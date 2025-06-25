@@ -1,7 +1,5 @@
 # IPRanges
 
-![IP Ranges](logo.png)
-
 List all IP ranges from: Google (Cloud & GoogleBot), Bing (Bingbot), Amazon (AWS), Microsoft, Oracle (Cloud), DigitalOcean, GitHub, Facebook (Meta), Twitter, Linode, Telegram, OpenAI (GPTBot), CloudFlare, Vultr, Apple (Private Relay) and ProtonVPN with daily updates.
 
 All lists are obtained from public sources.
@@ -146,8 +144,5 @@ A list of IP addresses from all sources combined into one file.
 - Spamhaus: https://github.com/SecOps-Institute/SpamhausIPLists
 - Alibaba, Telegram and others: https://github.com/im-sm/Mikrotik-IP-List
 
-## Author
-
-Lord_Alfred
-
-Blog (Russian language): [https://t.me/Lord_Alfred](https://t.me/Lord_Alfred)
+## Source
+https://github.com/lord-alfred/ipranges
