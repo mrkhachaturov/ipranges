@@ -32,13 +32,15 @@ for region in "${REGIONS[@]}"; do
     # Get IPv4 addresses
     ipv4_output=$(dig A "${region}.v2.argotunnel.com" +short 2>/dev/null || true)
     if [ -n "$ipv4_output" ]; then
-        echo "$ipv4_output" >> "$TMP_IPV4"
+        # Append /32 to each IPv4 address
+        echo "$ipv4_output" | sed 's/$/\/32/' >> "$TMP_IPV4"
     fi
     
     # Get IPv6 addresses
     ipv6_output=$(dig AAAA "${region}.v2.argotunnel.com" +short 2>/dev/null || true)
     if [ -n "$ipv6_output" ]; then
-        echo "$ipv6_output" >> "$TMP_IPV6"
+        # Append /128 to each IPv6 address
+        echo "$ipv6_output" | sed 's/$/\/128/' >> "$TMP_IPV6"
     fi
 done
 
