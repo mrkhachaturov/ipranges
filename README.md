@@ -1,6 +1,6 @@
 # IPRanges
 
-List all IP ranges from: Google (Cloud & GoogleBot), Bing (Bingbot), Amazon (AWS), Microsoft, Oracle (Cloud), DigitalOcean, GitHub, Facebook (Meta), Twitter, Linode, Telegram, OpenAI (GPTBot), CloudFlare, Vultr, Apple (Private Relay) and ProtonVPN with daily updates.
+List all IP ranges from: Google (Cloud & GoogleBot), Bing (Bingbot), Amazon (AWS), Microsoft, Oracle (Cloud), DigitalOcean, GitHub, Facebook (Meta), Twitter, Linode, Telegram, OpenAI (GPTBot), CloudFlare, Vultr, Apple (Private Relay), ProtonVPN and Discord with daily updates.
 
 All lists are obtained from public sources.
 
@@ -126,6 +126,11 @@ To allow GoogleBot, block all Google IP addresses and then allow the GoogleBot a
 
 - IPv4: https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/protonvpn/ipv4.txt
 - IPv4 (merged): https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/protonvpn/ipv4_merged.txt
+
+### Discord
+
+- IPv4: https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/discord/ipv4.txt
+- IPv4 (merged): https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/discord/ipv4_merged.txt
 
 ## All-In-One IPs
 
