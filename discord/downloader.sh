@@ -70,7 +70,6 @@ echo -e "${GREEN}Total Discord IPs found: $TOTAL_IPS${NC}"
 
 # Copy files to project directory
 cp discord_all.txt "$SCRIPT_DIR/ipv4.txt"
-cp main_domains.txt "$SCRIPT_DIR/ipv4_main.txt"
 
 # Clean up
 cd "$SCRIPT_DIR"
@@ -79,18 +78,4 @@ rm -rf "$TEMP_DIR"
 echo -e "${GREEN}Discord IP ranges downloaded successfully!${NC}"
 echo -e "${GREEN}Files created:${NC}"
 echo -e "  - ipv4.txt (all Discord IPs)"
-echo -e "  - ipv4_main.txt (main Discord domains only)"
-
-# Generate merged file using the project's merge utility
-if [ -f "../utils/merge.py" ]; then
-    echo -e "${YELLOW}Generating merged CIDR file...${NC}"
-    # Check if netaddr is available
-    if python3 -c "import netaddr" 2>/dev/null; then
-        python3 ../utils/merge.py --source ipv4.txt > ipv4_merged.txt
-        echo -e "${GREEN}Merged file created: ipv4_merged.txt${NC}"
-    else
-        echo -e "${YELLOW}Warning: netaddr module not found. Install with: pip install netaddr${NC}"
-        echo -e "${YELLOW}Creating empty merged file...${NC}"
-        touch ipv4_merged.txt
-    fi
-fi
+echo -e "${YELLOW}Note: ipv4_merged.txt will be generated automatically by GitHub Actions${NC}"
