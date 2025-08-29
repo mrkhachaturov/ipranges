@@ -52,9 +52,17 @@ for region in "${REGIONS[@]}"; do
     done
 done
 
-# Combine all IPs
-echo -e "${YELLOW}Combining IP addresses...${NC}"
-cat *.txt 2>/dev/null | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(/[0-9]+)?$' | sort -u > discord_all.txt
+# Combine all IPs with strict validation and ensure proper CIDR notation
+echo -e "${YELLOW}Combining and validating IP addresses...${NC}"
+cat *.txt 2>/dev/null | \
+    # Remove any non-IP content and ensure proper CIDR format
+    grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(/[0-9]+)?$' | \
+    # Remove any lines with extra text or malformed content
+    grep -v '[^0-9./]' | \
+    # Add /32 to IPs without CIDR notation (single IPs)
+    sed 's/^\([0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\)$/\1\/32/' | \
+    # Sort and remove duplicates
+    sort -u > discord_all.txt
 
 # Count IPs
 TOTAL_IPS=$(wc -l < discord_all.txt)
