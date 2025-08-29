@@ -8,6 +8,15 @@ set -x
 
 REPO_URL="https://raw.githubusercontent.com/GhostRooter0953/discord-voice-ips/master"
 
+# Determine output directory based on current location
+if [ -f "downloader.sh" ]; then
+    # Running from discord directory
+    OUTPUT_DIR="."
+else
+    # Running from project root (GitHub Actions)
+    OUTPUT_DIR="discord"
+fi
+
 # get from public ranges
 curl -s "$REPO_URL/main_domains/discord-main-ip-list" > /tmp/discord-main.txt
 
@@ -36,4 +45,4 @@ cat /tmp/discord-*.txt 2>/dev/null | \
     sort -V | uniq > /tmp/discord-all.txt
 
 # save ipv4
-cp /tmp/discord-all.txt ipv4.txt
+cp /tmp/discord-all.txt "$OUTPUT_DIR/ipv4.txt"
