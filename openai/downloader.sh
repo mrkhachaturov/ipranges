@@ -1,13 +1,47 @@
 #!/bin/bash
 
-
-# https://platform.openai.com/docs/gptbot
+# OpenAI IP Ranges Downloader
+# Downloads OpenAI IPs from JSON endpoints and resolves additional AI domains
 
 set -euo pipefail
 set -x
 
+# AI domains to resolve (additional to JSON endpoints)
+AI_DOMAINS=(
+    "ab.chatgpt.com"
+    "api.openai.com"
+    "arena.openai.com"
+    "auth.openai.com"
+    "auth0.openai.com"
+    "beta.api.openai.com"
+    "beta.openai.com"
+    "blog.openai.com"
+    "cdn.oaistatic.com"
+    "cdn.openai.com"
+    "community.openai.com"
+    "contest.openai.com"
+    "debate-game.openai.com"
+    "discuss.openai.com"
+    "files.oaiusercontent.com"
+    "gpt3-openai.com"
+    "gym.openai.com"
+    "help.openai.com"
+    "ios.chat.openai.com"
+    "jukebox.openai.com"
+    "labs.openai.com"
+    "microscope.openai.com"
+    "oaistatic.com"
+    "openai.com"
+    "openai.fund"
+    "openai.org"
+    "platform.api.openai.com"
+    "platform.openai.com"
+    "spinningup.openai"
+    "chat.openai.com"
+    "chatgpt.com"
+)
 
-# get from public ranges
+# Function to download and parse JSON from OpenAI endpoints
 download_and_parse_json() {
     curl --connect-timeout 60 --retry 3 --retry-delay 15 -s "${1}" \
     -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
@@ -36,10 +70,32 @@ download_and_parse_json() {
     sleep 10
 }
 
+# Download from JSON endpoints
 download_and_parse_json "https://openai.com/chatgpt-user.json"
 download_and_parse_json "https://openai.com/searchbot.json"
 download_and_parse_json "https://openai.com/gptbot.json"
 
+# Resolve additional AI domains
+for domain in "${AI_DOMAINS[@]}"; do
+    echo "Resolving $domain..." >&2
+    dig +short A "$domain" @8.8.8.8 >> /tmp/openai-ipv4.txt || echo 'failed'
+    dig +short AAAA "$domain" @8.8.8.8 >> /tmp/openai-ipv6.txt || echo 'failed'
+done
 
-# sort & uniq
-sort -V /tmp/openai-ipv4.txt | uniq > openai/ipv4.txt
+# Process IPv4 addresses (ensure proper CIDR notation)
+cat /tmp/openai-ipv4.txt 2>/dev/null | \
+    grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(/[0-9]+)?$' | \
+    sed 's/^\([0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\)$/\1\/32/' | \
+    sort -V | uniq > /tmp/openai-ipv4-final.txt
+
+# Process IPv6 addresses (ensure proper CIDR notation)
+cat /tmp/openai-ipv6.txt 2>/dev/null | \
+    grep ':' | \
+    sed 's/$/\/128/' | \
+    sort -V | uniq > /tmp/openai-ipv6-final.txt
+
+# save ipv4
+[ -f "downloader.sh" ] && cp /tmp/openai-ipv4-final.txt ipv4.txt || cp /tmp/openai-ipv4-final.txt openai/ipv4.txt
+
+# save ipv6
+[ -f "downloader.sh" ] && cp /tmp/openai-ipv6-final.txt ipv6.txt || cp /tmp/openai-ipv6-final.txt openai/ipv6.txt
