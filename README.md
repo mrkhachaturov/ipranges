@@ -1,6 +1,6 @@
 # IPRanges
 
-List all IP ranges from: Google (Cloud & GoogleBot), Bing (Bingbot), Amazon (AWS), Microsoft, Oracle (Cloud), DigitalOcean, GitHub, Facebook (Meta), Twitter, Linode, Telegram, OpenAI (GPTBot), CloudFlare, Vultr, Apple (Private Relay), ProtonVPN, Discord and Games with daily updates.
+List all IP ranges from: Google (Cloud & GoogleBot), Bing (Bingbot), Amazon (AWS), Microsoft, Oracle (Cloud), DigitalOcean, GitHub, Facebook (Meta), Twitter, Linode, Telegram, OpenAI (GPTBot), CloudFlare, Vultr, Apple (Private Relay), ProtonVPN, Discord, Games and Spotify with daily updates.
 
 All lists are obtained from public sources.
 
@@ -138,6 +138,13 @@ To allow GoogleBot, block all Google IP addresses and then allow the GoogleBot a
 - IPv4 (merged): https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/games/ipv4_merged.txt
 - IPv6: https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/games/ipv6.txt
 - IPv6 (merged): https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/games/ipv6_merged.txt
+
+### Spotify
+
+- IPv4: https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/spotify/ipv4.txt
+- IPv4 (merged): https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/spotify/ipv4_merged.txt
+- IPv6: https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/spotify/ipv6.txt
+- IPv6 (merged): https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/spotify/ipv6_merged.txt
 
 ## All-In-One IPs
 
