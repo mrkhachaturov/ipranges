@@ -14,6 +14,13 @@ NOTION_DOMAINS=(
     "api.notion.com"
     "img.notionusercontent.com"
     "notionusercontent.com"
+	"www.notion.so"
+	"exp.notion.so"
+	"http-inputs-notion.splunkcloud.com"
+	"identity.notion.so"
+	"msgstore.www.notion.so"
+	"o324374.ingest.us.sentry.io"
+    
 )
 
 # Specific IP addresses from Notion allowlist

@@ -39,6 +39,7 @@ AI_DOMAINS=(
     "spinningup.openai"
     "chat.openai.com"
     "chatgpt.com"
+	"i0.wp.com"
 )
 
 # Function to download and parse JSON from OpenAI endpoints
