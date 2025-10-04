@@ -20,6 +20,7 @@ NOTION_DOMAINS=(
 	"identity.notion.so"
 	"msgstore.www.notion.so"
 	"o324374.ingest.us.sentry.io"
+    "file.notion.so"
     
 )
 
