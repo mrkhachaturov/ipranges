@@ -21,6 +21,8 @@ NOTION_DOMAINS=(
 	"msgstore.www.notion.so"
 	"o324374.ingest.us.sentry.io"
     "file.notion.so"
+    "s3-us-west-2.amazonaws.com"
+    "s3.amazonaws.com"
     
 )
 
@@ -45,10 +47,21 @@ for ip in "${NOTION_IPS[@]}"; do
     echo "$ip/32" >> /tmp/notion-ipv4.txt
 done
 
-# Resolve domains to IP addresses
+# Resolve domains to IP addresses (including CNAME records)
 for domain in "${NOTION_DOMAINS[@]}"; do
     echo "Resolving $domain..." >&2
+    
+    # Get A records
     dig +short A "$domain" @8.8.8.8 >> /tmp/notion-ipv4.txt || echo 'failed'
+    
+    # Get CNAME records and resolve them too
+    cname=$(dig +short CNAME "$domain" @8.8.8.8 | head -1)
+    if [ -n "$cname" ] && [ "$cname" != "failed" ]; then
+        echo "Resolving CNAME $cname for $domain..." >&2
+        dig +short A "$cname" @8.8.8.8 >> /tmp/notion-ipv4.txt || echo 'failed'
+    fi
+    
+    # Get AAAA records
     dig +short AAAA "$domain" @8.8.8.8 >> /tmp/notion-ipv6.txt || echo 'failed'
 done
 
