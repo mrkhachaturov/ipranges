@@ -163,5 +163,9 @@ A list of IP addresses from all sources combined into one file.
 - IPv6 (merged): https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/all/ipv6_merged.txt
 
 
+## Documentation
+
+- See `docs/API.md` for usage, script interfaces, and examples.
+
 ## Source
 https://github.com/mrkhachaturov/ipranges
