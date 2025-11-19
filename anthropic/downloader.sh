@@ -27,11 +27,14 @@ echo "34.162.136.91/32" >> /tmp/anthropic-ipv4.txt
 echo "34.162.142.92/32" >> /tmp/anthropic-ipv4.txt
 echo "34.162.183.95/32" >> /tmp/anthropic-ipv4.txt
 
-# Resolve additional domains
+# Resolve additional domains (use multiple DNS servers to get all CDN IPs)
+DNS_SERVERS=("8.8.8.8" "1.1.1.1" "208.67.222.222" "9.9.9.9" "77.88.8.8")
 for domain in "${ANTHROPIC_DOMAINS[@]}"; do
     echo "Resolving $domain..." >&2
-    dig +short A "$domain" @8.8.8.8 | sed 's/$/\/32/' >> /tmp/anthropic-ipv4.txt || echo 'failed'
-    dig +short AAAA "$domain" @8.8.8.8 | sed 's/$/\/128/' >> /tmp/anthropic-ipv6.txt || echo 'failed'
+    for dns in "${DNS_SERVERS[@]}"; do
+        dig +short A "$domain" @"$dns" | sed 's/$/\/32/' >> /tmp/anthropic-ipv4.txt || true
+        dig +short AAAA "$domain" @"$dns" | sed 's/$/\/128/' >> /tmp/anthropic-ipv6.txt || true
+    done
 done
 
 # Process IPv4 addresses

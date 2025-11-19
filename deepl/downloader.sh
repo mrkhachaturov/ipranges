@@ -41,11 +41,14 @@ echo "2a13:b240:10::/44" >> /tmp/deepl-ipv6.txt
 echo "2606:4700:440b::6812:247a/128" >> /tmp/deepl-ipv6.txt
 echo "2a06:98c1:3108::ac40:9786/128" >> /tmp/deepl-ipv6.txt
 
-# Resolve additional domains
+# Resolve additional domains (use multiple DNS servers to get all CDN IPs)
+DNS_SERVERS=("8.8.8.8" "1.1.1.1" "208.67.222.222" "9.9.9.9" "77.88.8.8")
 for domain in "${DEEPL_DOMAINS[@]}"; do
     echo "Resolving $domain..." >&2
-    dig +short A "$domain" @8.8.8.8 | sed 's/$/\/32/' >> /tmp/deepl-ipv4.txt || echo 'failed'
-    dig +short AAAA "$domain" @8.8.8.8 | sed 's/$/\/128/' >> /tmp/deepl-ipv6.txt || echo 'failed'
+    for dns in "${DNS_SERVERS[@]}"; do
+        dig +short A "$domain" @"$dns" | sed 's/$/\/32/' >> /tmp/deepl-ipv4.txt || true
+        dig +short AAAA "$domain" @"$dns" | sed 's/$/\/128/' >> /tmp/deepl-ipv6.txt || true
+    done
 done
 
 # Process IPv4 addresses
