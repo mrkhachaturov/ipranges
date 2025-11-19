@@ -32,8 +32,12 @@ DNS_SERVERS=("8.8.8.8" "1.1.1.1" "208.67.222.222" "9.9.9.9" "77.88.8.8")
 for domain in "${ANTHROPIC_DOMAINS[@]}"; do
     echo "Resolving $domain..." >&2
     for dns in "${DNS_SERVERS[@]}"; do
-        dig +short A "$domain" @"$dns" | sed 's/$/\/32/' >> /tmp/anthropic-ipv4.txt || true
-        dig +short AAAA "$domain" @"$dns" | sed 's/$/\/128/' >> /tmp/anthropic-ipv6.txt || true
+        # Query multiple times to catch round-robin IPs
+        for i in {1..3}; do
+            dig +short A "$domain" @"$dns" | sed 's/$/\/32/' >> /tmp/anthropic-ipv4.txt || true
+            dig +short AAAA "$domain" @"$dns" | sed 's/$/\/128/' >> /tmp/anthropic-ipv6.txt || true
+            sleep 0.1  # Small delay between queries
+        done
     done
 done
 
