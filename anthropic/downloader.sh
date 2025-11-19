@@ -44,9 +44,7 @@ cat /tmp/anthropic-ipv6.txt 2>/dev/null | \
     grep ':' | \
     sort -V | uniq > /tmp/anthropic-ipv6-final.txt
 
-# Save files
-[ -f "downloader.sh" ] && cp /tmp/anthropic-ipv4-final.txt ipv4.txt || cp /tmp/anthropic-ipv4-final.txt anthropic/ipv4.txt
-[ -f "downloader.sh" ] && cp /tmp/anthropic-ipv6-final.txt ipv6.txt || cp /tmp/anthropic-ipv6-final.txt anthropic/ipv6.txt
-
-echo "Anthropic IP ranges downloaded successfully!"
+# sort & uniq
+sort -V /tmp/anthropic-ipv4-final.txt | uniq > anthropic/ipv4.txt
+sort -V /tmp/anthropic-ipv6-final.txt | uniq > anthropic/ipv6.txt
 
