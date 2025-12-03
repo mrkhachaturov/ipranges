@@ -1,0 +1,2879 @@
+[19:19:07.328] system initialized, build => 2945
+[19:19:07.328] system memory limit => 50 MB
+[19:19:07.328] system jailbroken => 0
+[19:19:07.328] system version => Version 26.1 (Build 23B85)
+[19:19:07.328] system current memory used => 3.1 MB free => 357.0 MB
+[19:19:07.328] tunnel provider setup message channel
+[19:19:07.328] network manager network path => satisfied (Path is satisfied), interface: pdp_ip0[lte], scoped, ipv4, dns, expensive, uses cell, LQM: moderate
+[19:19:07.328] network manager path did change
+[19:19:07.328] network manager interface type => cellular
+[19:19:07.328] network manager supports ipv6 => 0
+[19:19:07.328] network manager supports ipv4 => 1
+[19:19:07.328] network manager interface name => pdp_ip0
+[19:19:07.328] network manager interface index => 2
+[19:19:07.328] network manager primary ip address => 10.0.62.153
+[19:19:07.328] tunnel provider network interface did change
+[19:19:07.328] tunnel provider set tunnel network settings step0
+[19:19:07.328] network manager system dns ipv4 server => 213.87.0.1
+[19:19:07.328] network manager system dns ipv4 server => 213.87.1.1
+[19:19:07.328] tunnel provider vpn network path has dns
+[19:19:07.328] route manager async reload block
+[19:19:07.328] route manager load sentinel
+[19:19:07.328] route manager load settings
+[19:19:07.328] route manager setup route type => Config
+[19:19:07.328] server manager server selected uuid => 12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4
+[19:19:07.328] server manager read all servers done => 1 time => 1.321912 ms
+[19:19:07.328] route manager use system default server => Vless-rk_iphone
+[19:19:07.328] route manager use default group => AUTO
+[19:19:07.329] route manager prepare routing server done => 1.716018 ms
+[19:19:07.329] route manager load scene
+[19:19:07.329] route manager load routing type
+[19:19:07.329] route manager global routing => config
+[19:19:07.329] route manager load rule file default.db
+[19:19:07.329] rule manager load rule file => default.db
+[19:19:07.329] rule manager user config ipv6 = 1
+[19:19:07.329] rule manager use rule when global routing is config
+[19:19:07.329] rule manager mmdb system geoip lite2 database GeoLite2-Country.mmdb => 1
+[19:19:07.329] rule manager mmdb system geoip lite2 database GeoLite2-ASN.mmdb => 1
+[19:19:07.329] rule manager rule summary => domain:589, ip:5, asns:1, geoip:1, script:0, user-agent:1, domain-wildcards:0, url-rewrite:2, logical-rules:0
+[19:19:07.329] tunnel provider start to prepare tunnel
+[19:19:07.329] tunnel network setup dns settings
+[19:19:07.329] tunnel network ipv4 excluded route => 192.168.0.0/16
+[19:19:07.329] tunnel network ipv4 excluded route => 172.16.0.0/12
+[19:19:07.329] tunnel network ipv4 excluded route => 169.254.0.0/16
+[19:19:07.329] tunnel network ipv4 excluded route => 192.0.0.0/24
+[19:19:07.329] tunnel network ipv4 excluded route => 255.255.255.255/32
+[19:19:07.329] tunnel network ipv4 excluded route => 203.0.113.0/24
+[19:19:07.329] tunnel network ipv4 excluded route => 224.0.0.0/4
+[19:19:07.329] tunnel network ipv4 excluded route => 239.255.255.250/32
+[19:19:07.329] tunnel network ipv4 excluded route => 100.64.0.0/10
+[19:19:07.329] tunnel network ipv4 excluded route => 198.51.100.0/24
+[19:19:07.329] tunnel network ipv4 excluded route => 192.0.2.0/24
+[19:19:07.329] tunnel network ipv4 excluded route => 10.0.0.0/8
+[19:19:07.329] tunnel network ipv4 excluded route => 127.0.0.0/8
+[19:19:07.329] tunnel network ipv4 excluded route => 192.88.99.0/24
+[19:19:07.329] tunnel network proxy compatibility mode => 0
+[19:19:07.329] tunnel network setup ipv4 settings
+[19:19:07.329] tunnel network setup ipv6 settings
+[19:19:07.329] tunnel network setup proxy settings
+[19:19:07.329] tunnel network setup proxy exception list
+[19:19:07.329] tunnel network setup proxy protocol
+[19:19:07.329] tunnel network setup http proxy mode
+[19:19:07.329] tunnel provider start to set vpn network settings
+[19:19:07.329] tunnel provider vpn network settings pending
+[19:19:07.737] tunnel provider vpn network settings initialized
+[19:19:07.737] tunnel provider start all tunnels
+[19:19:07.741] icmp tunnel start
+[19:19:07.742] dns tunnel start
+[19:19:07.742] tcp tunnel start
+[19:19:07.742] dns tunnel logging enable => 0
+[19:19:07.742] dns tunnel create dns socket address => 213.87.0.1
+[19:19:07.742] dns system server => 1172787503
+[19:19:07.742] dns over udp => 213.87.0.1
+[19:19:07.742] udp tunnel load options
+[19:19:07.742] udp tunnel start
+[19:19:07.745] tunnel provider perform pending completion block
+[19:19:07.745] dns tunnel create dns socket address => 213.87.1.1
+[19:19:07.745] dns system server => 2864952048
+[19:19:07.745] dns over udp => 213.87.1.1
+[19:19:07.745] dns tunnel create fallback server 213.87.0.1
+[19:19:07.745] dns tunnel create fallback server 213.87.1.1
+[19:19:07.745] tunnel provider perform vpn network settings completion block
+[19:19:07.745] network manager lookup utun interface index
+[19:19:07.745] udp socket local host => 10.0.62.153:61812
+[19:19:07.745] network manager utun interface name => utun7
+[19:19:07.745] network manager utun interface index => 92
+[19:19:07.745] network manager lookup utun interface index done
+[19:19:07.745] tunnel provider start read packet from tunnel
+[19:19:07.745] udp socket local host => 10.0.62.153:50419
+[19:19:07.745] proxy tunnel start localhost:1082
+[19:19:07.745] tunnel provider vpn server started
+[19:19:07.745] system current memory used => 5.8 MB free => 379.8 MB
+[19:19:07.745] route manager notify current server => {
+	port = 443,
+	method = auto,
+	tls = 1,
+	publicKey = 3Bgu9hS6QoyFijuV03qe9cutHmtaKsLe4b07RkRjPFc,
+	title = Vless-rk_iphone,
+	host = 78.47.40.68,
+	xtls = 2,
+	type = VLESS,
+	udp = 1,
+	peer = github.com,
+	shortId = 650ee15b3b50
+}
+[19:19:07.801] network manager network path => satisfied (Path is satisfied), interface: pdp_ip0[lte], scoped, ipv4, dns, expensive, uses cell, LQM: moderate
+[19:19:07.801] network manager new path is equal to old path
+[19:19:07.845] proxy stream <0> loopback => 1 total => 1
+[19:19:07.845] proxy stream <0> async lookup rule url => gateway.icloud.com:443 host => gateway.icloud.com port => 443
+[19:19:07.845] proxy stream <0> tcp rule => {
+	result = DOMAIN-SUFFIX,icloud.com,DIRECT,
+	ns = 23,
+	url = gateway.icloud.com:443,
+	type = DIRECT,
+	ua = TCP Stream
+}
+[19:19:07.845] proxy stream <0> lookup host => gateway.icloud.com:443
+[19:19:07.845] dns query <1> did start => 1#gateway.icloud.com total => 0
+[19:19:07.845] dns query <1> any send ipv4 gateway.icloud.com to 213.87.0.1
+[19:19:07.845] tcp tunnel proxy request logging enable => 0
+[19:19:07.845] dns query <1> any send ipv4 gateway.icloud.com to 213.87.1.1
+[19:19:07.850] utun query => gateway.icloud.com type => 28
+[19:19:07.850] utun response dummy ip => gateway.icloud.com response => ::ffff:198.18.0.5
+[19:19:07.850] utun query => gateway.icloud.com type => 1
+[19:19:07.850] utun response dummy ip => gateway.icloud.com response => 198.18.0.5
+[19:19:07.850] utun query => _dns.resolver.arpa type => 64
+[19:19:07.945] dns query <1> response gateway.icloud.com from 213.87.0.1
+[19:19:07.945] proxy stream <0> lookup host => gateway.icloud.com:443 result => 17.248.214.67 cost => 107.799053 ms
+[19:19:07.945] dns query <1> did finish 1#gateway.icloud.com => success total => 2
+[19:19:07.945] dns response record => {
+	result = 17.248.214.67,
+	host = gateway.icloud.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 107
+}
+[19:19:07.947] dns query <1> cancel from 213.87.1.1
+[19:19:07.995] proxy stream <0> did connect to host => gateway.icloud.com:443 > 17.248.214.67:443 fastopen => 0 cost => 49.999952 ms
+[19:19:10.368] utun query => www.google.com type => 28
+[19:19:10.368] utun response dummy ip => www.google.com response => ::ffff:198.18.0.6
+[19:19:10.368] utun query => www.google.com type => 1
+[19:19:10.368] utun response dummy ip => www.google.com response => 198.18.0.6
+[19:19:10.400] proxy stream <1> loopback => 1 total => 2
+[19:19:10.400] proxy stream <1> async lookup rule url => clientsettingscdn.roblox.com:443 host => clientsettingscdn.roblox.com port => 443
+[19:19:10.400] proxy stream <1> async lookup host => clientsettingscdn.roblox.com:443
+[19:19:10.400] dns query <3> did start => 3#clientsettingscdn.roblox.com total => 0
+[19:19:10.400] dns query <3> any send ipv4 clientsettingscdn.roblox.com to 213.87.0.1
+[19:19:10.400] dns query <3> any send ipv4 clientsettingscdn.roblox.com to 213.87.1.1
+[19:19:10.408] utun query => ecsv2.roblox.com type => 1
+[19:19:10.408] utun response dummy ip => ecsv2.roblox.com response => 198.18.0.7
+[19:19:10.411] utun query => ecsv2.roblox.com type => 28
+[19:19:10.411] utun response dummy ip => ecsv2.roblox.com response => ::ffff:198.18.0.7
+[19:19:10.411] utun query => ephemeralcounters.api.roblox.com type => 1
+[19:19:10.411] utun response dummy ip => ephemeralcounters.api.roblox.com response => 198.18.0.8
+[19:19:10.411] utun query => ephemeralcounters.api.roblox.com type => 28
+[19:19:10.411] utun response dummy ip => ephemeralcounters.api.roblox.com response => ::ffff:198.18.0.8
+[19:19:10.417] tcp tunnel lwip resume tcp timer
+[19:19:10.430] tcp tunnel dummy ip 198.18.0.8 => ephemeralcounters.api.roblox.com
+[19:19:10.430] tcp stream <2> start host => ephemeralcounters.api.roblox.com port => 443 total => 1
+[19:19:10.430] utun query => apis.roblox.com type => 1
+[19:19:10.430] utun response dummy ip => apis.roblox.com response => 198.18.0.9
+[19:19:10.430] utun query => apis.roblox.com type => 28
+[19:19:10.430] utun response dummy ip => apis.roblox.com response => ::ffff:198.18.0.9
+[19:19:10.451] tcp stream <2> match tcp request => ephemeralcounters.api.roblox.com:443, cost => 14.693022 ms
+[19:19:10.452] tcp stream <2> async lookup host => ephemeralcounters.api.roblox.com:443 => 198.18.0.8
+[19:19:10.452] dns query <5> did start => 5#ephemeralcounters.api.roblox.com total => 2
+[19:19:10.452] dns query <5> any send ipv4 ephemeralcounters.api.roblox.com to 213.87.0.1
+[19:19:10.452] dns query <5> any send ipv4 ephemeralcounters.api.roblox.com to 213.87.1.1
+[19:19:10.452] utun query => realtime-signalr.roblox.com type => 1
+[19:19:10.452] utun response dummy ip => realtime-signalr.roblox.com response => 198.18.0.10
+[19:19:10.452] tcp tunnel dummy ip 198.18.0.8 => ephemeralcounters.api.roblox.com
+[19:19:10.452] tcp stream <3> start host => ephemeralcounters.api.roblox.com port => 443 total => 2
+[19:19:10.452] tcp tunnel dummy ip 198.18.0.7 => ecsv2.roblox.com
+[19:19:10.452] tcp stream <4> start host => ecsv2.roblox.com port => 443 total => 3
+[19:19:10.452] utun query => realtime-signalr.roblox.com type => 28
+[19:19:10.452] utun response dummy ip => realtime-signalr.roblox.com response => ::ffff:198.18.0.10
+[19:19:10.452] utun query => friends.roblox.com type => 1
+[19:19:10.455] utun response dummy ip => friends.roblox.com response => 198.18.0.11
+[19:19:10.455] utun query => friends.roblox.com type => 28
+[19:19:10.455] utun response dummy ip => friends.roblox.com response => ::ffff:198.18.0.11
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.7 => ecsv2.roblox.com
+[19:19:10.455] tcp stream <5> start host => ecsv2.roblox.com port => 443 total => 4
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.7 => ecsv2.roblox.com
+[19:19:10.455] tcp stream <6> start host => ecsv2.roblox.com port => 443 total => 5
+[19:19:10.455] tcp stream <3> match tcp request => ephemeralcounters.api.roblox.com:443, cost => 14.843106 ms
+[19:19:10.455] tcp stream <3> async lookup host => ephemeralcounters.api.roblox.com:443 => 198.18.0.8
+[19:19:10.455] tcp stream <4> match tcp request => ecsv2.roblox.com:443, cost => 14.703035 ms
+[19:19:10.455] tcp stream <4> async lookup host => ecsv2.roblox.com:443 => 198.18.0.7
+[19:19:10.455] dns query <7> did start => 7#ecsv2.roblox.com total => 4
+[19:19:10.455] dns query <7> any send ipv4 ecsv2.roblox.com to 213.87.0.1
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.8 => ephemeralcounters.api.roblox.com
+[19:19:10.455] dns query <7> any send ipv4 ecsv2.roblox.com to 213.87.1.1
+[19:19:10.455] tcp stream <7> start host => ephemeralcounters.api.roblox.com port => 443 total => 6
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:10.455] tcp stream <8> start host => apis.roblox.com port => 443 total => 7
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:10.455] tcp stream <9> start host => apis.roblox.com port => 443 total => 8
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:10.455] tcp stream <10> start host => apis.roblox.com port => 443 total => 9
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.11 => friends.roblox.com
+[19:19:10.455] tcp stream <11> start host => friends.roblox.com port => 443 total => 10
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.8 => ephemeralcounters.api.roblox.com
+[19:19:10.455] tcp stream <12> start host => ephemeralcounters.api.roblox.com port => 443 total => 11
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.7 => ecsv2.roblox.com
+[19:19:10.455] tcp stream <13> start host => ecsv2.roblox.com port => 443 total => 12
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.7 => ecsv2.roblox.com
+[19:19:10.455] tcp stream <14> start host => ecsv2.roblox.com port => 443 total => 13
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.7 => ecsv2.roblox.com
+[19:19:10.455] tcp stream <15> start host => ecsv2.roblox.com port => 443 total => 14
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:10.455] tcp stream <16> start host => apis.roblox.com port => 443 total => 15
+[19:19:10.455] tcp tunnel dummy ip 198.18.0.10 => realtime-signalr.roblox.com
+[19:19:10.455] tcp stream <17> start host => realtime-signalr.roblox.com port => 443 total => 16
+[19:19:10.465] tcp stream <5> match tcp request => ecsv2.roblox.com:443, cost => 13.401031 ms
+[19:19:10.465] tcp stream <5> async lookup host => ecsv2.roblox.com:443 => 198.18.0.7
+[19:19:10.465] tcp stream <6> match tcp request => ecsv2.roblox.com:443, cost => 13.439059 ms
+[19:19:10.465] tcp stream <6> async lookup host => ecsv2.roblox.com:443 => 198.18.0.7
+[19:19:10.465] tcp stream <7> match tcp request => ephemeralcounters.api.roblox.com:443, cost => 13.243914 ms
+[19:19:10.465] tcp stream <7> async lookup host => ephemeralcounters.api.roblox.com:443 => 198.18.0.8
+[19:19:10.465] tcp stream <8> match tcp request => apis.roblox.com:443, cost => 13.216019 ms
+[19:19:10.465] tcp stream <8> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:10.465] tcp stream <9> match tcp request => apis.roblox.com:443, cost => 13.223052 ms
+[19:19:10.465] tcp stream <9> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:10.465] tcp stream <10> match tcp request => apis.roblox.com:443, cost => 13.178945 ms
+[19:19:10.465] tcp stream <10> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:10.465] tcp stream <11> match tcp request => friends.roblox.com:443, cost => 13.136983 ms
+[19:19:10.465] dns query <9> did start => 9#apis.roblox.com total => 6
+[19:19:10.465] tcp stream <11> async lookup host => friends.roblox.com:443 => 198.18.0.11
+[19:19:10.465] tcp stream <12> match tcp request => ephemeralcounters.api.roblox.com:443, cost => 13.059974 ms
+[19:19:10.465] dns query <9> any send ipv4 apis.roblox.com to 213.87.0.1
+[19:19:10.465] tcp stream <12> async lookup host => ephemeralcounters.api.roblox.com:443 => 198.18.0.8
+[19:19:10.465] tcp stream <13> match tcp request => ecsv2.roblox.com:443, cost => 11.631012 ms
+[19:19:10.465] dns query <9> any send ipv4 apis.roblox.com to 213.87.1.1
+[19:19:10.466] tcp stream <13> async lookup host => ecsv2.roblox.com:443 => 198.18.0.7
+[19:19:10.466] tcp stream <14> match tcp request => ecsv2.roblox.com:443, cost => 11.571050 ms
+[19:19:10.466] tcp stream <14> async lookup host => ecsv2.roblox.com:443 => 198.18.0.7
+[19:19:10.466] tcp stream <15> match tcp request => ecsv2.roblox.com:443, cost => 11.496902 ms
+[19:19:10.466] tcp stream <15> async lookup host => ecsv2.roblox.com:443 => 198.18.0.7
+[19:19:10.466] dns query <11> did start => 11#friends.roblox.com total => 8
+[19:19:10.466] tcp stream <16> match tcp request => apis.roblox.com:443, cost => 11.464000 ms
+[19:19:10.466] dns query <11> any send ipv4 friends.roblox.com to 213.87.0.1
+[19:19:10.466] tcp stream <16> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:10.466] dns query <11> any send ipv4 friends.roblox.com to 213.87.1.1
+[19:19:10.466] tcp stream <17> match tcp request => realtime-signalr.roblox.com:443, cost => 11.388063 ms
+[19:19:10.466] tcp stream <17> async lookup host => realtime-signalr.roblox.com:443 => 198.18.0.10
+[19:19:10.466] dns query <13> did start => 13#realtime-signalr.roblox.com total => 10
+[19:19:10.466] dns query <13> any send ipv4 realtime-signalr.roblox.com to 213.87.0.1
+[19:19:10.466] dns query <13> any send ipv4 realtime-signalr.roblox.com to 213.87.1.1
+[19:19:10.482] dns query <3> response clientsettingscdn.roblox.com from 213.87.0.1
+[19:19:10.482] proxy stream <1> async lookup host => clientsettingscdn.roblox.com:443 result => 23.210.252.62 cost => 82.926035 ms
+[19:19:10.482] dns query <3> did finish 3#clientsettingscdn.roblox.com => success total => 12
+[19:19:10.482] dns response record => {
+	result = 23.210.252.62,
+	host = clientsettingscdn.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 82
+}
+[19:19:10.486] proxy stream <1> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = clientsettingscdn.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.486] proxy stream <1> lookup host => clientsettingscdn.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.486] proxy stream <1> lookup host => 78.47.40.68:443
+[19:19:10.505] dns query <7> response ecsv2.roblox.com from 213.87.1.1
+[19:19:10.505] tcp stream <4> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 53.714991 ms
+[19:19:10.505] tcp stream <5> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 40.454984 ms
+[19:19:10.505] tcp stream <6> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 40.435076 ms
+[19:19:10.505] tcp stream <13> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 40.232062 ms
+[19:19:10.505] tcp stream <14> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 40.229917 ms
+[19:19:10.505] tcp stream <15> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 40.219903 ms
+[19:19:10.505] dns query <7> did finish 7#ecsv2.roblox.com => success total => 10
+[19:19:10.505] dns response record => {
+	result = 128.116.44.3,
+	host = ecsv2.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 53
+}
+[19:19:10.506] tcp stream <4> proxy lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.506] tcp stream <4> lookup host => 78.47.40.68:443 domain => ecsv2.roblox.com host => <null> ip => 198.18.0.7
+[19:19:10.507] tcp stream <4> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.507] tcp stream <5> proxy lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.507] tcp stream <5> lookup host => 78.47.40.68:443 domain => ecsv2.roblox.com host => <null> ip => 198.18.0.7
+[19:19:10.507] tcp stream <5> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.507] tcp stream <6> proxy lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.507] tcp stream <6> lookup host => 78.47.40.68:443 domain => ecsv2.roblox.com host => <null> ip => 198.18.0.7
+[19:19:10.507] tcp stream <6> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.507] tcp stream <13> proxy lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.507] tcp stream <13> lookup host => 78.47.40.68:443 domain => ecsv2.roblox.com host => <null> ip => 198.18.0.7
+[19:19:10.507] tcp stream <13> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.507] tcp stream <14> proxy lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.507] tcp stream <14> lookup host => 78.47.40.68:443 domain => ecsv2.roblox.com host => <null> ip => 198.18.0.7
+[19:19:10.507] tcp stream <14> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.507] tcp stream <15> proxy lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.507] tcp stream <15> lookup host => 78.47.40.68:443 domain => ecsv2.roblox.com host => <null> ip => 198.18.0.7
+[19:19:10.507] tcp stream <15> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.509] dns query <7> cancel from 213.87.0.1
+[19:19:10.525] dns query <11> response friends.roblox.com from 213.87.0.1
+[19:19:10.525] tcp stream <11> async lookup host => friends.roblox.com:443 result => 128.116.44.3 cost => 59.907913 ms
+[19:19:10.525] dns query <11> did finish 11#friends.roblox.com => success total => 8
+[19:19:10.525] dns response record => {
+	result = 128.116.44.3,
+	host = friends.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 59
+}
+[19:19:10.525] tcp stream <11> proxy lookup host => friends.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.525] tcp stream <11> lookup host => 78.47.40.68:443 domain => friends.roblox.com host => <null> ip => 198.18.0.11
+[19:19:10.525] tcp stream <11> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = friends.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.526] dns query <5> response ephemeralcounters.api.roblox.com from 213.87.0.1
+[19:19:10.526] tcp stream <2> async lookup host => ephemeralcounters.api.roblox.com:443 result => 128.116.44.3 cost => 94.298959 ms
+[19:19:10.526] tcp stream <3> async lookup host => ephemeralcounters.api.roblox.com:443 result => 128.116.44.3 cost => 74.425936 ms
+[19:19:10.526] tcp stream <7> async lookup host => ephemeralcounters.api.roblox.com:443 result => 128.116.44.3 cost => 61.028957 ms
+[19:19:10.526] tcp stream <12> async lookup host => ephemeralcounters.api.roblox.com:443 result => 128.116.44.3 cost => 60.853958 ms
+[19:19:10.526] dns query <5> did finish 5#ephemeralcounters.api.roblox.com => success total => 6
+[19:19:10.526] tcp stream <2> proxy lookup host => ephemeralcounters.api.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.526] dns response record => {
+	result = 128.116.44.3,
+	host = ephemeralcounters.api.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 94
+}
+[19:19:10.526] dns query <3> cancel from 213.87.1.1
+[19:19:10.526] tcp stream <2> lookup host => 78.47.40.68:443 domain => ephemeralcounters.api.roblox.com host => <null> ip => 198.18.0.8
+[19:19:10.526] tcp stream <2> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ephemeralcounters.api.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.526] tcp stream <3> proxy lookup host => ephemeralcounters.api.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.526] tcp stream <3> lookup host => 78.47.40.68:443 domain => ephemeralcounters.api.roblox.com host => <null> ip => 198.18.0.8
+[19:19:10.526] tcp stream <3> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ephemeralcounters.api.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.526] tcp stream <7> proxy lookup host => ephemeralcounters.api.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.526] tcp stream <7> lookup host => 78.47.40.68:443 domain => ephemeralcounters.api.roblox.com host => <null> ip => 198.18.0.8
+[19:19:10.526] tcp stream <7> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ephemeralcounters.api.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.526] tcp stream <12> proxy lookup host => ephemeralcounters.api.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.526] tcp stream <12> lookup host => 78.47.40.68:443 domain => ephemeralcounters.api.roblox.com host => <null> ip => 198.18.0.8
+[19:19:10.526] tcp stream <12> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ephemeralcounters.api.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.538] dns query <5> cancel from 213.87.1.1
+[19:19:10.555] dns query <9> response apis.roblox.com from 213.87.1.1
+[19:19:10.555] tcp stream <8> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 90.311050 ms
+[19:19:10.555] tcp stream <9> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 90.319991 ms
+[19:19:10.556] tcp stream <10> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 90.296984 ms
+[19:19:10.556] tcp stream <16> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 90.202928 ms
+[19:19:10.556] dns query <9> did finish 9#apis.roblox.com => success total => 4
+[19:19:10.556] dns response record => {
+	result = 128.116.44.3,
+	host = apis.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 90
+}
+[19:19:10.556] tcp stream <8> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.557] tcp stream <8> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:10.557] tcp stream <8> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.557] tcp stream <9> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.557] tcp stream <9> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:10.557] tcp stream <9> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.557] tcp stream <10> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.557] tcp stream <10> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:10.557] tcp stream <10> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.557] tcp stream <16> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.557] tcp stream <16> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:10.557] tcp stream <16> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.561] dns query <9> cancel from 213.87.0.1
+[19:19:10.562] dns query <13> response realtime-signalr.roblox.com from 213.87.1.1
+[19:19:10.562] tcp stream <17> async lookup host => realtime-signalr.roblox.com:443 result => 128.116.44.3 cost => 96.865058 ms
+[19:19:10.562] tcp stream <17> proxy lookup host => realtime-signalr.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.562] dns query <13> did finish 13#realtime-signalr.roblox.com => success total => 2
+[19:19:10.562] dns response record => {
+	result = 128.116.44.3,
+	host = realtime-signalr.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 96
+}
+[19:19:10.562] tcp stream <17> lookup host => 78.47.40.68:443 domain => realtime-signalr.roblox.com host => <null> ip => 198.18.0.10
+[19:19:10.562] dns query <11> cancel from 213.87.1.1
+[19:19:10.562] tcp stream <17> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = realtime-signalr.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.564] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.570] dns query <13> cancel from 213.87.0.1
+[19:19:10.575] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.577] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.577] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.577] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.577] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.583] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.634] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.636] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.638] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.638] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.638] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.638] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.638] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.651] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.653] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.653] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:10.673] tcp stream <13> connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 166.489959 ms
+[19:19:10.673] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.679] tcp stream <4> connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 173.348904 ms
+[19:19:10.679] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.691] tcp stream <5> connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 184.386015 ms
+[19:19:10.691] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.691] tcp stream <6> connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 184.382915 ms
+[19:19:10.691] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.691] tcp stream <15> connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 184.193969 ms
+[19:19:10.691] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.691] tcp stream <14> connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 184.350014 ms
+[19:19:10.691] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.760] tcp stream <8> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 204.223990 ms
+[19:19:10.760] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.765] tcp stream <16> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 207.569003 ms
+[19:19:10.765] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.773] tcp stream <9> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 217.146993 ms
+[19:19:10.773] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.793] tcp stream <12> connect to host => ephemeralcounters.api.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 260.489106 ms
+[19:19:10.793] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.793] proxy stream <18> loopback => 1 total => 3
+[19:19:10.793] proxy stream <18> async lookup rule url => bijmry-launches.appsflyersdk.com:443 host => bijmry-launches.appsflyersdk.com port => 443
+[19:19:10.793] proxy stream <18> async lookup host => bijmry-launches.appsflyersdk.com:443
+[19:19:10.793] dns query <15> did start => 15#bijmry-launches.appsflyersdk.com total => 0
+[19:19:10.793] dns query <15> any send ipv4 bijmry-launches.appsflyersdk.com to 213.87.0.1
+[19:19:10.793] dns query <15> any send ipv4 bijmry-launches.appsflyersdk.com to 213.87.1.1
+[19:19:10.796] tcp stream <3> connect to host => ephemeralcounters.api.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 270.033002 ms
+[19:19:10.797] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.797] tcp stream <7> connect to host => ephemeralcounters.api.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 270.056009 ms
+[19:19:10.797] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.798] tcp stream <17> connect to host => realtime-signalr.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 235.932946 ms
+[19:19:10.798] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.799] tcp stream <11> connect to host => friends.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 273.160100 ms
+[19:19:10.799] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.799] tcp stream <10> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 242.138982 ms
+[19:19:10.799] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.799] tcp stream <2> connect to host => ephemeralcounters.api.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 272.500992 ms
+[19:19:10.799] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:10.844] dns query <15> response bijmry-launches.appsflyersdk.com from 213.87.1.1
+[19:19:10.844] proxy stream <18> async lookup host => bijmry-launches.appsflyersdk.com:443 result => 108.159.117.24 cost => 53.971052 ms
+[19:19:10.844] dns query <15> did finish 15#bijmry-launches.appsflyersdk.com => success total => 2
+[19:19:10.844] dns response record => {
+	result = 108.159.117.24,
+	host = bijmry-launches.appsflyersdk.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 53
+}
+[19:19:10.846] proxy stream <18> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = bijmry-launches.appsflyersdk.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:10.846] proxy stream <18> lookup host => bijmry-launches.appsflyersdk.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:10.846] proxy stream <18> lookup host => 78.47.40.68:443
+[19:19:10.881] dns query <15> cancel from 213.87.0.1
+[19:19:10.900] proxy stream <19> loopback => 1 total => 4
+[19:19:10.900] proxy stream <19> async lookup rule url => sandbox.itunes.apple.com:443 host => sandbox.itunes.apple.com port => 443
+[19:19:10.900] proxy stream <19> tcp rule => {
+	result = DOMAIN-SUFFIX,apple.com,DIRECT,
+	ns = 20,
+	url = sandbox.itunes.apple.com:443,
+	type = DIRECT,
+	ua = TCP Stream
+}
+[19:19:10.900] proxy stream <19> lookup host => sandbox.itunes.apple.com:443
+[19:19:10.900] dns query <17> did start => 17#sandbox.itunes.apple.com total => 0
+[19:19:10.900] dns query <17> any send ipv4 sandbox.itunes.apple.com to 213.87.0.1
+[19:19:10.900] dns query <17> any send ipv4 sandbox.itunes.apple.com to 213.87.1.1
+[19:19:11.113] dns query <17> response sandbox.itunes.apple.com from 213.87.0.1
+[19:19:11.113] proxy stream <19> lookup host => sandbox.itunes.apple.com:443 result => 212.188.39.74 cost => 212.898970 ms
+[19:19:11.113] dns query <17> did finish 17#sandbox.itunes.apple.com => success total => 2
+[19:19:11.113] dns response record => {
+	result = 212.188.39.74,
+	host = sandbox.itunes.apple.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 212
+}
+[19:19:11.113] dns query <17> cancel from 213.87.1.1
+[19:19:11.115] proxy stream <1> did connect to host => clientsettingscdn.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 631.178021 ms
+[19:19:11.115] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:11.116] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:11.117] utun query => clientsettingscdn.roblox.com type => 1
+[19:19:11.117] utun response dummy ip => clientsettingscdn.roblox.com response => 198.18.0.12
+[19:19:11.117] utun query => clientsettingscdn.roblox.com type => 28
+[19:19:11.117] utun response dummy ip => clientsettingscdn.roblox.com response => ::ffff:198.18.0.12
+[19:19:11.118] tcp tunnel dummy ip 198.18.0.12 => clientsettingscdn.roblox.com
+[19:19:11.118] tcp stream <20> start host => clientsettingscdn.roblox.com port => 443 total => 17
+[19:19:11.131] tcp stream <20> match tcp request => clientsettingscdn.roblox.com:443, cost => 12.535095 ms
+[19:19:11.131] tcp stream <20> async lookup host => clientsettingscdn.roblox.com:443 => 198.18.0.12
+[19:19:11.131] dns response cache expired => 0, clientsettingscdn.roblox.com => 23.210.252.62 
+[19:19:11.131] tcp stream <20> async lookup host => clientsettingscdn.roblox.com:443 result => 23.210.252.62 cost => 0.043988 ms
+[19:19:11.131] tcp stream <20> proxy lookup host => clientsettingscdn.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:11.131] tcp stream <20> lookup host => 78.47.40.68:443 domain => clientsettingscdn.roblox.com host => <null> ip => 198.18.0.12
+[19:19:11.131] tcp stream <20> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = clientsettingscdn.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:11.215] proxy stream <19> did connect to host => sandbox.itunes.apple.com:443 > 212.188.39.74:443 fastopen => 0 cost => 102.488041 ms
+[19:19:11.248] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:11.282] proxy stream <18> did connect to host => bijmry-launches.appsflyersdk.com:443 > 78.47.40.68:443 fastopen => 0 cost => 432.043076 ms
+[19:19:11.282] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:11.396] tcp stream <20> connect to host => clientsettingscdn.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 264.640927 ms
+[19:19:11.396] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:11.826] proxy stream <21> loopback => 1 total => 5
+[19:19:11.826] proxy stream <21> async lookup rule url => users.roblox.com:443 host => users.roblox.com port => 443
+[19:19:11.826] proxy stream <21> async lookup host => users.roblox.com:443
+[19:19:11.827] dns query <19> did start => 19#users.roblox.com total => 0
+[19:19:11.827] dns query <19> any send ipv4 users.roblox.com to 213.87.0.1
+[19:19:11.827] dns query <19> any send ipv4 users.roblox.com to 213.87.1.1
+[19:19:11.863] utun query => thumbnails.roblox.com type => 1
+[19:19:11.863] utun response dummy ip => thumbnails.roblox.com response => 198.18.0.13
+[19:19:11.864] utun query => thumbnails.roblox.com type => 28
+[19:19:11.864] utun response dummy ip => thumbnails.roblox.com response => ::ffff:198.18.0.13
+[19:19:11.866] tcp tunnel dummy ip 198.18.0.13 => thumbnails.roblox.com
+[19:19:11.866] tcp stream <22> start host => thumbnails.roblox.com port => 443 total => 18
+[19:19:11.881] tcp stream <22> match tcp request => thumbnails.roblox.com:443, cost => 14.912963 ms
+[19:19:11.881] tcp stream <22> async lookup host => thumbnails.roblox.com:443 => 198.18.0.13
+[19:19:11.881] dns query <21> did start => 21#thumbnails.roblox.com total => 2
+[19:19:11.881] dns query <21> any send ipv4 thumbnails.roblox.com to 213.87.0.1
+[19:19:11.881] dns query <21> any send ipv4 thumbnails.roblox.com to 213.87.1.1
+[19:19:11.886] dns query <19> response users.roblox.com from 213.87.0.1
+[19:19:11.887] proxy stream <21> async lookup host => users.roblox.com:443 result => 128.116.44.3 cost => 59.942007 ms
+[19:19:11.887] dns query <19> did finish 19#users.roblox.com => success total => 4
+[19:19:11.887] dns response record => {
+	result = 128.116.44.3,
+	host = users.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 59
+}
+[19:19:11.887] proxy stream <21> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = users.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:11.887] proxy stream <21> lookup host => users.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:11.887] proxy stream <21> lookup host => 78.47.40.68:443
+[19:19:11.897] dns query <19> cancel from 213.87.1.1
+[19:19:11.926] dns query <21> response thumbnails.roblox.com from 213.87.0.1
+[19:19:11.926] tcp stream <22> async lookup host => thumbnails.roblox.com:443 result => 128.116.44.3 cost => 45.650959 ms
+[19:19:11.926] dns query <21> did finish 21#thumbnails.roblox.com => success total => 2
+[19:19:11.926] tcp stream <22> proxy lookup host => thumbnails.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:11.926] dns response record => {
+	result = 128.116.44.3,
+	host = thumbnails.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 45
+}
+[19:19:11.926] tcp stream <22> lookup host => 78.47.40.68:443 domain => thumbnails.roblox.com host => <null> ip => 198.18.0.13
+[19:19:11.926] tcp stream <22> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = thumbnails.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:11.928] dns query <21> cancel from 213.87.1.1
+[19:19:11.950] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:11.989] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:12.166] proxy stream <21> did connect to host => users.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 275.513053 ms
+[19:19:12.166] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:12.166] tcp stream <22> connect to host => thumbnails.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 237.037063 ms
+[19:19:12.166] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:12.264] proxy stream <23> loopback => 1 total => 6
+[19:19:12.264] proxy stream <23> async lookup rule url => ecsv2.roblox.com:443 host => ecsv2.roblox.com port => 443
+[19:19:12.264] proxy stream <23> async lookup host => ecsv2.roblox.com:443
+[19:19:12.264] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:12.264] proxy stream <23> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.030041 ms
+[19:19:12.264] proxy stream <23> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:12.264] proxy stream <23> lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:12.264] proxy stream <23> lookup host => 78.47.40.68:443
+[19:19:12.329] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:12.512] proxy stream <24> loopback => 1 total => 7
+[19:19:12.512] proxy stream <24> async lookup rule url => ecsv2.roblox.com:443 host => ecsv2.roblox.com port => 443
+[19:19:12.512] proxy stream <24> async lookup host => ecsv2.roblox.com:443
+[19:19:12.512] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:12.512] proxy stream <24> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.042081 ms
+[19:19:12.512] proxy stream <24> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:12.512] proxy stream <24> lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:12.512] proxy stream <24> lookup host => 78.47.40.68:443
+[19:19:12.607] proxy stream <23> did connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 342.193961 ms
+[19:19:12.607] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:12.607] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:12.677] tcp stream <17> local tcp error => realtime-signalr.roblox.com error => , state => 4
+[19:19:12.677] tcp stream <17> remove host => realtime-signalr.roblox.com port => 443 total => 17
+[19:19:12.847] proxy stream <24> did connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 340.694070 ms
+[19:19:12.847] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:13.181] tcp stream <3> local tcp did close => ephemeralcounters.api.roblox.com, state => 9, cost => 2709.138036 ms
+[19:19:13.181] tcp stream <22> local tcp did close => thumbnails.roblox.com, state => 9, cost => 1283.419967 ms
+[19:19:13.181] tcp stream <16> local tcp did close => apis.roblox.com, state => 9, cost => 2700.259089 ms
+[19:19:13.181] tcp stream <15> local tcp did close => ecsv2.roblox.com, state => 9, cost => 2705.577016 ms
+[19:19:13.181] tcp stream <2> local tcp did close => ephemeralcounters.api.roblox.com, state => 9, cost => 2742.951989 ms
+[19:19:13.181] tcp stream <14> local tcp did close => ecsv2.roblox.com, state => 9, cost => 2706.340075 ms
+[19:19:13.181] tcp stream <13> local tcp did close => ecsv2.roblox.com, state => 9, cost => 2706.529021 ms
+[19:19:13.181] tcp stream <12> local tcp did close => ephemeralcounters.api.roblox.com, state => 9, cost => 2708.073020 ms
+[19:19:13.181] tcp stream <11> local tcp did close => friends.roblox.com, state => 9, cost => 2708.248019 ms
+[19:19:13.181] proxy stream <24> disconnect ecsv2.roblox.com:443 error => Socket closed by remote peer reason => none cost => 654.492021 ms
+[19:19:13.181] proxy stream <23> disconnect ecsv2.roblox.com:443 error => Socket closed by remote peer reason => none cost => 896.100044 ms
+[19:19:13.181] tcp stream <10> local tcp did close => apis.roblox.com, state => 9, cost => 2708.407998 ms
+[19:19:13.181] proxy stream <18> disconnect bijmry-launches.appsflyersdk.com:443 error => Socket closed by remote peer reason => none cost => 2370.601058 ms
+[19:19:13.181] tcp stream <9> local tcp did close => apis.roblox.com, state => 9, cost => 2708.562970 ms
+[19:19:13.181] tcp stream <8> local tcp did close => apis.roblox.com, state => 9, cost => 2708.699107 ms
+[19:19:13.181] proxy stream <1> disconnect clientsettingscdn.roblox.com:443 error => Socket closed by remote peer reason => none cost => 2761.985064 ms
+[19:19:13.181] proxy stream <21> disconnect users.roblox.com:443 error => Socket closed by remote peer reason => none cost => 1334.380031 ms
+[19:19:13.181] tcp stream <7> local tcp did close => ephemeralcounters.api.roblox.com, state => 9, cost => 2708.830953 ms
+[19:19:13.181] tcp stream <6> local tcp did close => ecsv2.roblox.com, state => 9, cost => 2709.125996 ms
+[19:19:13.181] tcp stream <5> local tcp did close => ecsv2.roblox.com, state => 9, cost => 2709.285021 ms
+[19:19:13.181] tcp stream <20> local tcp did close => clientsettingscdn.roblox.com, state => 9, cost => 2042.591095 ms
+[19:19:13.182] tcp stream <4> local tcp did close => ecsv2.roblox.com, state => 9, cost => 2723.968983 ms
+[19:19:13.182] tcp stream <3> remove host => ephemeralcounters.api.roblox.com port => 443 total => 16
+[19:19:13.182] tcp stream <22> remove host => thumbnails.roblox.com port => 443 total => 15
+[19:19:13.182] tcp stream <16> remove host => apis.roblox.com port => 443 total => 14
+[19:19:13.182] tcp stream <15> remove host => ecsv2.roblox.com port => 443 total => 13
+[19:19:13.182] tcp stream <2> remove host => ephemeralcounters.api.roblox.com port => 443 total => 12
+[19:19:13.182] tcp stream <14> remove host => ecsv2.roblox.com port => 443 total => 11
+[19:19:13.182] tcp stream <13> remove host => ecsv2.roblox.com port => 443 total => 10
+[19:19:13.182] tcp stream <12> remove host => ephemeralcounters.api.roblox.com port => 443 total => 9
+[19:19:13.182] tcp stream <11> remove host => friends.roblox.com port => 443 total => 8
+[19:19:13.182] tcp stream <10> remove host => apis.roblox.com port => 443 total => 7
+[19:19:13.182] tcp stream <9> remove host => apis.roblox.com port => 443 total => 6
+[19:19:13.182] tcp stream <8> remove host => apis.roblox.com port => 443 total => 5
+[19:19:13.182] tcp stream <7> remove host => ephemeralcounters.api.roblox.com port => 443 total => 4
+[19:19:13.182] tcp stream <6> remove host => ecsv2.roblox.com port => 443 total => 3
+[19:19:13.182] tcp stream <5> remove host => ecsv2.roblox.com port => 443 total => 2
+[19:19:13.182] tcp stream <20> remove host => clientsettingscdn.roblox.com port => 443 total => 1
+[19:19:13.182] tcp stream <4> remove host => ecsv2.roblox.com port => 443 total => 0
+[19:19:13.372] tcp tunnel lwip suspend tcp timer
+[19:19:13.755] utun query => users.roblox.com type => 1
+[19:19:13.755] utun response dummy ip => users.roblox.com response => 198.18.0.14
+[19:19:13.766] utun query => users.roblox.com type => 28
+[19:19:13.766] utun response dummy ip => users.roblox.com response => ::ffff:198.18.0.14
+[19:19:13.766] utun query => locale.roblox.com type => 1
+[19:19:13.766] utun response dummy ip => locale.roblox.com response => 198.18.0.15
+[19:19:13.766] utun query => locale.roblox.com type => 28
+[19:19:13.766] utun response dummy ip => locale.roblox.com response => ::ffff:198.18.0.15
+[19:19:13.766] tcp tunnel lwip resume tcp timer
+[19:19:13.766] tcp tunnel dummy ip 198.18.0.12 => clientsettingscdn.roblox.com
+[19:19:13.766] tcp stream <25> start host => clientsettingscdn.roblox.com port => 443 total => 1
+[19:19:13.766] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:13.766] utun query => accountsettings.roblox.com type => 1
+[19:19:13.766] utun response dummy ip => accountsettings.roblox.com response => 198.18.0.16
+[19:19:13.766] tcp stream <26> start host => apis.roblox.com port => 443 total => 2
+[19:19:13.766] tcp tunnel dummy ip 198.18.0.15 => locale.roblox.com
+[19:19:13.766] tcp stream <27> start host => locale.roblox.com port => 443 total => 3
+[19:19:13.766] tcp tunnel dummy ip 198.18.0.14 => users.roblox.com
+[19:19:13.766] tcp stream <28> start host => users.roblox.com port => 443 total => 4
+[19:19:13.766] tcp tunnel dummy ip 198.18.0.14 => users.roblox.com
+[19:19:13.767] tcp stream <29> start host => users.roblox.com port => 443 total => 5
+[19:19:13.767] utun query => accountsettings.roblox.com type => 28
+[19:19:13.767] utun response dummy ip => accountsettings.roblox.com response => ::ffff:198.18.0.16
+[19:19:13.776] tcp stream <25> match tcp request => clientsettingscdn.roblox.com:443, cost => 13.201952 ms
+[19:19:13.776] tcp stream <25> async lookup host => clientsettingscdn.roblox.com:443 => 198.18.0.12
+[19:19:13.776] tcp stream <26> match tcp request => apis.roblox.com:443, cost => 11.237025 ms
+[19:19:13.776] tcp stream <26> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:13.776] tcp stream <27> match tcp request => locale.roblox.com:443, cost => 11.191964 ms
+[19:19:13.776] tcp stream <27> async lookup host => locale.roblox.com:443 => 198.18.0.15
+[19:19:13.786] tcp stream <28> match tcp request => users.roblox.com:443, cost => 11.190057 ms
+[19:19:13.786] dns response cache expired => 0, clientsettingscdn.roblox.com => 23.210.252.62 
+[19:19:13.786] tcp stream <25> async lookup host => clientsettingscdn.roblox.com:443 result => 23.210.252.62 cost => 0.059009 ms
+[19:19:13.786] tcp stream <28> async lookup host => users.roblox.com:443 => 198.18.0.14
+[19:19:13.786] tcp stream <29> match tcp request => users.roblox.com:443, cost => 10.954022 ms
+[19:19:13.786] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:13.786] tcp stream <29> async lookup host => users.roblox.com:443 => 198.18.0.14
+[19:19:13.786] tcp stream <26> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.047088 ms
+[19:19:13.786] tcp stream <25> proxy lookup host => clientsettingscdn.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:13.786] dns query <23> did start => 23#locale.roblox.com total => 0
+[19:19:13.786] dns query <23> any send ipv4 locale.roblox.com to 213.87.0.1
+[19:19:13.786] tcp stream <25> lookup host => 78.47.40.68:443 domain => clientsettingscdn.roblox.com host => <null> ip => 198.18.0.12
+[19:19:13.786] dns query <23> any send ipv4 locale.roblox.com to 213.87.1.1
+[19:19:13.786] dns response cache expired => 0, users.roblox.com => 128.116.44.3 
+[19:19:13.786] tcp stream <28> async lookup host => users.roblox.com:443 result => 128.116.44.3 cost => 0.092030 ms
+[19:19:13.786] dns response cache expired => 0, users.roblox.com => 128.116.44.3 
+[19:19:13.786] tcp stream <29> async lookup host => users.roblox.com:443 result => 128.116.44.3 cost => 0.121951 ms
+[19:19:13.786] tcp stream <25> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = clientsettingscdn.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:13.786] tcp stream <26> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:13.786] tcp stream <26> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:13.786] tcp stream <26> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:13.786] tcp stream <28> proxy lookup host => users.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:13.786] tcp stream <28> lookup host => 78.47.40.68:443 domain => users.roblox.com host => <null> ip => 198.18.0.14
+[19:19:13.786] tcp stream <28> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = users.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:13.786] tcp stream <29> proxy lookup host => users.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:13.786] tcp stream <29> lookup host => 78.47.40.68:443 domain => users.roblox.com host => <null> ip => 198.18.0.14
+[19:19:13.786] tcp stream <29> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = users.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:13.786] tcp tunnel dummy ip 198.18.0.16 => accountsettings.roblox.com
+[19:19:13.786] tcp stream <30> start host => accountsettings.roblox.com port => 443 total => 6
+[19:19:13.786] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:13.786] tcp stream <31> start host => apis.roblox.com port => 443 total => 7
+[19:19:13.786] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:13.786] tcp stream <32> start host => apis.roblox.com port => 443 total => 8
+[19:19:13.786] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:13.786] tcp stream <33> start host => apis.roblox.com port => 443 total => 9
+[19:19:13.802] tcp stream <30> match tcp request => accountsettings.roblox.com:443, cost => 14.165998 ms
+[19:19:13.802] tcp stream <30> async lookup host => accountsettings.roblox.com:443 => 198.18.0.16
+[19:19:13.802] tcp stream <31> match tcp request => apis.roblox.com:443, cost => 12.548923 ms
+[19:19:13.802] tcp stream <31> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:13.817] tcp stream <32> match tcp request => apis.roblox.com:443, cost => 10.882020 ms
+[19:19:13.817] tcp stream <32> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:13.818] tcp stream <33> match tcp request => apis.roblox.com:443, cost => 10.699987 ms
+[19:19:13.818] tcp stream <33> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:13.818] dns query <25> did start => 25#accountsettings.roblox.com total => 2
+[19:19:13.818] dns query <25> any send ipv4 accountsettings.roblox.com to 213.87.0.1
+[19:19:13.818] dns query <25> any send ipv4 accountsettings.roblox.com to 213.87.1.1
+[19:19:13.818] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:13.818] tcp stream <31> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.133991 ms
+[19:19:13.818] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:13.818] tcp stream <32> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.326991 ms
+[19:19:13.818] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:13.818] tcp stream <33> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.344038 ms
+[19:19:13.818] tcp stream <31> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:13.818] tcp stream <31> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:13.818] tcp stream <31> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:13.818] tcp stream <32> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:13.818] tcp stream <32> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:13.818] tcp stream <32> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:13.818] tcp stream <33> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:13.818] tcp stream <33> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:13.818] tcp stream <33> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:13.827] proxy stream <34> loopback => 1 total => 8
+[19:19:13.827] proxy stream <34> async lookup rule url => ecsv2.roblox.com:443 host => ecsv2.roblox.com port => 443
+[19:19:13.827] proxy stream <34> async lookup host => ecsv2.roblox.com:443
+[19:19:13.828] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:13.828] proxy stream <34> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.037074 ms
+[19:19:13.828] proxy stream <34> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:13.828] proxy stream <34> lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:13.828] proxy stream <34> lookup host => 78.47.40.68:443
+[19:19:13.830] dns query <23> response locale.roblox.com from 213.87.0.1
+[19:19:13.831] tcp stream <27> async lookup host => locale.roblox.com:443 result => 128.116.44.3 cost => 54.899931 ms
+[19:19:13.831] dns query <23> did finish 23#locale.roblox.com => success total => 4
+[19:19:13.831] dns response record => {
+	result = 128.116.44.3,
+	host = locale.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 54
+}
+[19:19:13.831] tcp stream <27> proxy lookup host => locale.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:13.831] tcp stream <27> lookup host => 78.47.40.68:443 domain => locale.roblox.com host => <null> ip => 198.18.0.15
+[19:19:13.831] tcp stream <27> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = locale.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:13.849] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:13.849] proxy stream <35> loopback => 1 total => 9
+[19:19:13.849] proxy stream <35> async lookup rule url => bijmry-launches.appsflyersdk.com:443 host => bijmry-launches.appsflyersdk.com port => 443
+[19:19:13.849] proxy stream <35> async lookup host => bijmry-launches.appsflyersdk.com:443
+[19:19:13.849] dns response cache expired => 0, bijmry-launches.appsflyersdk.com => 108.159.117.24 
+[19:19:13.849] proxy stream <35> async lookup host => bijmry-launches.appsflyersdk.com:443 result => 108.159.117.24 cost => 0.052094 ms
+[19:19:13.849] proxy stream <35> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = bijmry-launches.appsflyersdk.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:13.849] proxy stream <35> lookup host => bijmry-launches.appsflyersdk.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:13.849] proxy stream <35> lookup host => 78.47.40.68:443
+[19:19:13.852] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:13.852] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:13.856] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:13.858] dns query <25> response accountsettings.roblox.com from 213.87.1.1
+[19:19:13.858] tcp stream <30> async lookup host => accountsettings.roblox.com:443 result => 128.116.44.3 cost => 62.242031 ms
+[19:19:13.858] dns query <25> did finish 25#accountsettings.roblox.com => success total => 2
+[19:19:13.858] dns response record => {
+	result = 128.116.44.3,
+	host = accountsettings.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 62
+}
+[19:19:13.859] tcp stream <30> proxy lookup host => accountsettings.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:13.859] tcp stream <30> lookup host => 78.47.40.68:443 domain => accountsettings.roblox.com host => <null> ip => 198.18.0.16
+[19:19:13.859] tcp stream <30> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = accountsettings.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:13.868] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:13.868] dns query <23> cancel from 213.87.1.1
+[19:19:13.871] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:13.875] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:13.880] dns query <25> cancel from 213.87.0.1
+[19:19:13.908] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:13.910] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:13.929] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:13.940] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:13.960] tcp stream <28> connect to host => users.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 184.624910 ms
+[19:19:13.960] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:13.966] tcp stream <29> connect to host => users.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 190.623999 ms
+[19:19:13.966] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:13.971] tcp stream <25> connect to host => clientsettingscdn.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 196.295977 ms
+[19:19:13.972] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:13.984] tcp stream <31> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 187.669992 ms
+[19:19:13.984] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:13.989] tcp stream <26> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 213.624954 ms
+[19:19:13.989] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:13.994] tcp stream <33> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 196.383953 ms
+[19:19:13.994] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:13.994] tcp stream <32> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 196.972013 ms
+[19:19:13.994] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:14.028] tcp stream <27> connect to host => locale.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 198.081017 ms
+[19:19:14.028] proxy stream <34> did connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 200.454950 ms
+[19:19:14.028] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:14.028] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:14.032] tcp stream <30> connect to host => accountsettings.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 173.154950 ms
+[19:19:14.032] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:14.062] proxy stream <35> did connect to host => bijmry-launches.appsflyersdk.com:443 > 78.47.40.68:443 fastopen => 0 cost => 207.170963 ms
+[19:19:14.062] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:14.331] tcp stream <27> local tcp did close => locale.roblox.com, state => 9, cost => 567.165017 ms
+[19:19:14.333] tcp stream <27> remove host => locale.roblox.com port => 443 total => 8
+[19:19:14.333] tcp stream <28> local tcp did close => users.roblox.com, state => 7, cost => 567.440987 ms
+[19:19:14.333] tcp stream <28> remove host => users.roblox.com port => 443 total => 7
+[19:19:14.333] tcp stream <29> local tcp did close => users.roblox.com, state => 9, cost => 567.498088 ms
+[19:19:14.333] tcp stream <29> remove host => users.roblox.com port => 443 total => 6
+[19:19:14.363] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:14.363] tcp stream <36> start host => apis.roblox.com port => 443 total => 7
+[19:19:14.363] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:14.363] tcp stream <37> start host => apis.roblox.com port => 443 total => 8
+[19:19:14.364] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:14.364] tcp stream <38> start host => apis.roblox.com port => 443 total => 9
+[19:19:14.364] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:14.364] tcp stream <39> start host => apis.roblox.com port => 443 total => 10
+[19:19:14.378] tcp stream <36> match tcp request => apis.roblox.com:443, cost => 15.046000 ms
+[19:19:14.378] tcp stream <36> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:14.378] tcp stream <37> match tcp request => apis.roblox.com:443, cost => 14.218092 ms
+[19:19:14.378] tcp stream <37> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:14.378] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:14.378] tcp stream <36> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.033975 ms
+[19:19:14.378] tcp stream <38> match tcp request => apis.roblox.com:443, cost => 14.206052 ms
+[19:19:14.378] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:14.378] tcp stream <38> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:14.378] tcp stream <37> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.020027 ms
+[19:19:14.378] tcp stream <39> match tcp request => apis.roblox.com:443, cost => 14.206052 ms
+[19:19:14.378] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:14.378] tcp stream <38> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.011921 ms
+[19:19:14.378] tcp stream <39> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:14.378] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:14.378] tcp stream <39> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.007987 ms
+[19:19:14.378] tcp stream <36> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.378] tcp stream <36> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:14.378] tcp stream <36> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.378] tcp stream <37> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.378] tcp stream <37> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:14.378] tcp stream <37> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.378] tcp stream <38> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.378] tcp stream <38> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:14.378] tcp stream <38> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.378] tcp stream <39> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.378] tcp stream <39> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:14.378] tcp stream <39> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.394] tcp tunnel dummy ip 198.18.0.7 => ecsv2.roblox.com
+[19:19:14.394] tcp stream <40> start host => ecsv2.roblox.com port => 443 total => 11
+[19:19:14.408] tcp stream <40> match tcp request => ecsv2.roblox.com:443, cost => 12.775898 ms
+[19:19:14.408] tcp stream <40> async lookup host => ecsv2.roblox.com:443 => 198.18.0.7
+[19:19:14.408] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:14.408] tcp stream <40> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.031948 ms
+[19:19:14.408] tcp stream <40> proxy lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.408] tcp stream <40> lookup host => 78.47.40.68:443 domain => ecsv2.roblox.com host => <null> ip => 198.18.0.7
+[19:19:14.408] tcp stream <40> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.438] tcp stream <30> local tcp did close => accountsettings.roblox.com, state => 9, cost => 656.067967 ms
+[19:19:14.438] tcp stream <30> remove host => accountsettings.roblox.com port => 443 total => 10
+[19:19:14.460] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.462] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.462] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.463] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.574] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.590] tcp stream <36> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 211.720943 ms
+[19:19:14.590] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:14.596] tcp stream <37> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 217.603087 ms
+[19:19:14.596] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:14.602] tcp stream <39> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 223.381996 ms
+[19:19:14.602] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:14.622] tcp stream <38> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 243.517995 ms
+[19:19:14.622] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:14.760] tcp stream <40> connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 352.873921 ms
+[19:19:14.760] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:14.773] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:14.773] tcp stream <41> start host => apis.roblox.com port => 443 total => 11
+[19:19:14.786] tcp stream <41> match tcp request => apis.roblox.com:443, cost => 12.666941 ms
+[19:19:14.786] tcp stream <41> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:14.786] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:14.786] tcp stream <41> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.147939 ms
+[19:19:14.786] tcp stream <41> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.786] tcp stream <41> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:14.786] tcp stream <41> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.799] tcp tunnel dummy ip 198.18.0.15 => locale.roblox.com
+[19:19:14.799] tcp stream <42> start host => locale.roblox.com port => 443 total => 12
+[19:19:14.801] utun query => assetdelivery.roblox.com type => 1
+[19:19:14.801] utun response dummy ip => assetdelivery.roblox.com response => 198.18.0.17
+[19:19:14.801] utun query => assetdelivery.roblox.com type => 28
+[19:19:14.801] utun response dummy ip => assetdelivery.roblox.com response => ::ffff:198.18.0.17
+[19:19:14.802] tcp tunnel dummy ip 198.18.0.17 => assetdelivery.roblox.com
+[19:19:14.802] tcp stream <43> start host => assetdelivery.roblox.com port => 443 total => 13
+[19:19:14.810] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:14.810] tcp stream <44> start host => apis.roblox.com port => 443 total => 14
+[19:19:14.810] tcp stream <42> match tcp request => locale.roblox.com:443, cost => 11.343002 ms
+[19:19:14.810] tcp stream <42> async lookup host => locale.roblox.com:443 => 198.18.0.15
+[19:19:14.810] dns response cache expired => 0, locale.roblox.com => 128.116.44.3 
+[19:19:14.810] tcp stream <42> async lookup host => locale.roblox.com:443 result => 128.116.44.3 cost => 0.048995 ms
+[19:19:14.810] tcp stream <42> proxy lookup host => locale.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.810] tcp stream <42> lookup host => 78.47.40.68:443 domain => locale.roblox.com host => <null> ip => 198.18.0.15
+[19:19:14.811] tcp stream <42> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = locale.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.812] tcp tunnel dummy ip 198.18.0.13 => thumbnails.roblox.com
+[19:19:14.812] tcp stream <45> start host => thumbnails.roblox.com port => 443 total => 15
+[19:19:14.812] tcp stream <43> match tcp request => assetdelivery.roblox.com:443, cost => 10.045052 ms
+[19:19:14.812] tcp stream <43> async lookup host => assetdelivery.roblox.com:443 => 198.18.0.17
+[19:19:14.812] dns query <27> did start => 27#assetdelivery.roblox.com total => 0
+[19:19:14.812] dns query <27> any send ipv4 assetdelivery.roblox.com to 213.87.0.1
+[19:19:14.812] dns query <27> any send ipv4 assetdelivery.roblox.com to 213.87.1.1
+[19:19:14.819] tcp tunnel dummy ip 198.18.0.11 => friends.roblox.com
+[19:19:14.819] tcp stream <46> start host => friends.roblox.com port => 443 total => 16
+[19:19:14.821] tcp stream <44> match tcp request => apis.roblox.com:443, cost => 10.759950 ms
+[19:19:14.821] tcp stream <44> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:14.821] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:14.821] tcp stream <44> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.031948 ms
+[19:19:14.821] tcp stream <44> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.821] tcp stream <44> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:14.821] tcp stream <44> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.827] tcp stream <45> match tcp request => thumbnails.roblox.com:443, cost => 14.938951 ms
+[19:19:14.827] tcp stream <45> async lookup host => thumbnails.roblox.com:443 => 198.18.0.13
+[19:19:14.827] dns response cache expired => 0, thumbnails.roblox.com => 128.116.44.3 
+[19:19:14.827] tcp stream <45> async lookup host => thumbnails.roblox.com:443 result => 128.116.44.3 cost => 0.057936 ms
+[19:19:14.827] tcp stream <45> proxy lookup host => thumbnails.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.827] tcp stream <45> lookup host => 78.47.40.68:443 domain => thumbnails.roblox.com host => <null> ip => 198.18.0.13
+[19:19:14.827] tcp stream <45> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = thumbnails.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.830] tcp stream <46> match tcp request => friends.roblox.com:443, cost => 11.626959 ms
+[19:19:14.831] tcp stream <46> async lookup host => friends.roblox.com:443 => 198.18.0.11
+[19:19:14.831] dns response cache expired => 0, friends.roblox.com => 128.116.44.3 
+[19:19:14.831] tcp stream <46> async lookup host => friends.roblox.com:443 result => 128.116.44.3 cost => 0.034928 ms
+[19:19:14.831] tcp stream <46> proxy lookup host => friends.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.831] tcp stream <46> lookup host => 78.47.40.68:443 domain => friends.roblox.com host => <null> ip => 198.18.0.11
+[19:19:14.831] tcp stream <46> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = friends.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.848] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:14.848] tcp stream <47> start host => apis.roblox.com port => 443 total => 17
+[19:19:14.848] tcp tunnel dummy ip 198.18.0.14 => users.roblox.com
+[19:19:14.849] tcp stream <48> start host => users.roblox.com port => 443 total => 18
+[19:19:14.858] tcp stream <47> match tcp request => apis.roblox.com:443, cost => 10.151982 ms
+[19:19:14.858] tcp stream <47> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:14.858] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.858] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:14.858] tcp stream <47> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.084996 ms
+[19:19:14.860] tcp stream <47> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.860] tcp stream <47> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:14.861] tcp stream <47> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.861] tcp stream <48> match tcp request => users.roblox.com:443, cost => 12.104988 ms
+[19:19:14.861] tcp stream <48> async lookup host => users.roblox.com:443 => 198.18.0.14
+[19:19:14.861] dns response cache expired => 0, users.roblox.com => 128.116.44.3 
+[19:19:14.861] tcp stream <48> async lookup host => users.roblox.com:443 result => 128.116.44.3 cost => 0.053048 ms
+[19:19:14.861] tcp stream <48> proxy lookup host => users.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.861] tcp stream <48> lookup host => 78.47.40.68:443 domain => users.roblox.com host => <null> ip => 198.18.0.14
+[19:19:14.861] tcp stream <48> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = users.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.864] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:14.864] tcp stream <49> start host => apis.roblox.com port => 443 total => 19
+[19:19:14.865] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:14.865] tcp stream <50> start host => apis.roblox.com port => 443 total => 20
+[19:19:14.875] tcp stream <49> match tcp request => apis.roblox.com:443, cost => 11.095047 ms
+[19:19:14.875] tcp stream <49> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:14.875] tcp stream <50> match tcp request => apis.roblox.com:443, cost => 10.586023 ms
+[19:19:14.875] tcp stream <50> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:14.875] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:14.875] tcp stream <49> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.036001 ms
+[19:19:14.875] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:14.875] tcp stream <50> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.028014 ms
+[19:19:14.875] tcp stream <49> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.875] tcp stream <49> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:14.875] tcp stream <49> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.875] tcp stream <50> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.875] tcp stream <50> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:14.875] tcp stream <50> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.884] dns query <27> response assetdelivery.roblox.com from 213.87.1.1
+[19:19:14.884] tcp stream <43> async lookup host => assetdelivery.roblox.com:443 result => 128.116.44.3 cost => 71.958065 ms
+[19:19:14.884] dns query <27> did finish 27#assetdelivery.roblox.com => success total => 2
+[19:19:14.884] tcp stream <43> proxy lookup host => assetdelivery.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.884] dns response record => {
+	result = 128.116.44.3,
+	host = assetdelivery.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 71
+}
+[19:19:14.884] tcp stream <43> lookup host => 78.47.40.68:443 domain => assetdelivery.roblox.com host => <null> ip => 198.18.0.17
+[19:19:14.884] tcp stream <43> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = assetdelivery.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.895] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.897] tcp tunnel dummy ip 198.18.0.9 => apis.roblox.com
+[19:19:14.897] tcp stream <51> start host => apis.roblox.com port => 443 total => 21
+[19:19:14.905] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.906] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.908] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.912] tcp stream <51> match tcp request => apis.roblox.com:443, cost => 15.050054 ms
+[19:19:14.912] tcp stream <51> async lookup host => apis.roblox.com:443 => 198.18.0.9
+[19:19:14.912] dns response cache expired => 0, apis.roblox.com => 128.116.44.3 
+[19:19:14.912] tcp stream <51> async lookup host => apis.roblox.com:443 result => 128.116.44.3 cost => 0.032067 ms
+[19:19:14.912] tcp stream <51> proxy lookup host => apis.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:14.912] tcp stream <51> lookup host => 78.47.40.68:443 domain => apis.roblox.com host => <null> ip => 198.18.0.9
+[19:19:14.912] tcp stream <51> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:14.933] dns query <27> cancel from 213.87.0.1
+[19:19:14.937] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.938] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.973] tcp stream <41> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 186.262012 ms
+[19:19:14.973] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:14.973] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.973] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.973] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:14.980] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.006] tcp stream <42> connect to host => locale.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 195.816040 ms
+[19:19:15.006] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.010] tcp stream <46> connect to host => friends.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 179.022074 ms
+[19:19:15.010] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.010] tcp stream <45> connect to host => thumbnails.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 182.685971 ms
+[19:19:15.010] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.010] tcp stream <44> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 188.836932 ms
+[19:19:15.010] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.040] tcp stream <48> connect to host => users.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 179.657936 ms
+[19:19:15.040] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.043] tcp stream <47> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 182.322979 ms
+[19:19:15.043] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.064] tcp stream <43> connect to host => assetdelivery.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 180.225015 ms
+[19:19:15.064] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.082] tcp stream <49> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 207.090974 ms
+[19:19:15.082] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.093] tcp stream <50> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 217.326999 ms
+[19:19:15.093] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.093] tcp stream <51> connect to host => apis.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 181.103945 ms
+[19:19:15.093] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.235] tcp tunnel dummy ip 198.18.0.13 => thumbnails.roblox.com
+[19:19:15.235] tcp stream <52> start host => thumbnails.roblox.com port => 443 total => 22
+[19:19:15.249] tcp stream <52> match tcp request => thumbnails.roblox.com:443, cost => 12.966037 ms
+[19:19:15.249] tcp stream <52> async lookup host => thumbnails.roblox.com:443 => 198.18.0.13
+[19:19:15.249] dns response cache expired => 0, thumbnails.roblox.com => 128.116.44.3 
+[19:19:15.249] tcp stream <52> async lookup host => thumbnails.roblox.com:443 result => 128.116.44.3 cost => 0.084996 ms
+[19:19:15.249] tcp stream <52> proxy lookup host => thumbnails.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.249] tcp stream <52> lookup host => 78.47.40.68:443 domain => thumbnails.roblox.com host => <null> ip => 198.18.0.13
+[19:19:15.249] tcp stream <52> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = thumbnails.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.314] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.317] tcp tunnel dummy ip 198.18.0.17 => assetdelivery.roblox.com
+[19:19:15.317] tcp stream <53> start host => assetdelivery.roblox.com port => 443 total => 23
+[19:19:15.330] tcp stream <53> match tcp request => assetdelivery.roblox.com:443, cost => 13.119936 ms
+[19:19:15.331] tcp stream <53> async lookup host => assetdelivery.roblox.com:443 => 198.18.0.17
+[19:19:15.331] dns response cache expired => 0, assetdelivery.roblox.com => 128.116.44.3 
+[19:19:15.331] tcp stream <53> async lookup host => assetdelivery.roblox.com:443 result => 128.116.44.3 cost => 0.066996 ms
+[19:19:15.331] tcp stream <53> proxy lookup host => assetdelivery.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.331] tcp stream <53> lookup host => 78.47.40.68:443 domain => assetdelivery.roblox.com host => <null> ip => 198.18.0.17
+[19:19:15.331] tcp stream <53> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = assetdelivery.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.345] tcp tunnel dummy ip 198.18.0.8 => ephemeralcounters.api.roblox.com
+[19:19:15.345] tcp stream <54> start host => ephemeralcounters.api.roblox.com port => 443 total => 24
+[19:19:15.345] proxy stream <55> loopback => 1 total => 10
+[19:19:15.345] proxy stream <55> async lookup rule url => gspe1-ssl.ls.apple.com:443 host => gspe1-ssl.ls.apple.com port => 443
+[19:19:15.345] proxy stream <55> tcp rule => {
+	result = DOMAIN-SUFFIX,apple.com,DIRECT,
+	ns = 20,
+	url = gspe1-ssl.ls.apple.com:443,
+	type = DIRECT,
+	ua = TCP Stream
+}
+[19:19:15.345] proxy stream <55> lookup host => gspe1-ssl.ls.apple.com:443
+[19:19:15.345] dns query <29> did start => 29#gspe1-ssl.ls.apple.com total => 0
+[19:19:15.345] dns query <29> any send ipv4 gspe1-ssl.ls.apple.com to 213.87.0.1
+[19:19:15.345] dns query <29> any send ipv4 gspe1-ssl.ls.apple.com to 213.87.1.1
+[19:19:15.359] tcp stream <54> match tcp request => ephemeralcounters.api.roblox.com:443, cost => 15.087008 ms
+[19:19:15.359] tcp stream <54> async lookup host => ephemeralcounters.api.roblox.com:443 => 198.18.0.8
+[19:19:15.359] dns response cache expired => 0, ephemeralcounters.api.roblox.com => 128.116.44.3 
+[19:19:15.359] tcp stream <54> async lookup host => ephemeralcounters.api.roblox.com:443 result => 128.116.44.3 cost => 0.054002 ms
+[19:19:15.359] tcp stream <54> proxy lookup host => ephemeralcounters.api.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.359] tcp stream <54> lookup host => 78.47.40.68:443 domain => ephemeralcounters.api.roblox.com host => <null> ip => 198.18.0.8
+[19:19:15.359] tcp stream <54> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ephemeralcounters.api.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.398] dns query <29> response gspe1-ssl.ls.apple.com from 213.87.0.1
+[19:19:15.398] proxy stream <55> lookup host => gspe1-ssl.ls.apple.com:443 result => 92.123.135.139 cost => 53.676963 ms
+[19:19:15.398] dns query <29> did finish 29#gspe1-ssl.ls.apple.com => success total => 2
+[19:19:15.399] dns response record => {
+	result = 92.123.135.139,
+	host = gspe1-ssl.ls.apple.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 53
+}
+[19:19:15.400] dns query <29> cancel from 213.87.1.1
+[19:19:15.408] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.409] proxy stream <56> loopback => 1 total => 11
+[19:19:15.410] proxy stream <56> async lookup rule url => gateway.icloud.com:443 host => gateway.icloud.com port => 443
+[19:19:15.410] proxy stream <56> tcp rule => {
+	result = DOMAIN-SUFFIX,icloud.com,DIRECT,
+	ns = 21,
+	url = gateway.icloud.com:443,
+	type = DIRECT,
+	ua = TCP Stream
+}
+[19:19:15.410] proxy stream <56> lookup host => gateway.icloud.com:443
+[19:19:15.410] dns response cache expired => 0, gateway.icloud.com => 17.248.214.67 
+[19:19:15.410] proxy stream <56> lookup host => gateway.icloud.com:443 result => 17.248.214.67 cost => 0.051975 ms
+[19:19:15.414] tcp stream <52> connect to host => thumbnails.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 165.111065 ms
+[19:19:15.414] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.421] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.454] proxy stream <55> did connect to host => gspe1-ssl.ls.apple.com:443 > 92.123.135.139:443 fastopen => 0 cost => 54.823995 ms
+[19:19:15.466] proxy stream <56> did connect to host => gateway.icloud.com:443 > 17.248.214.67:443 fastopen => 0 cost => 55.345058 ms
+[19:19:15.483] tcp tunnel dummy ip 198.18.0.16 => accountsettings.roblox.com
+[19:19:15.484] tcp stream <57> start host => accountsettings.roblox.com port => 443 total => 25
+[19:19:15.489] tcp tunnel dummy ip 198.18.0.10 => realtime-signalr.roblox.com
+[19:19:15.489] tcp stream <58> start host => realtime-signalr.roblox.com port => 443 total => 26
+[19:19:15.494] tcp stream <57> match tcp request => accountsettings.roblox.com:443, cost => 13.388991 ms
+[19:19:15.494] tcp stream <57> async lookup host => accountsettings.roblox.com:443 => 198.18.0.16
+[19:19:15.494] dns response cache expired => 0, accountsettings.roblox.com => 128.116.44.3 
+[19:19:15.494] tcp stream <57> async lookup host => accountsettings.roblox.com:443 result => 128.116.44.3 cost => 0.048995 ms
+[19:19:15.494] tcp stream <57> proxy lookup host => accountsettings.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.494] tcp stream <57> lookup host => 78.47.40.68:443 domain => accountsettings.roblox.com host => <null> ip => 198.18.0.16
+[19:19:15.494] tcp stream <57> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = accountsettings.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.503] tcp stream <58> match tcp request => realtime-signalr.roblox.com:443, cost => 14.043093 ms
+[19:19:15.504] tcp stream <58> async lookup host => realtime-signalr.roblox.com:443 => 198.18.0.10
+[19:19:15.504] dns response cache expired => 0, realtime-signalr.roblox.com => 128.116.44.3 
+[19:19:15.504] tcp stream <58> async lookup host => realtime-signalr.roblox.com:443 result => 128.116.44.3 cost => 0.107050 ms
+[19:19:15.504] tcp stream <58> proxy lookup host => realtime-signalr.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.504] tcp stream <58> lookup host => 78.47.40.68:443 domain => realtime-signalr.roblox.com host => <null> ip => 198.18.0.10
+[19:19:15.504] tcp stream <58> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = realtime-signalr.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.505] proxy stream <59> loopback => 1 total => 12
+[19:19:15.505] proxy stream <59> async lookup rule url => notifications.roblox.com:443 host => notifications.roblox.com port => 443
+[19:19:15.505] proxy stream <59> async lookup host => notifications.roblox.com:443
+[19:19:15.505] dns query <31> did start => 31#notifications.roblox.com total => 0
+[19:19:15.505] dns query <31> any send ipv4 notifications.roblox.com to 213.87.0.1
+[19:19:15.505] dns query <31> any send ipv4 notifications.roblox.com to 213.87.1.1
+[19:19:15.512] tcp stream <53> connect to host => assetdelivery.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 181.523919 ms
+[19:19:15.512] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.523] utun query => usermoderation.roblox.com type => 1
+[19:19:15.523] utun response dummy ip => usermoderation.roblox.com response => 198.18.0.18
+[19:19:15.523] utun query => usermoderation.roblox.com type => 28
+[19:19:15.523] utun response dummy ip => usermoderation.roblox.com response => ::ffff:198.18.0.18
+[19:19:15.523] utun query => clientsettings.roblox.com type => 1
+[19:19:15.523] utun response dummy ip => clientsettings.roblox.com response => 198.18.0.19
+[19:19:15.523] utun query => clientsettings.roblox.com type => 28
+[19:19:15.523] utun response dummy ip => clientsettings.roblox.com response => ::ffff:198.18.0.19
+[19:19:15.523] tcp tunnel dummy ip 198.18.0.18 => usermoderation.roblox.com
+[19:19:15.523] tcp stream <60> start host => usermoderation.roblox.com port => 443 total => 27
+[19:19:15.523] tcp tunnel dummy ip 198.18.0.19 => clientsettings.roblox.com
+[19:19:15.523] tcp stream <61> start host => clientsettings.roblox.com port => 443 total => 28
+[19:19:15.523] proxy stream <62> loopback => 1 total => 13
+[19:19:15.523] proxy stream <62> async lookup rule url => iphone-ld.apple.com:443 host => iphone-ld.apple.com port => 443
+[19:19:15.523] proxy stream <62> tcp rule => {
+	result = DOMAIN-SUFFIX,apple.com,DIRECT,
+	ns = 18,
+	url = iphone-ld.apple.com:443,
+	type = DIRECT,
+	ua = TCP Stream
+}
+[19:19:15.523] proxy stream <62> lookup host => iphone-ld.apple.com:443
+[19:19:15.523] dns query <33> did start => 33#iphone-ld.apple.com total => 2
+[19:19:15.523] dns query <33> any send ipv4 iphone-ld.apple.com to 213.87.0.1
+[19:19:15.523] dns query <33> any send ipv4 iphone-ld.apple.com to 213.87.1.1
+[19:19:15.524] tcp stream <54> connect to host => ephemeralcounters.api.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 164.934039 ms
+[19:19:15.525] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.532] tcp stream <60> match tcp request => usermoderation.roblox.com:443, cost => 10.892034 ms
+[19:19:15.532] tcp stream <60> async lookup host => usermoderation.roblox.com:443 => 198.18.0.18
+[19:19:15.532] dns query <35> did start => 35#usermoderation.roblox.com total => 4
+[19:19:15.532] dns query <35> any send ipv4 usermoderation.roblox.com to 213.87.0.1
+[19:19:15.532] dns query <35> any send ipv4 usermoderation.roblox.com to 213.87.1.1
+[19:19:15.532] tcp stream <61> match tcp request => clientsettings.roblox.com:443, cost => 10.174036 ms
+[19:19:15.532] tcp stream <61> async lookup host => clientsettings.roblox.com:443 => 198.18.0.19
+[19:19:15.532] dns query <37> did start => 37#clientsettings.roblox.com total => 6
+[19:19:15.532] dns query <37> any send ipv4 clientsettings.roblox.com to 213.87.0.1
+[19:19:15.532] dns query <37> any send ipv4 clientsettings.roblox.com to 213.87.1.1
+[19:19:15.560] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.562] dns query <31> response notifications.roblox.com from 213.87.0.1
+[19:19:15.562] proxy stream <59> async lookup host => notifications.roblox.com:443 result => 128.116.44.3 cost => 57.374001 ms
+[19:19:15.562] dns query <31> did finish 31#notifications.roblox.com => success total => 8
+[19:19:15.562] dns response record => {
+	result = 128.116.44.3,
+	host = notifications.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 57
+}
+[19:19:15.562] proxy stream <59> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = notifications.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.562] proxy stream <59> lookup host => notifications.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.562] proxy stream <59> lookup host => 78.47.40.68:443
+[19:19:15.586] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.589] dns query <31> cancel from 213.87.1.1
+[19:19:15.589] dns query <33> response iphone-ld.apple.com from 213.87.0.1
+[19:19:15.589] proxy stream <62> lookup host => iphone-ld.apple.com:443 result => 17.253.39.139 cost => 66.822886 ms
+[19:19:15.589] dns query <33> did finish 33#iphone-ld.apple.com => success total => 6
+[19:19:15.589] dns response record => {
+	result = 17.253.39.139,
+	host = iphone-ld.apple.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 66
+}
+[19:19:15.600] dns query <35> response usermoderation.roblox.com from 213.87.0.1
+[19:19:15.600] tcp stream <60> async lookup host => usermoderation.roblox.com:443 result => 128.116.44.3 cost => 70.256948 ms
+[19:19:15.600] dns query <35> did finish 35#usermoderation.roblox.com => success total => 4
+[19:19:15.600] tcp stream <60> proxy lookup host => usermoderation.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.600] dns response record => {
+	result = 128.116.44.3,
+	host = usermoderation.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 70
+}
+[19:19:15.600] tcp stream <60> lookup host => 78.47.40.68:443 domain => usermoderation.roblox.com host => <null> ip => 198.18.0.18
+[19:19:15.600] tcp stream <60> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = usermoderation.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.602] dns query <33> cancel from 213.87.1.1
+[19:19:15.607] dns query <35> cancel from 213.87.1.1
+[19:19:15.620] utun query => privatemessages.roblox.com type => 1
+[19:19:15.620] utun response dummy ip => privatemessages.roblox.com response => 198.18.0.20
+[19:19:15.621] utun query => privatemessages.roblox.com type => 28
+[19:19:15.621] utun response dummy ip => privatemessages.roblox.com response => ::ffff:198.18.0.20
+[19:19:15.625] utun query => notifications.roblox.com type => 1
+[19:19:15.625] utun response dummy ip => notifications.roblox.com response => 198.18.0.21
+[19:19:15.625] utun query => notifications.roblox.com type => 28
+[19:19:15.625] utun response dummy ip => notifications.roblox.com response => ::ffff:198.18.0.21
+[19:19:15.626] utun query => apis.rbxcdn.com type => 1
+[19:19:15.626] utun response dummy ip => apis.rbxcdn.com response => 198.18.0.22
+[19:19:15.626] utun query => apis.rbxcdn.com type => 28
+[19:19:15.626] utun response dummy ip => apis.rbxcdn.com response => ::ffff:198.18.0.22
+[19:19:15.626] utun query => economy.roblox.com type => 1
+[19:19:15.626] utun response dummy ip => economy.roblox.com response => 198.18.0.23
+[19:19:15.626] tcp tunnel dummy ip 198.18.0.20 => privatemessages.roblox.com
+[19:19:15.626] tcp stream <63> start host => privatemessages.roblox.com port => 443 total => 29
+[19:19:15.626] utun query => economy.roblox.com type => 28
+[19:19:15.627] utun response dummy ip => economy.roblox.com response => ::ffff:198.18.0.23
+[19:19:15.628] tcp tunnel dummy ip 198.18.0.21 => notifications.roblox.com
+[19:19:15.628] tcp stream <64> start host => notifications.roblox.com port => 443 total => 30
+[19:19:15.628] tcp tunnel dummy ip 198.18.0.22 => apis.rbxcdn.com
+[19:19:15.628] tcp stream <65> start host => apis.rbxcdn.com port => 443 total => 31
+[19:19:15.628] tcp tunnel dummy ip 198.18.0.23 => economy.roblox.com
+[19:19:15.628] tcp stream <66> start host => economy.roblox.com port => 443 total => 32
+[19:19:15.630] utun query => catalog.roblox.com type => 1
+[19:19:15.630] utun response dummy ip => catalog.roblox.com response => 198.18.0.24
+[19:19:15.630] utun query => catalog.roblox.com type => 28
+[19:19:15.630] utun response dummy ip => catalog.roblox.com response => ::ffff:198.18.0.24
+[19:19:15.631] utun query => avatar.roblox.com type => 1
+[19:19:15.631] utun response dummy ip => avatar.roblox.com response => 198.18.0.25
+[19:19:15.632] utun query => avatar.roblox.com type => 28
+[19:19:15.632] tcp tunnel dummy ip 198.18.0.24 => catalog.roblox.com
+[19:19:15.632] utun response dummy ip => avatar.roblox.com response => ::ffff:198.18.0.25
+[19:19:15.632] tcp stream <67> start host => catalog.roblox.com port => 443 total => 33
+[19:19:15.634] tcp tunnel dummy ip 198.18.0.25 => avatar.roblox.com
+[19:19:15.634] tcp stream <68> start host => avatar.roblox.com port => 443 total => 34
+[19:19:15.638] tcp stream <63> match tcp request => privatemessages.roblox.com:443, cost => 11.162043 ms
+[19:19:15.638] tcp stream <63> async lookup host => privatemessages.roblox.com:443 => 198.18.0.20
+[19:19:15.638] dns query <39> did start => 39#privatemessages.roblox.com total => 2
+[19:19:15.638] tcp stream <64> match tcp request => notifications.roblox.com:443, cost => 10.264039 ms
+[19:19:15.638] dns query <39> any send ipv4 privatemessages.roblox.com to 213.87.0.1
+[19:19:15.639] dns query <39> any send ipv4 privatemessages.roblox.com to 213.87.1.1
+[19:19:15.639] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.639] tcp stream <64> async lookup host => notifications.roblox.com:443 => 198.18.0.21
+[19:19:15.639] tcp stream <65> match tcp request => apis.rbxcdn.com:443, cost => 10.354996 ms
+[19:19:15.639] tcp stream <65> async lookup host => apis.rbxcdn.com:443 => 198.18.0.22
+[19:19:15.639] tcp stream <66> match tcp request => economy.roblox.com:443, cost => 10.473967 ms
+[19:19:15.639] tcp stream <66> async lookup host => economy.roblox.com:443 => 198.18.0.23
+[19:19:15.639] dns response cache expired => 0, notifications.roblox.com => 128.116.44.3 
+[19:19:15.639] tcp stream <64> async lookup host => notifications.roblox.com:443 result => 128.116.44.3 cost => 0.251055 ms
+[19:19:15.639] tcp stream <64> proxy lookup host => notifications.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.639] tcp stream <64> lookup host => 78.47.40.68:443 domain => notifications.roblox.com host => <null> ip => 198.18.0.21
+[19:19:15.639] dns query <41> did start => 41#apis.rbxcdn.com total => 4
+[19:19:15.639] dns query <41> any send ipv4 apis.rbxcdn.com to 213.87.0.1
+[19:19:15.639] dns query <41> any send ipv4 apis.rbxcdn.com to 213.87.1.1
+[19:19:15.639] dns query <43> did start => 43#economy.roblox.com total => 6
+[19:19:15.639] dns query <43> any send ipv4 economy.roblox.com to 213.87.0.1
+[19:19:15.639] dns query <43> any send ipv4 economy.roblox.com to 213.87.1.1
+[19:19:15.639] tcp stream <64> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = notifications.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.645] tcp stream <67> match tcp request => catalog.roblox.com:443, cost => 13.125062 ms
+[19:19:15.645] tcp stream <67> async lookup host => catalog.roblox.com:443 => 198.18.0.24
+[19:19:15.645] tcp stream <68> match tcp request => avatar.roblox.com:443, cost => 11.191010 ms
+[19:19:15.645] tcp stream <68> async lookup host => avatar.roblox.com:443 => 198.18.0.25
+[19:19:15.645] dns query <45> did start => 45#catalog.roblox.com total => 8
+[19:19:15.645] dns query <45> any send ipv4 catalog.roblox.com to 213.87.0.1
+[19:19:15.645] dns query <45> any send ipv4 catalog.roblox.com to 213.87.1.1
+[19:19:15.645] dns query <47> did start => 47#avatar.roblox.com total => 10
+[19:19:15.645] dns query <47> any send ipv4 avatar.roblox.com to 213.87.0.1
+[19:19:15.645] dns query <47> any send ipv4 avatar.roblox.com to 213.87.1.1
+[19:19:15.727] proxy stream <62> did connect to host => iphone-ld.apple.com:443 > 17.253.39.139:443 fastopen => 0 cost => 137.345076 ms
+[19:19:15.731] dns query <37> response clientsettings.roblox.com from 213.87.1.1
+[19:19:15.731] tcp stream <61> async lookup host => clientsettings.roblox.com:443 result => 128.116.44.3 cost => 198.837042 ms
+[19:19:15.731] dns query <37> did finish 37#clientsettings.roblox.com => success total => 12
+[19:19:15.731] dns response record => {
+	result = 128.116.44.3,
+	host = clientsettings.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 198
+}
+[19:19:15.731] dns query <43> response economy.roblox.com from 213.87.1.1
+[19:19:15.731] tcp stream <66> async lookup host => economy.roblox.com:443 result => 128.116.44.3 cost => 91.297984 ms
+[19:19:15.731] dns query <43> did finish 43#economy.roblox.com => success total => 10
+[19:19:15.731] dns response record => {
+	result = 128.116.44.3,
+	host = economy.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 90
+}
+[19:19:15.731] dns query <39> response privatemessages.roblox.com from 213.87.1.1
+[19:19:15.731] tcp stream <63> async lookup host => privatemessages.roblox.com:443 result => 128.116.44.3 cost => 92.059970 ms
+[19:19:15.731] dns query <39> did finish 39#privatemessages.roblox.com => success total => 8
+[19:19:15.731] dns response record => {
+	result = 128.116.44.3,
+	host = privatemessages.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 91
+}
+[19:19:15.731] dns query <41> response apis.rbxcdn.com from 213.87.1.1
+[19:19:15.731] tcp stream <65> async lookup host => apis.rbxcdn.com:443 result => 3.175.196.97 cost => 91.788054 ms
+[19:19:15.731] dns query <41> did finish 41#apis.rbxcdn.com => success total => 6
+[19:19:15.731] dns response record => {
+	result = 3.175.196.97,
+	host = apis.rbxcdn.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 91
+}
+[19:19:15.731] dns query <47> response avatar.roblox.com from 213.87.1.1
+[19:19:15.731] tcp stream <68> async lookup host => avatar.roblox.com:443 result => 128.116.44.3 cost => 85.369945 ms
+[19:19:15.731] dns query <47> did finish 47#avatar.roblox.com => success total => 4
+[19:19:15.731] dns response record => {
+	result = 128.116.44.3,
+	host = avatar.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 85
+}
+[19:19:15.731] dns query <45> response catalog.roblox.com from 213.87.1.1
+[19:19:15.731] tcp stream <67> async lookup host => catalog.roblox.com:443 result => 128.116.44.3 cost => 85.491896 ms
+[19:19:15.731] dns query <45> did finish 45#catalog.roblox.com => success total => 2
+[19:19:15.731] dns response record => {
+	result = 128.116.44.3,
+	host = catalog.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 85
+}
+[19:19:15.731] dns query <37> cancel from 213.87.0.1
+[19:19:15.731] dns query <43> cancel from 213.87.0.1
+[19:19:15.731] dns query <45> cancel from 213.87.0.1
+[19:19:15.731] dns query <39> cancel from 213.87.0.1
+[19:19:15.731] dns query <47> cancel from 213.87.0.1
+[19:19:15.731] dns query <41> cancel from 213.87.0.1
+[19:19:15.740] tcp stream <61> proxy lookup host => clientsettings.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.740] tcp stream <61> lookup host => 78.47.40.68:443 domain => clientsettings.roblox.com host => <null> ip => 198.18.0.19
+[19:19:15.740] tcp stream <61> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = clientsettings.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.740] tcp stream <66> proxy lookup host => economy.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.740] tcp stream <66> lookup host => 78.47.40.68:443 domain => economy.roblox.com host => <null> ip => 198.18.0.23
+[19:19:15.740] tcp stream <66> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = economy.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.740] tcp stream <63> proxy lookup host => privatemessages.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.740] tcp stream <63> lookup host => 78.47.40.68:443 domain => privatemessages.roblox.com host => <null> ip => 198.18.0.20
+[19:19:15.740] tcp stream <63> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = privatemessages.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.740] tcp stream <65> proxy lookup host => apis.rbxcdn.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.740] tcp stream <65> lookup host => 78.47.40.68:443 domain => apis.rbxcdn.com host => <null> ip => 198.18.0.22
+[19:19:15.741] tcp stream <65> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = apis.rbxcdn.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.741] tcp stream <68> proxy lookup host => avatar.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.741] tcp stream <68> lookup host => 78.47.40.68:443 domain => avatar.roblox.com host => <null> ip => 198.18.0.25
+[19:19:15.741] tcp stream <68> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = avatar.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.741] tcp stream <67> proxy lookup host => catalog.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:15.741] tcp stream <67> lookup host => 78.47.40.68:443 domain => catalog.roblox.com host => <null> ip => 198.18.0.24
+[19:19:15.741] tcp stream <67> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = catalog.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:15.741] tcp stream <57> connect to host => accountsettings.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 238.899946 ms
+[19:19:15.741] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.741] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.741] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.741] tcp stream <58> connect to host => realtime-signalr.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 234.705925 ms
+[19:19:15.741] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.741] proxy stream <59> did connect to host => notifications.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 176.644087 ms
+[19:19:15.741] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.796] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.817] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.820] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.820] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.826] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.826] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:15.854] tcp stream <64> connect to host => notifications.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 215.066910 ms
+[19:19:15.854] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.864] tcp stream <60> connect to host => usermoderation.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 264.124990 ms
+[19:19:15.864] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.905] tcp stream <61> connect to host => clientsettings.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 172.870040 ms
+[19:19:15.905] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.912] tcp stream <63> connect to host => privatemessages.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 179.797888 ms
+[19:19:15.912] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.917] tcp stream <68> connect to host => avatar.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 184.607029 ms
+[19:19:15.917] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.922] tcp stream <65> connect to host => apis.rbxcdn.com:443 > 78.47.40.68:443, fastopen => 0, cost => 189.770103 ms
+[19:19:15.922] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.922] tcp stream <66> connect to host => economy.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 190.418959 ms
+[19:19:15.923] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:15.923] tcp stream <67> connect to host => catalog.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 189.623952 ms
+[19:19:15.923] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:16.129] utun query => accountinformation.roblox.com type => 1
+[19:19:16.129] utun response dummy ip => accountinformation.roblox.com response => 198.18.0.26
+[19:19:16.130] utun query => accountinformation.roblox.com type => 28
+[19:19:16.130] utun response dummy ip => accountinformation.roblox.com response => ::ffff:198.18.0.26
+[19:19:16.131] tcp tunnel dummy ip 198.18.0.26 => accountinformation.roblox.com
+[19:19:16.131] tcp stream <69> start host => accountinformation.roblox.com port => 443 total => 35
+[19:19:16.142] proxy stream <70> loopback => 1 total => 14
+[19:19:16.142] proxy stream <70> async lookup rule url => sesto4.icloud-content.com:443 host => sesto4.icloud-content.com port => 443
+[19:19:16.142] proxy stream <70> tcp rule => {
+	result = DOMAIN-SUFFIX,icloud-content.com,DIRECT,
+	ns = 22,
+	url = sesto4.icloud-content.com:443,
+	type = DIRECT,
+	ua = TCP Stream
+}
+[19:19:16.142] proxy stream <70> lookup host => sesto4.icloud-content.com:443
+[19:19:16.142] dns query <49> did start => 49#sesto4.icloud-content.com total => 0
+[19:19:16.142] tcp stream <69> match tcp request => accountinformation.roblox.com:443, cost => 11.298895 ms
+[19:19:16.142] dns query <49> any send ipv4 sesto4.icloud-content.com to 213.87.0.1
+[19:19:16.142] dns query <49> any send ipv4 sesto4.icloud-content.com to 213.87.1.1
+[19:19:16.142] tcp stream <69> async lookup host => accountinformation.roblox.com:443 => 198.18.0.26
+[19:19:16.143] dns query <51> did start => 51#accountinformation.roblox.com total => 2
+[19:19:16.143] dns query <51> any send ipv4 accountinformation.roblox.com to 213.87.0.1
+[19:19:16.143] dns query <51> any send ipv4 accountinformation.roblox.com to 213.87.1.1
+[19:19:16.205] dns query <49> response sesto4.icloud-content.com from 213.87.0.1
+[19:19:16.205] proxy stream <70> lookup host => sesto4.icloud-content.com:443 result => 17.248.214.4 cost => 62.386990 ms
+[19:19:16.205] dns query <49> did finish 49#sesto4.icloud-content.com => success total => 4
+[19:19:16.205] dns response record => {
+	result = 17.248.214.4,
+	host = sesto4.icloud-content.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 62
+}
+[19:19:16.205] dns query <49> cancel from 213.87.1.1
+[19:19:16.206] dns query <51> response accountinformation.roblox.com from 213.87.1.1
+[19:19:16.206] tcp stream <69> async lookup host => accountinformation.roblox.com:443 result => 128.116.44.3 cost => 63.629985 ms
+[19:19:16.206] dns query <51> did finish 51#accountinformation.roblox.com => success total => 2
+[19:19:16.206] dns response record => {
+	result = 128.116.44.3,
+	host = accountinformation.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 63
+}
+[19:19:16.206] tcp stream <69> proxy lookup host => accountinformation.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:16.206] tcp stream <69> lookup host => 78.47.40.68:443 domain => accountinformation.roblox.com host => <null> ip => 198.18.0.26
+[19:19:16.206] tcp stream <69> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = accountinformation.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:16.208] utun query => tr.rbxcdn.com type => 1
+[19:19:16.208] utun response dummy ip => tr.rbxcdn.com response => 198.18.0.27
+[19:19:16.209] utun query => tr.rbxcdn.com type => 28
+[19:19:16.209] utun response dummy ip => tr.rbxcdn.com response => ::ffff:198.18.0.27
+[19:19:16.211] tcp tunnel dummy ip 198.18.0.27 => tr.rbxcdn.com
+[19:19:16.211] tcp stream <71> start host => tr.rbxcdn.com port => 443 total => 36
+[19:19:16.222] tcp stream <71> match tcp request => tr.rbxcdn.com:443, cost => 11.639953 ms
+[19:19:16.222] tcp stream <71> async lookup host => tr.rbxcdn.com:443 => 198.18.0.27
+[19:19:16.223] dns query <53> did start => 53#tr.rbxcdn.com total => 0
+[19:19:16.223] dns query <53> any send ipv4 tr.rbxcdn.com to 213.87.0.1
+[19:19:16.223] dns query <53> any send ipv4 tr.rbxcdn.com to 213.87.1.1
+[19:19:16.232] dns query <51> cancel from 213.87.0.1
+[19:19:16.263] proxy stream <70> did connect to host => sesto4.icloud-content.com:443 > 17.248.214.4:443 fastopen => 0 cost => 58.260918 ms
+[19:19:16.264] utun query => presence.roblox.com type => 1
+[19:19:16.264] utun response dummy ip => presence.roblox.com response => 198.18.0.28
+[19:19:16.265] utun query => presence.roblox.com type => 28
+[19:19:16.265] utun response dummy ip => presence.roblox.com response => ::ffff:198.18.0.28
+[19:19:16.266] tcp tunnel dummy ip 198.18.0.28 => presence.roblox.com
+[19:19:16.267] tcp stream <72> start host => presence.roblox.com port => 443 total => 37
+[19:19:16.279] dns query <53> response tr.rbxcdn.com from 213.87.0.1
+[19:19:16.279] tcp stream <72> match tcp request => presence.roblox.com:443, cost => 12.563944 ms
+[19:19:16.279] tcp stream <71> async lookup host => tr.rbxcdn.com:443 result => 212.188.32.104 cost => 56.644082 ms
+[19:19:16.279] tcp stream <72> async lookup host => presence.roblox.com:443 => 198.18.0.28
+[19:19:16.279] dns query <53> did finish 53#tr.rbxcdn.com => success total => 2
+[19:19:16.279] dns response record => {
+	result = 212.188.32.104,
+	host = tr.rbxcdn.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 56
+}
+[19:19:16.279] dns query <55> did start => 55#presence.roblox.com total => 0
+[19:19:16.279] dns query <55> any send ipv4 presence.roblox.com to 213.87.0.1
+[19:19:16.279] dns query <55> any send ipv4 presence.roblox.com to 213.87.1.1
+[19:19:16.280] dns query <53> cancel from 213.87.1.1
+[19:19:16.281] tcp stream <71> proxy lookup host => tr.rbxcdn.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:16.281] tcp stream <71> lookup host => 78.47.40.68:443 domain => tr.rbxcdn.com host => <null> ip => 198.18.0.27
+[19:19:16.281] tcp stream <71> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = tr.rbxcdn.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:16.284] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:16.322] dns query <55> response presence.roblox.com from 213.87.0.1
+[19:19:16.322] tcp stream <72> async lookup host => presence.roblox.com:443 result => 128.116.44.3 cost => 42.774081 ms
+[19:19:16.322] dns query <55> did finish 55#presence.roblox.com => success total => 2
+[19:19:16.322] tcp stream <72> proxy lookup host => presence.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:16.322] dns response record => {
+	result = 128.116.44.3,
+	host = presence.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 42
+}
+[19:19:16.322] tcp stream <72> lookup host => 78.47.40.68:443 domain => presence.roblox.com host => <null> ip => 198.18.0.28
+[19:19:16.322] tcp stream <72> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = presence.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:16.343] dns query <55> cancel from 213.87.1.1
+[19:19:16.354] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:16.384] tcp stream <69> connect to host => accountinformation.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 177.625895 ms
+[19:19:16.384] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:16.396] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:16.449] tcp stream <71> connect to host => tr.rbxcdn.com:443 > 78.47.40.68:443, fastopen => 0, cost => 168.347001 ms
+[19:19:16.449] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:16.498] tcp stream <72> connect to host => presence.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 175.369024 ms
+[19:19:16.498] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:16.546] proxy stream <73> loopback => 1 total => 15
+[19:19:16.546] proxy stream <73> async lookup rule url => gateway.icloud.com:443 host => gateway.icloud.com port => 443
+[19:19:16.547] proxy stream <73> tcp rule => {
+	result = DOMAIN-SUFFIX,icloud.com,DIRECT,
+	ns = 33,
+	url = gateway.icloud.com:443,
+	type = DIRECT,
+	ua = TCP Stream
+}
+[19:19:16.547] proxy stream <73> lookup host => gateway.icloud.com:443
+[19:19:16.547] dns response cache expired => 0, gateway.icloud.com => 17.248.214.67 
+[19:19:16.547] proxy stream <73> lookup host => gateway.icloud.com:443 result => 17.248.214.67 cost => 0.074983 ms
+[19:19:16.602] proxy stream <73> did connect to host => gateway.icloud.com:443 > 17.248.214.67:443 fastopen => 0 cost => 55.588007 ms
+[19:19:16.615] utun query => contacts.roblox.com type => 1
+[19:19:16.615] utun response dummy ip => contacts.roblox.com response => 198.18.0.29
+[19:19:16.616] utun query => contacts.roblox.com type => 28
+[19:19:16.616] utun response dummy ip => contacts.roblox.com response => ::ffff:198.18.0.29
+[19:19:16.617] tcp tunnel dummy ip 198.18.0.29 => contacts.roblox.com
+[19:19:16.617] tcp stream <74> start host => contacts.roblox.com port => 443 total => 38
+[19:19:16.630] tcp stream <74> match tcp request => contacts.roblox.com:443, cost => 13.101935 ms
+[19:19:16.630] tcp stream <74> async lookup host => contacts.roblox.com:443 => 198.18.0.29
+[19:19:16.631] dns query <57> did start => 57#contacts.roblox.com total => 0
+[19:19:16.631] dns query <57> any send ipv4 contacts.roblox.com to 213.87.0.1
+[19:19:16.631] dns query <57> any send ipv4 contacts.roblox.com to 213.87.1.1
+[19:19:16.704] dns query <57> response contacts.roblox.com from 213.87.0.1
+[19:19:16.704] tcp stream <74> async lookup host => contacts.roblox.com:443 result => 128.116.44.3 cost => 73.715091 ms
+[19:19:16.704] dns query <57> did finish 57#contacts.roblox.com => success total => 2
+[19:19:16.704] dns response record => {
+	result = 128.116.44.3,
+	host = contacts.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 73
+}
+[19:19:16.704] tcp stream <74> proxy lookup host => contacts.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:16.704] dns query <57> cancel from 213.87.1.1
+[19:19:16.704] tcp stream <74> lookup host => 78.47.40.68:443 domain => contacts.roblox.com host => <null> ip => 198.18.0.29
+[19:19:16.704] tcp stream <74> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = contacts.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:16.782] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:16.890] tcp stream <74> connect to host => contacts.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 185.757041 ms
+[19:19:16.890] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:17.137] proxy stream <0> disconnect gateway.icloud.com:443 error => Socket closed by remote peer reason => none cost => 9300.825000 ms
+[19:19:17.163] proxy stream <75> loopback => 1 total => 16
+[19:19:17.163] proxy stream <75> async lookup rule url => gateway.icloud.com:443 host => gateway.icloud.com port => 443
+[19:19:17.163] proxy stream <75> tcp rule => {
+	result = DOMAIN-SUFFIX,icloud.com,DIRECT,
+	ns = 30,
+	url = gateway.icloud.com:443,
+	type = DIRECT,
+	ua = TCP Stream
+}
+[19:19:17.163] proxy stream <75> lookup host => gateway.icloud.com:443
+[19:19:17.163] dns response cache expired => 0, gateway.icloud.com => 17.248.214.67 
+[19:19:17.163] proxy stream <75> lookup host => gateway.icloud.com:443 result => 17.248.214.67 cost => 0.052929 ms
+[19:19:17.312] proxy stream <75> did connect to host => gateway.icloud.com:443 > 17.248.214.67:443 fastopen => 0 cost => 149.174094 ms
+[19:19:18.237] proxy stream <73> disconnect gateway.icloud.com:443 error => Socket closed by remote peer reason => none cost => 1690.127969 ms
+[19:19:18.537] proxy stream <70> disconnect sesto4.icloud-content.com:443 error => Socket closed by remote peer reason => none cost => 2395.215988 ms
+[19:19:19.307] proxy stream <76> loopback => 1 total => 17
+[19:19:19.307] proxy stream <76> async lookup rule url => ecsv2.roblox.com:443 host => ecsv2.roblox.com port => 443
+[19:19:19.307] proxy stream <76> async lookup host => ecsv2.roblox.com:443
+[19:19:19.307] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:19.307] proxy stream <76> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.045061 ms
+[19:19:19.308] proxy stream <76> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:19.308] proxy stream <76> lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:19.308] proxy stream <76> lookup host => 78.47.40.68:443
+[19:19:19.474] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:19.595] proxy stream <76> did connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 286.787987 ms
+[19:19:19.595] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:19.840] tcp tunnel dummy ip 198.18.0.8 => ephemeralcounters.api.roblox.com
+[19:19:19.841] tcp stream <77> start host => ephemeralcounters.api.roblox.com port => 443 total => 39
+[19:19:19.854] tcp stream <77> match tcp request => ephemeralcounters.api.roblox.com:443, cost => 13.756990 ms
+[19:19:19.854] tcp stream <77> async lookup host => ephemeralcounters.api.roblox.com:443 => 198.18.0.8
+[19:19:19.854] dns response cache expired => 0, ephemeralcounters.api.roblox.com => 128.116.44.3 
+[19:19:19.854] tcp stream <77> async lookup host => ephemeralcounters.api.roblox.com:443 result => 128.116.44.3 cost => 0.091910 ms
+[19:19:19.854] tcp stream <77> proxy lookup host => ephemeralcounters.api.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:19.855] tcp stream <77> lookup host => 78.47.40.68:443 domain => ephemeralcounters.api.roblox.com host => <null> ip => 198.18.0.8
+[19:19:19.855] tcp stream <77> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ephemeralcounters.api.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:19.874] proxy stream <78> loopback => 1 total => 18
+[19:19:19.874] tcp tunnel dummy ip 198.18.0.7 => ecsv2.roblox.com
+[19:19:19.874] tcp stream <79> start host => ecsv2.roblox.com port => 443 total => 40
+[19:19:19.874] proxy stream <78> async lookup rule url => ecsv2.roblox.com:443 host => ecsv2.roblox.com port => 443
+[19:19:19.874] proxy stream <78> async lookup host => ecsv2.roblox.com:443
+[19:19:19.874] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:19.874] proxy stream <78> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.042081 ms
+[19:19:19.874] tcp tunnel dummy ip 198.18.0.7 => ecsv2.roblox.com
+[19:19:19.874] tcp stream <80> start host => ecsv2.roblox.com port => 443 total => 41
+[19:19:19.874] proxy stream <78> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:19.874] proxy stream <78> lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:19.874] proxy stream <78> lookup host => 78.47.40.68:443
+[19:19:19.889] tcp stream <79> match tcp request => ecsv2.roblox.com:443, cost => 14.868975 ms
+[19:19:19.889] tcp stream <79> async lookup host => ecsv2.roblox.com:443 => 198.18.0.7
+[19:19:19.889] tcp stream <80> match tcp request => ecsv2.roblox.com:443, cost => 14.583945 ms
+[19:19:19.889] tcp stream <80> async lookup host => ecsv2.roblox.com:443 => 198.18.0.7
+[19:19:19.889] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:19.889] tcp stream <79> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.038981 ms
+[19:19:19.889] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:19.889] tcp stream <80> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.054002 ms
+[19:19:19.889] tcp stream <79> proxy lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:19.889] tcp stream <79> lookup host => 78.47.40.68:443 domain => ecsv2.roblox.com host => <null> ip => 198.18.0.7
+[19:19:19.889] tcp stream <79> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:19.889] tcp stream <80> proxy lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:19.889] tcp stream <80> lookup host => 78.47.40.68:443 domain => ecsv2.roblox.com host => <null> ip => 198.18.0.7
+[19:19:19.889] tcp stream <80> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:19.943] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:19.943] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:19.955] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:19.965] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:20.038] proxy stream <78> did connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 163.790941 ms
+[19:19:20.038] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:20.038] tcp stream <77> connect to host => ephemeralcounters.api.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 183.613062 ms
+[19:19:20.038] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:20.048] tcp stream <58> local tcp did close => realtime-signalr.roblox.com, state => 9, cost => 4559.246063 ms
+[19:19:20.048] tcp stream <58> remove host => realtime-signalr.roblox.com port => 443 total => 40
+[19:19:20.051] tcp stream <79> connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 162.016988 ms
+[19:19:20.051] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:20.054] tcp stream <80> connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 164.804935 ms
+[19:19:20.054] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:20.095] tcp tunnel dummy ip 198.18.0.8 => ephemeralcounters.api.roblox.com
+[19:19:20.095] tcp stream <81> start host => ephemeralcounters.api.roblox.com port => 443 total => 41
+[19:19:20.095] proxy stream <82> loopback => 1 total => 19
+[19:19:20.095] proxy stream <82> async lookup rule url => clientsettingscdn.roblox.com:443 host => clientsettingscdn.roblox.com port => 443
+[19:19:20.095] proxy stream <82> async lookup host => clientsettingscdn.roblox.com:443
+[19:19:20.095] dns response cache expired => 0, clientsettingscdn.roblox.com => 23.210.252.62 
+[19:19:20.095] proxy stream <82> async lookup host => clientsettingscdn.roblox.com:443 result => 23.210.252.62 cost => 0.041008 ms
+[19:19:20.095] proxy stream <82> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = clientsettingscdn.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:20.095] proxy stream <82> lookup host => clientsettingscdn.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:20.095] proxy stream <82> lookup host => 78.47.40.68:443
+[19:19:20.095] utun query => metrics.roblox.com type => 1
+[19:19:20.095] utun response dummy ip => metrics.roblox.com response => 198.18.0.30
+[19:19:20.095] utun query => metrics.roblox.com type => 28
+[19:19:20.095] utun response dummy ip => metrics.roblox.com response => ::ffff:198.18.0.30
+[19:19:20.095] tcp tunnel dummy ip 198.18.0.7 => ecsv2.roblox.com
+[19:19:20.095] tcp stream <83> start host => ecsv2.roblox.com port => 443 total => 42
+[19:19:20.095] tcp tunnel dummy ip 198.18.0.7 => ecsv2.roblox.com
+[19:19:20.095] tcp stream <84> start host => ecsv2.roblox.com port => 443 total => 43
+[19:19:20.106] tcp tunnel dummy ip 198.18.0.10 => realtime-signalr.roblox.com
+[19:19:20.106] tcp stream <85> start host => realtime-signalr.roblox.com port => 443 total => 44
+[19:19:20.106] tcp stream <81> match tcp request => ephemeralcounters.api.roblox.com:443, cost => 18.712044 ms
+[19:19:20.106] tcp stream <81> async lookup host => ephemeralcounters.api.roblox.com:443 => 198.18.0.8
+[19:19:20.106] dns response cache expired => 0, ephemeralcounters.api.roblox.com => 128.116.44.3 
+[19:19:20.106] tcp stream <81> async lookup host => ephemeralcounters.api.roblox.com:443 result => 128.116.44.3 cost => 0.036955 ms
+[19:19:20.106] tcp stream <81> proxy lookup host => ephemeralcounters.api.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:20.106] tcp stream <81> lookup host => 78.47.40.68:443 domain => ephemeralcounters.api.roblox.com host => <null> ip => 198.18.0.8
+[19:19:20.106] tcp stream <81> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ephemeralcounters.api.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:20.106] tcp stream <83> match tcp request => ecsv2.roblox.com:443, cost => 14.172077 ms
+[19:19:20.106] tcp stream <83> async lookup host => ecsv2.roblox.com:443 => 198.18.0.7
+[19:19:20.106] tcp stream <84> match tcp request => ecsv2.roblox.com:443, cost => 12.394071 ms
+[19:19:20.106] tcp stream <84> async lookup host => ecsv2.roblox.com:443 => 198.18.0.7
+[19:19:20.106] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:20.106] tcp stream <83> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.048041 ms
+[19:19:20.106] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:20.106] tcp stream <84> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.036955 ms
+[19:19:20.106] tcp stream <83> proxy lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:20.106] tcp stream <83> lookup host => 78.47.40.68:443 domain => ecsv2.roblox.com host => <null> ip => 198.18.0.7
+[19:19:20.106] tcp stream <83> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:20.106] tcp stream <84> proxy lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:20.106] tcp stream <84> lookup host => 78.47.40.68:443 domain => ecsv2.roblox.com host => <null> ip => 198.18.0.7
+[19:19:20.106] tcp stream <84> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:20.106] tcp tunnel dummy ip 198.18.0.30 => metrics.roblox.com
+[19:19:20.106] tcp stream <86> start host => metrics.roblox.com port => 443 total => 45
+[19:19:20.112] tcp stream <85> match tcp request => realtime-signalr.roblox.com:443, cost => 13.834953 ms
+[19:19:20.112] tcp stream <85> async lookup host => realtime-signalr.roblox.com:443 => 198.18.0.10
+[19:19:20.112] dns response cache expired => 0, realtime-signalr.roblox.com => 128.116.44.3 
+[19:19:20.112] tcp stream <85> async lookup host => realtime-signalr.roblox.com:443 result => 128.116.44.3 cost => 0.036955 ms
+[19:19:20.112] tcp stream <85> proxy lookup host => realtime-signalr.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:20.112] tcp stream <85> lookup host => 78.47.40.68:443 domain => realtime-signalr.roblox.com host => <null> ip => 198.18.0.10
+[19:19:20.112] tcp stream <85> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = realtime-signalr.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:20.119] tcp stream <86> match tcp request => metrics.roblox.com:443, cost => 14.688969 ms
+[19:19:20.119] tcp stream <86> async lookup host => metrics.roblox.com:443 => 198.18.0.30
+[19:19:20.120] dns query <59> did start => 59#metrics.roblox.com total => 0
+[19:19:20.120] dns query <59> any send ipv4 metrics.roblox.com to 213.87.0.1
+[19:19:20.120] dns query <59> any send ipv4 metrics.roblox.com to 213.87.1.1
+[19:19:20.215] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:20.215] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:20.217] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:20.217] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:20.219] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:20.226] dns query <59> response metrics.roblox.com from 213.87.1.1
+[19:19:20.226] tcp stream <86> async lookup host => metrics.roblox.com:443 result => 128.116.44.3 cost => 106.520057 ms
+[19:19:20.226] dns query <59> did finish 59#metrics.roblox.com => success total => 2
+[19:19:20.226] dns response record => {
+	result = 128.116.44.3,
+	host = metrics.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 106
+}
+[19:19:20.226] tcp stream <86> proxy lookup host => metrics.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:20.226] tcp stream <86> lookup host => 78.47.40.68:443 domain => metrics.roblox.com host => <null> ip => 198.18.0.30
+[19:19:20.226] tcp stream <86> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = metrics.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:20.270] dns query <59> cancel from 213.87.0.1
+[19:19:20.299] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:20.314] proxy stream <82> did connect to host => clientsettingscdn.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 229.950070 ms
+[19:19:20.315] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:20.317] tcp stream <84> connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 213.913918 ms
+[19:19:20.317] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:20.322] tcp stream <81> connect to host => ephemeralcounters.api.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 219.547987 ms
+[19:19:20.322] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:20.337] proxy stream <75> disconnect gateway.icloud.com:443 error => Socket closed by remote peer reason => none cost => 3174.018025 ms
+[19:19:20.339] tcp stream <83> connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 236.513019 ms
+[19:19:20.339] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:20.344] tcp stream <85> connect to host => realtime-signalr.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 232.216954 ms
+[19:19:20.344] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:20.407] tcp stream <86> connect to host => metrics.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 180.292010 ms
+[19:19:20.407] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:20.661] proxy stream <87> loopback => 1 total => 20
+[19:19:20.661] proxy stream <87> async lookup rule url => users.roblox.com:443 host => users.roblox.com port => 443
+[19:19:20.661] proxy stream <87> async lookup host => users.roblox.com:443
+[19:19:20.661] dns response cache expired => 0, users.roblox.com => 128.116.44.3 
+[19:19:20.661] proxy stream <87> async lookup host => users.roblox.com:443 result => 128.116.44.3 cost => 0.084043 ms
+[19:19:20.661] proxy stream <87> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = users.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:20.661] proxy stream <87> lookup host => users.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:20.661] proxy stream <87> lookup host => 78.47.40.68:443
+[19:19:20.737] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:20.834] proxy stream <87> did connect to host => users.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 173.101068 ms
+[19:19:20.834] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:22.069] utun query => games.roblox.com type => 1
+[19:19:22.069] utun response dummy ip => games.roblox.com response => 198.18.0.31
+[19:19:22.069] utun query => games.roblox.com type => 28
+[19:19:22.069] utun response dummy ip => games.roblox.com response => ::ffff:198.18.0.31
+[19:19:22.071] tcp tunnel dummy ip 198.18.0.31 => games.roblox.com
+[19:19:22.071] tcp stream <88> start host => games.roblox.com port => 443 total => 46
+[19:19:22.071] utun query => voice.roblox.com type => 1
+[19:19:22.071] utun response dummy ip => voice.roblox.com response => 198.18.0.32
+[19:19:22.072] utun query => voice.roblox.com type => 28
+[19:19:22.072] utun response dummy ip => voice.roblox.com response => ::ffff:198.18.0.32
+[19:19:22.073] tcp tunnel dummy ip 198.18.0.32 => voice.roblox.com
+[19:19:22.074] tcp stream <89> start host => voice.roblox.com port => 443 total => 47
+[19:19:22.082] tcp stream <88> match tcp request => games.roblox.com:443, cost => 11.225939 ms
+[19:19:22.082] tcp stream <88> async lookup host => games.roblox.com:443 => 198.18.0.31
+[19:19:22.082] dns query <61> did start => 61#games.roblox.com total => 0
+[19:19:22.082] dns query <61> any send ipv4 games.roblox.com to 213.87.0.1
+[19:19:22.082] dns query <61> any send ipv4 games.roblox.com to 213.87.1.1
+[19:19:22.088] tcp stream <89> match tcp request => voice.roblox.com:443, cost => 14.925957 ms
+[19:19:22.089] tcp stream <89> async lookup host => voice.roblox.com:443 => 198.18.0.32
+[19:19:22.089] dns query <63> did start => 63#voice.roblox.com total => 2
+[19:19:22.089] dns query <63> any send ipv4 voice.roblox.com to 213.87.0.1
+[19:19:22.089] dns query <63> any send ipv4 voice.roblox.com to 213.87.1.1
+[19:19:22.130] dns query <61> response games.roblox.com from 213.87.1.1
+[19:19:22.130] tcp stream <88> async lookup host => games.roblox.com:443 result => 128.116.44.3 cost => 47.565937 ms
+[19:19:22.130] dns query <61> did finish 61#games.roblox.com => success total => 4
+[19:19:22.130] dns response record => {
+	result = 128.116.44.3,
+	host = games.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 47
+}
+[19:19:22.130] tcp stream <88> proxy lookup host => games.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:22.130] tcp stream <88> lookup host => 78.47.40.68:443 domain => games.roblox.com host => <null> ip => 198.18.0.31
+[19:19:22.130] tcp stream <88> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = games.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:22.135] dns query <61> cancel from 213.87.0.1
+[19:19:22.136] dns query <63> response voice.roblox.com from 213.87.0.1
+[19:19:22.136] tcp stream <89> async lookup host => voice.roblox.com:443 result => 128.116.44.3 cost => 47.485948 ms
+[19:19:22.136] dns query <63> did finish 63#voice.roblox.com => success total => 2
+[19:19:22.136] dns response record => {
+	result = 128.116.44.3,
+	host = voice.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 47
+}
+[19:19:22.136] tcp stream <89> proxy lookup host => voice.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:22.136] tcp stream <89> lookup host => 78.47.40.68:443 domain => voice.roblox.com host => <null> ip => 198.18.0.32
+[19:19:22.137] tcp stream <89> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = voice.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:22.157] dns query <63> cancel from 213.87.1.1
+[19:19:22.195] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:22.216] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:22.293] tcp stream <88> connect to host => games.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 162.965894 ms
+[19:19:22.293] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:22.350] tcp stream <89> connect to host => voice.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 214.025021 ms
+[19:19:22.350] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:22.468] tcp tunnel dummy ip 198.18.0.13 => thumbnails.roblox.com
+[19:19:22.468] tcp stream <90> start host => thumbnails.roblox.com port => 443 total => 48
+[19:19:22.482] tcp stream <90> match tcp request => thumbnails.roblox.com:443, cost => 14.203072 ms
+[19:19:22.482] tcp stream <90> async lookup host => thumbnails.roblox.com:443 => 198.18.0.13
+[19:19:22.482] dns response cache expired => 0, thumbnails.roblox.com => 128.116.44.3 
+[19:19:22.482] tcp stream <90> async lookup host => thumbnails.roblox.com:443 result => 128.116.44.3 cost => 0.092983 ms
+[19:19:22.482] tcp stream <90> proxy lookup host => thumbnails.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:22.482] tcp stream <90> lookup host => 78.47.40.68:443 domain => thumbnails.roblox.com host => <null> ip => 198.18.0.13
+[19:19:22.483] tcp stream <90> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = thumbnails.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:22.556] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:22.681] tcp stream <90> connect to host => thumbnails.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 198.361993 ms
+[19:19:22.681] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:22.758] proxy stream <91> loopback => 1 total => 21
+[19:19:22.758] proxy stream <91> async lookup rule url => gspe1-ssl.ls.apple.com:443 host => gspe1-ssl.ls.apple.com port => 443
+[19:19:22.758] proxy stream <91> tcp rule => {
+	result = DOMAIN-SUFFIX,apple.com,DIRECT,
+	ns = 21,
+	url = gspe1-ssl.ls.apple.com:443,
+	type = DIRECT,
+	ua = TCP Stream
+}
+[19:19:22.758] proxy stream <91> lookup host => gspe1-ssl.ls.apple.com:443
+[19:19:22.759] dns response cache expired => 0, gspe1-ssl.ls.apple.com => 92.123.135.139 
+[19:19:22.759] proxy stream <91> lookup host => gspe1-ssl.ls.apple.com:443 result => 92.123.135.139 cost => 0.069022 ms
+[19:19:22.818] proxy stream <91> did connect to host => gspe1-ssl.ls.apple.com:443 > 92.123.135.139:443 fastopen => 0 cost => 59.607029 ms
+[19:19:23.300] utun query => fts.rbxcdn.com type => 1
+[19:19:23.300] utun response dummy ip => fts.rbxcdn.com response => 198.18.0.33
+[19:19:23.300] utun query => fts.rbxcdn.com type => 28
+[19:19:23.300] utun response dummy ip => fts.rbxcdn.com response => ::ffff:198.18.0.33
+[19:19:23.303] tcp tunnel dummy ip 198.18.0.33 => fts.rbxcdn.com
+[19:19:23.303] tcp stream <92> start host => fts.rbxcdn.com port => 443 total => 49
+[19:19:23.315] tcp stream <92> match tcp request => fts.rbxcdn.com:443, cost => 12.854099 ms
+[19:19:23.316] tcp stream <92> async lookup host => fts.rbxcdn.com:443 => 198.18.0.33
+[19:19:23.316] dns query <65> did start => 65#fts.rbxcdn.com total => 0
+[19:19:23.316] dns query <65> any send ipv4 fts.rbxcdn.com to 213.87.0.1
+[19:19:23.316] dns query <65> any send ipv4 fts.rbxcdn.com to 213.87.1.1
+[19:19:23.389] dns query <65> response fts.rbxcdn.com from 213.87.1.1
+[19:19:23.389] tcp stream <92> async lookup host => fts.rbxcdn.com:443 result => 108.159.120.25 cost => 73.361993 ms
+[19:19:23.389] dns query <65> did finish 65#fts.rbxcdn.com => success total => 2
+[19:19:23.389] dns response record => {
+	result = 108.159.120.25,
+	host = fts.rbxcdn.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 73
+}
+[19:19:23.389] tcp stream <92> proxy lookup host => fts.rbxcdn.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:23.389] tcp stream <92> lookup host => 78.47.40.68:443 domain => fts.rbxcdn.com host => <null> ip => 198.18.0.33
+[19:19:23.389] tcp stream <92> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = fts.rbxcdn.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:23.390] dns query <65> cancel from 213.87.0.1
+[19:19:23.457] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:23.566] tcp stream <92> connect to host => fts.rbxcdn.com:443 > 78.47.40.68:443, fastopen => 0, cost => 176.613927 ms
+[19:19:23.566] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:23.720] utun query => gamejoin.roblox.com type => 1
+[19:19:23.720] utun response dummy ip => gamejoin.roblox.com response => 198.18.0.34
+[19:19:23.720] utun query => gamejoin.roblox.com type => 28
+[19:19:23.721] utun response dummy ip => gamejoin.roblox.com response => ::ffff:198.18.0.34
+[19:19:23.722] tcp tunnel dummy ip 198.18.0.34 => gamejoin.roblox.com
+[19:19:23.722] tcp stream <93> start host => gamejoin.roblox.com port => 443 total => 50
+[19:19:23.737] tcp stream <93> match tcp request => gamejoin.roblox.com:443, cost => 14.917970 ms
+[19:19:23.737] tcp stream <93> async lookup host => gamejoin.roblox.com:443 => 198.18.0.34
+[19:19:23.737] dns query <67> did start => 67#gamejoin.roblox.com total => 0
+[19:19:23.737] dns query <67> any send ipv4 gamejoin.roblox.com to 213.87.0.1
+[19:19:23.737] dns query <67> any send ipv4 gamejoin.roblox.com to 213.87.1.1
+[19:19:23.782] dns query <67> response gamejoin.roblox.com from 213.87.1.1
+[19:19:23.782] tcp stream <93> async lookup host => gamejoin.roblox.com:443 result => 128.116.44.3 cost => 44.588089 ms
+[19:19:23.782] dns query <67> did finish 67#gamejoin.roblox.com => success total => 2
+[19:19:23.782] tcp stream <93> proxy lookup host => gamejoin.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:23.782] tcp stream <93> lookup host => 78.47.40.68:443 domain => gamejoin.roblox.com host => <null> ip => 198.18.0.34
+[19:19:23.782] dns response record => {
+	result = 128.116.44.3,
+	host = gamejoin.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 44
+}
+[19:19:23.782] tcp stream <93> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = gamejoin.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:23.784] dns query <67> cancel from 213.87.0.1
+[19:19:23.926] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:24.291] tcp stream <93> connect to host => gamejoin.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 509.216905 ms
+[19:19:24.291] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:24.713] udp tunnel send packet to relay server 78.47.40.68:443 from 198.18.0.1:58202
+[19:19:24.713] relay socket <128.116.46.33:51451:58202> init => 78.47.40.68:443
+[19:19:24.713] relay socket <128.116.46.33:51451:58202> => lookup host => 78.47.40.68:443
+[19:19:24.713] udp tunnel create proxy relay => 128.116.46.33:51451 <-> 78.47.40.68:443 total => 1
+[19:19:24.713] udp tunnel match rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ua = UDP Relay,
+	type = PROXY,
+	url = 128.116.46.33:51451,
+	ns = 112
+}
+[19:19:24.780] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:24.877] relay socket <128.116.46.33:51451:58202> connect to host => 78.47.40.68:443
+[19:19:24.877] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:24.877] relay socket <128.116.46.33:51451:58202> send pending packets => 1
+[19:19:27.836] tcp tunnel dummy ip 198.18.0.17 => assetdelivery.roblox.com
+[19:19:27.836] tcp stream <94> start host => assetdelivery.roblox.com port => 443 total => 51
+[19:19:27.850] tcp stream <94> match tcp request => assetdelivery.roblox.com:443, cost => 14.094949 ms
+[19:19:27.850] tcp stream <94> async lookup host => assetdelivery.roblox.com:443 => 198.18.0.17
+[19:19:27.850] dns response cache expired => 0, assetdelivery.roblox.com => 128.116.44.3 
+[19:19:27.850] tcp stream <94> async lookup host => assetdelivery.roblox.com:443 result => 128.116.44.3 cost => 0.271082 ms
+[19:19:27.850] tcp stream <94> proxy lookup host => assetdelivery.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:27.850] tcp stream <94> lookup host => 78.47.40.68:443 domain => assetdelivery.roblox.com host => <null> ip => 198.18.0.17
+[19:19:27.850] tcp stream <94> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = assetdelivery.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:27.965] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:28.109] tcp stream <94> connect to host => assetdelivery.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 258.969069 ms
+[19:19:28.109] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:28.729] tcp tunnel dummy ip 198.18.0.17 => assetdelivery.roblox.com
+[19:19:28.729] tcp stream <95> start host => assetdelivery.roblox.com port => 443 total => 52
+[19:19:28.741] tcp stream <95> match tcp request => assetdelivery.roblox.com:443, cost => 11.770010 ms
+[19:19:28.741] tcp stream <95> async lookup host => assetdelivery.roblox.com:443 => 198.18.0.17
+[19:19:28.741] dns response cache expired => 0, assetdelivery.roblox.com => 128.116.44.3 
+[19:19:28.741] tcp stream <95> async lookup host => assetdelivery.roblox.com:443 result => 128.116.44.3 cost => 0.122070 ms
+[19:19:28.741] tcp stream <95> proxy lookup host => assetdelivery.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:28.741] tcp stream <95> lookup host => 78.47.40.68:443 domain => assetdelivery.roblox.com host => <null> ip => 198.18.0.17
+[19:19:28.741] tcp stream <95> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = assetdelivery.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:28.825] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:28.861] tcp tunnel dummy ip 198.18.0.17 => assetdelivery.roblox.com
+[19:19:28.861] tcp stream <96> start host => assetdelivery.roblox.com port => 443 total => 53
+[19:19:28.872] tcp stream <96> match tcp request => assetdelivery.roblox.com:443, cost => 10.177970 ms
+[19:19:28.872] tcp stream <96> async lookup host => assetdelivery.roblox.com:443 => 198.18.0.17
+[19:19:28.872] dns response cache expired => 0, assetdelivery.roblox.com => 128.116.44.3 
+[19:19:28.872] tcp stream <96> async lookup host => assetdelivery.roblox.com:443 result => 128.116.44.3 cost => 0.247955 ms
+[19:19:28.872] tcp stream <96> proxy lookup host => assetdelivery.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:28.873] tcp stream <96> lookup host => 78.47.40.68:443 domain => assetdelivery.roblox.com host => <null> ip => 198.18.0.17
+[19:19:28.873] tcp stream <96> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = assetdelivery.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:28.928] tcp stream <95> connect to host => assetdelivery.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 186.826944 ms
+[19:19:28.928] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:28.952] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:29.064] tcp stream <96> connect to host => assetdelivery.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 191.606998 ms
+[19:19:29.064] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:29.444] utun query => tracing.roblox.com type => 1
+[19:19:29.444] utun response dummy ip => tracing.roblox.com response => 198.18.0.35
+[19:19:29.445] utun query => tracing.roblox.com type => 28
+[19:19:29.445] utun response dummy ip => tracing.roblox.com response => ::ffff:198.18.0.35
+[19:19:29.446] tcp tunnel dummy ip 198.18.0.35 => tracing.roblox.com
+[19:19:29.446] tcp stream <97> start host => tracing.roblox.com port => 443 total => 54
+[19:19:29.456] tcp stream <97> match tcp request => tracing.roblox.com:443, cost => 10.208011 ms
+[19:19:29.457] tcp stream <97> async lookup host => tracing.roblox.com:443 => 198.18.0.35
+[19:19:29.457] dns query <69> did start => 69#tracing.roblox.com total => 0
+[19:19:29.457] dns query <69> any send ipv4 tracing.roblox.com to 213.87.0.1
+[19:19:29.457] dns query <69> any send ipv4 tracing.roblox.com to 213.87.1.1
+[19:19:29.539] tcp tunnel dummy ip 198.18.0.30 => metrics.roblox.com
+[19:19:29.539] tcp stream <98> start host => metrics.roblox.com port => 443 total => 55
+[19:19:29.540] dns query <69> response tracing.roblox.com from 213.87.0.1
+[19:19:29.540] tcp stream <97> async lookup host => tracing.roblox.com:443 result => 128.116.44.3 cost => 83.696961 ms
+[19:19:29.540] dns query <69> did finish 69#tracing.roblox.com => success total => 2
+[19:19:29.540] dns response record => {
+	result = 128.116.44.3,
+	host = tracing.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 83
+}
+[19:19:29.541] tcp stream <97> proxy lookup host => tracing.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:29.541] tcp stream <97> lookup host => 78.47.40.68:443 domain => tracing.roblox.com host => <null> ip => 198.18.0.35
+[19:19:29.541] tcp stream <97> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = tracing.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:29.548] dns query <69> cancel from 213.87.1.1
+[19:19:29.551] tcp stream <98> match tcp request => metrics.roblox.com:443, cost => 12.495995 ms
+[19:19:29.552] tcp stream <98> async lookup host => metrics.roblox.com:443 => 198.18.0.30
+[19:19:29.552] dns response cache expired => 0, metrics.roblox.com => 128.116.44.3 
+[19:19:29.552] tcp stream <98> async lookup host => metrics.roblox.com:443 result => 128.116.44.3 cost => 0.035048 ms
+[19:19:29.552] tcp stream <98> proxy lookup host => metrics.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:29.552] tcp stream <98> lookup host => 78.47.40.68:443 domain => metrics.roblox.com host => <null> ip => 198.18.0.30
+[19:19:29.552] utun query => groups.roblox.com type => 1
+[19:19:29.552] utun response dummy ip => groups.roblox.com response => 198.18.0.36
+[19:19:29.552] tcp stream <98> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = metrics.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:29.553] utun query => groups.roblox.com type => 28
+[19:19:29.553] utun response dummy ip => groups.roblox.com response => ::ffff:198.18.0.36
+[19:19:29.554] tcp tunnel dummy ip 198.18.0.36 => groups.roblox.com
+[19:19:29.554] tcp stream <99> start host => groups.roblox.com port => 443 total => 56
+[19:19:29.568] tcp stream <99> match tcp request => groups.roblox.com:443, cost => 13.612986 ms
+[19:19:29.568] tcp stream <99> async lookup host => groups.roblox.com:443 => 198.18.0.36
+[19:19:29.568] dns query <71> did start => 71#groups.roblox.com total => 0
+[19:19:29.568] dns query <71> any send ipv4 groups.roblox.com to 213.87.0.1
+[19:19:29.568] dns query <71> any send ipv4 groups.roblox.com to 213.87.1.1
+[19:19:29.631] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:29.635] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:29.656] dns query <71> response groups.roblox.com from 213.87.1.1
+[19:19:29.656] tcp stream <99> async lookup host => groups.roblox.com:443 result => 128.116.44.3 cost => 87.988019 ms
+[19:19:29.656] dns query <71> did finish 71#groups.roblox.com => success total => 2
+[19:19:29.656] tcp stream <99> proxy lookup host => groups.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:29.656] dns response record => {
+	result = 128.116.44.3,
+	host = groups.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 87
+}
+[19:19:29.656] tcp stream <99> lookup host => 78.47.40.68:443 domain => groups.roblox.com host => <null> ip => 198.18.0.36
+[19:19:29.656] tcp stream <99> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = groups.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:29.690] dns query <71> cancel from 213.87.0.1
+[19:19:29.740] tcp stream <98> connect to host => metrics.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 188.220024 ms
+[19:19:29.740] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:29.741] tcp stream <97> connect to host => tracing.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 200.677037 ms
+[19:19:29.741] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:29.806] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:29.895] tcp stream <99> connect to host => groups.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 238.827109 ms
+[19:19:29.895] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:29.935] tcp tunnel dummy ip 198.18.0.17 => assetdelivery.roblox.com
+[19:19:29.935] tcp stream <100> start host => assetdelivery.roblox.com port => 443 total => 57
+[19:19:29.936] tcp tunnel dummy ip 198.18.0.17 => assetdelivery.roblox.com
+[19:19:29.936] tcp stream <101> start host => assetdelivery.roblox.com port => 443 total => 58
+[19:19:29.946] tcp stream <100> match tcp request => assetdelivery.roblox.com:443, cost => 11.428952 ms
+[19:19:29.946] tcp stream <100> async lookup host => assetdelivery.roblox.com:443 => 198.18.0.17
+[19:19:29.946] dns response cache expired => 0, assetdelivery.roblox.com => 128.116.44.3 
+[19:19:29.946] tcp stream <100> async lookup host => assetdelivery.roblox.com:443 result => 128.116.44.3 cost => 0.100970 ms
+[19:19:29.946] tcp stream <100> proxy lookup host => assetdelivery.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:29.947] tcp stream <100> lookup host => 78.47.40.68:443 domain => assetdelivery.roblox.com host => <null> ip => 198.18.0.17
+[19:19:29.947] tcp stream <100> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = assetdelivery.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:29.947] tcp stream <101> match tcp request => assetdelivery.roblox.com:443, cost => 10.710955 ms
+[19:19:29.947] tcp stream <101> async lookup host => assetdelivery.roblox.com:443 => 198.18.0.17
+[19:19:29.947] dns response cache expired => 0, assetdelivery.roblox.com => 128.116.44.3 
+[19:19:29.947] tcp stream <101> async lookup host => assetdelivery.roblox.com:443 result => 128.116.44.3 cost => 0.072002 ms
+[19:19:29.947] tcp stream <101> proxy lookup host => assetdelivery.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:29.947] tcp stream <101> lookup host => 78.47.40.68:443 domain => assetdelivery.roblox.com host => <null> ip => 198.18.0.17
+[19:19:29.947] tcp stream <101> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = assetdelivery.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:30.033] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:30.037] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:30.130] tcp stream <100> connect to host => assetdelivery.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 183.284044 ms
+[19:19:30.130] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:30.130] tcp stream <101> connect to host => assetdelivery.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 182.893038 ms
+[19:19:30.130] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:31.146] utun query => gameinternationalization.roblox.com type => 1
+[19:19:31.146] utun response dummy ip => gameinternationalization.roblox.com response => 198.18.0.37
+[19:19:31.146] utun query => gameinternationalization.roblox.com type => 28
+[19:19:31.146] utun response dummy ip => gameinternationalization.roblox.com response => ::ffff:198.18.0.37
+[19:19:31.146] tcp tunnel dummy ip 198.18.0.37 => gameinternationalization.roblox.com
+[19:19:31.147] tcp stream <102> start host => gameinternationalization.roblox.com port => 443 total => 59
+[19:19:31.159] tcp stream <102> match tcp request => gameinternationalization.roblox.com:443, cost => 12.485981 ms
+[19:19:31.159] tcp stream <102> async lookup host => gameinternationalization.roblox.com:443 => 198.18.0.37
+[19:19:31.159] dns query <73> did start => 73#gameinternationalization.roblox.com total => 0
+[19:19:31.159] dns query <73> any send ipv4 gameinternationalization.roblox.com to 213.87.0.1
+[19:19:31.159] dns query <73> any send ipv4 gameinternationalization.roblox.com to 213.87.1.1
+[19:19:31.214] dns query <73> response gameinternationalization.roblox.com from 213.87.1.1
+[19:19:31.214] tcp stream <102> async lookup host => gameinternationalization.roblox.com:443 result => 128.116.44.3 cost => 54.753065 ms
+[19:19:31.214] dns query <73> did finish 73#gameinternationalization.roblox.com => success total => 2
+[19:19:31.214] dns response record => {
+	result = 128.116.44.3,
+	host = gameinternationalization.roblox.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 54
+}
+[19:19:31.214] tcp stream <102> proxy lookup host => gameinternationalization.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:31.214] tcp stream <102> lookup host => 78.47.40.68:443 domain => gameinternationalization.roblox.com host => <null> ip => 198.18.0.37
+[19:19:31.214] tcp stream <102> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = gameinternationalization.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:31.275] dns query <73> cancel from 213.87.0.1
+[19:19:31.290] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:31.407] tcp stream <102> connect to host => gameinternationalization.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 191.915035 ms
+[19:19:31.407] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:32.671] proxy stream <103> loopback => 1 total => 22
+[19:19:32.671] proxy stream <103> async lookup rule url => sun9-9.userapi.com:443 host => sun9-9.userapi.com port => 443
+[19:19:32.671] proxy stream <103> async lookup host => sun9-9.userapi.com:443
+[19:19:32.671] dns query <75> did start => 75#sun9-9.userapi.com total => 0
+[19:19:32.672] dns query <75> any send ipv4 sun9-9.userapi.com to 213.87.0.1
+[19:19:32.672] dns query <75> any send ipv4 sun9-9.userapi.com to 213.87.1.1
+[19:19:32.683] proxy stream <104> loopback => 1 total => 23
+[19:19:32.683] proxy stream <104> async lookup rule url => api.vk.com:443 host => api.vk.com port => 443
+[19:19:32.683] proxy stream <104> async lookup host => api.vk.com:443
+[19:19:32.683] dns query <77> did start => 77#api.vk.com total => 2
+[19:19:32.683] dns query <77> any send ipv4 api.vk.com to 213.87.0.1
+[19:19:32.683] dns query <77> any send ipv4 api.vk.com to 213.87.1.1
+[19:19:32.732] dns query <77> response api.vk.com from 213.87.0.1
+[19:19:32.732] proxy stream <104> async lookup host => api.vk.com:443 result => 87.240.139.193 cost => 49.396992 ms
+[19:19:32.732] dns query <77> did finish 77#api.vk.com => success total => 4
+[19:19:32.732] dns response record => {
+	result = 87.240.139.193,
+	host = api.vk.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 49
+}
+[19:19:32.734] proxy stream <104> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = api.vk.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:32.734] proxy stream <104> lookup host => api.vk.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:32.734] proxy stream <104> lookup host => 78.47.40.68:443
+[19:19:32.735] dns query <75> response sun9-9.userapi.com from 213.87.0.1
+[19:19:32.735] proxy stream <103> async lookup host => sun9-9.userapi.com:443 result => 87.240.169.23 cost => 63.830972 ms
+[19:19:32.735] dns query <75> did finish 75#sun9-9.userapi.com => success total => 2
+[19:19:32.736] dns response record => {
+	result = 87.240.169.23,
+	host = sun9-9.userapi.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 63
+}
+[19:19:32.736] proxy stream <103> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = sun9-9.userapi.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:32.736] proxy stream <103> lookup host => sun9-9.userapi.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:32.736] dns query <77> cancel from 213.87.1.1
+[19:19:32.736] dns query <75> cancel from 213.87.1.1
+[19:19:32.736] proxy stream <103> lookup host => 78.47.40.68:443
+[19:19:32.832] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:32.852] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:32.924] proxy stream <103> did connect to host => sun9-9.userapi.com:443 > 78.47.40.68:443 fastopen => 0 cost => 188.663960 ms
+[19:19:32.924] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:32.993] proxy stream <104> did connect to host => api.vk.com:443 > 78.47.40.68:443 fastopen => 0 cost => 259.513021 ms
+[19:19:32.993] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:33.347] proxy stream <105> loopback => 1 total => 24
+[19:19:33.348] proxy stream <105> async lookup rule url => api.vk.com:443 host => api.vk.com port => 443
+[19:19:33.348] proxy stream <105> async lookup host => api.vk.com:443
+[19:19:33.348] dns response cache expired => 0, api.vk.com => 87.240.139.193 
+[19:19:33.348] proxy stream <105> async lookup host => api.vk.com:443 result => 87.240.139.193 cost => 0.051975 ms
+[19:19:33.348] proxy stream <105> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = api.vk.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:33.348] proxy stream <105> lookup host => api.vk.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:33.348] proxy stream <105> lookup host => 78.47.40.68:443
+[19:19:33.445] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:33.553] proxy stream <105> did connect to host => api.vk.com:443 > 78.47.40.68:443 fastopen => 0 cost => 204.416990 ms
+[19:19:33.553] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:34.267] proxy stream <105> disconnect api.vk.com:443 error => Socket closed by remote peer reason => none cost => 919.459939 ms
+[19:19:34.267] proxy stream <104> disconnect api.vk.com:443 error => Socket closed by remote peer reason => none cost => 1584.692001 ms
+[19:19:35.118] udp tunnel remove 128.116.46.33:51451:58202 => 0
+[19:19:36.189] network manager network path => satisfied (Path is satisfied), interface: pdp_ip0[lte], scoped, ipv4, dns, expensive, uses cell, LQM: minimal
+[19:19:36.189] network manager new path is equal to old path
+[19:19:37.058] proxy stream <106> loopback => 1 total => 25
+[19:19:37.058] proxy stream <106> async lookup rule url => ecsv2.roblox.com:443 host => ecsv2.roblox.com port => 443
+[19:19:37.058] proxy stream <106> async lookup host => ecsv2.roblox.com:443
+[19:19:37.058] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:37.058] proxy stream <106> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.056982 ms
+[19:19:37.058] proxy stream <106> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:37.058] proxy stream <106> lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:37.058] proxy stream <106> lookup host => 78.47.40.68:443
+[19:19:37.135] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:37.236] proxy stream <106> did connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 177.754045 ms
+[19:19:37.240] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:37.514] proxy stream <107> loopback => 1 total => 26
+[19:19:37.517] proxy stream <107> async lookup rule url => ecsv2.roblox.com:443 host => ecsv2.roblox.com port => 443
+[19:19:37.517] proxy stream <107> async lookup host => ecsv2.roblox.com:443
+[19:19:37.517] dns response cache expired => 0, ecsv2.roblox.com => 128.116.44.3 
+[19:19:37.517] proxy stream <107> async lookup host => ecsv2.roblox.com:443 result => 128.116.44.3 cost => 0.047922 ms
+[19:19:37.517] proxy stream <107> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ecsv2.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:37.517] proxy stream <107> lookup host => ecsv2.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:37.517] proxy stream <107> lookup host => 78.47.40.68:443
+[19:19:37.592] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:37.610] tcp tunnel dummy ip 198.18.0.8 => ephemeralcounters.api.roblox.com
+[19:19:37.610] tcp stream <108> start host => ephemeralcounters.api.roblox.com port => 443 total => 60
+[19:19:37.626] tcp stream <108> match tcp request => ephemeralcounters.api.roblox.com:443, cost => 15.029907 ms
+[19:19:37.626] tcp stream <108> async lookup host => ephemeralcounters.api.roblox.com:443 => 198.18.0.8
+[19:19:37.626] dns response cache expired => 0, ephemeralcounters.api.roblox.com => 128.116.44.3 
+[19:19:37.626] tcp stream <108> async lookup host => ephemeralcounters.api.roblox.com:443 result => 128.116.44.3 cost => 0.038028 ms
+[19:19:37.626] tcp stream <108> proxy lookup host => ephemeralcounters.api.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:37.626] tcp stream <108> lookup host => 78.47.40.68:443 domain => ephemeralcounters.api.roblox.com host => <null> ip => 198.18.0.8
+[19:19:37.626] tcp stream <108> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = ephemeralcounters.api.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:37.694] proxy stream <107> did connect to host => ecsv2.roblox.com:443 > 78.47.40.68:443 fastopen => 0 cost => 179.643989 ms
+[19:19:37.694] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:37.696] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:37.701] tcp stream <85> local tcp error => realtime-signalr.roblox.com error => , state => 4
+[19:19:37.701] tcp stream <85> remove host => realtime-signalr.roblox.com port => 443 total => 59
+[19:19:37.818] tcp stream <108> connect to host => ephemeralcounters.api.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 192.565918 ms
+[19:19:37.818] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:38.533] utun query => client-telemetry.roblox.com type => 1
+[19:19:38.533] utun response dummy ip => client-telemetry.roblox.com response => 198.18.0.38
+[19:19:38.535] utun query => client-telemetry.roblox.com type => 28
+[19:19:38.535] utun response dummy ip => client-telemetry.roblox.com response => ::ffff:198.18.0.38
+[19:19:38.538] tcp tunnel dummy ip 198.18.0.38 => client-telemetry.roblox.com
+[19:19:38.538] tcp stream <109> start host => client-telemetry.roblox.com port => 443 total => 60
+[19:19:38.551] tcp stream <109> match tcp request => client-telemetry.roblox.com:443, cost => 12.106061 ms
+[19:19:38.551] tcp stream <109> async lookup host => client-telemetry.roblox.com:443 => 198.18.0.38
+[19:19:38.551] dns query <79> did start => 79#client-telemetry.roblox.com total => 0
+[19:19:38.551] dns query <79> any send ipv4 client-telemetry.roblox.com to 213.87.0.1
+[19:19:38.551] dns query <79> any send ipv4 client-telemetry.roblox.com to 213.87.1.1
+[19:19:38.632] dns query <79> response client-telemetry.roblox.com from 213.87.0.1
+[19:19:38.632] tcp stream <109> async lookup host => client-telemetry.roblox.com:443 result => 128.116.44.3 cost => 81.121087 ms
+[19:19:38.632] dns query <79> did finish 79#client-telemetry.roblox.com => success total => 2
+[19:19:38.632] dns response record => {
+	result = 128.116.44.3,
+	host = client-telemetry.roblox.com,
+	type = 1,
+	server = 213.87.0.1,
+	elapsed = 81
+}
+[19:19:38.632] tcp stream <109> proxy lookup host => client-telemetry.roblox.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:38.632] tcp stream <109> lookup host => 78.47.40.68:443 domain => client-telemetry.roblox.com host => <null> ip => 198.18.0.38
+[19:19:38.633] tcp stream <109> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = client-telemetry.roblox.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:38.674] dns query <79> cancel from 213.87.1.1
+[19:19:38.725] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:38.818] tcp stream <109> connect to host => client-telemetry.roblox.com:443 > 78.47.40.68:443, fastopen => 0, cost => 185.585976 ms
+[19:19:38.818] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header
+[19:19:39.246] tcp stream <102> local tcp did close => gameinternationalization.roblox.com, state => 9, cost => 8099.431992 ms
+[19:19:39.246] proxy stream <107> disconnect ecsv2.roblox.com:443 error => Socket closed by remote peer reason => none cost => 1732.461095 ms
+[19:19:39.273] tcp stream <108> local tcp did close => ephemeralcounters.api.roblox.com, state => 9, cost => 1636.024952 ms
+[19:19:39.273] tcp stream <99> local tcp did close => groups.roblox.com, state => 9, cost => 9692.286968 ms
+[19:19:39.273] tcp stream <98> local tcp did close => metrics.roblox.com, state => 9, cost => 9708.039045 ms
+[19:19:39.273] proxy stream <106> disconnect ecsv2.roblox.com:443 error => Socket closed by remote peer reason => none cost => 2188.986063 ms
+[19:19:39.273] tcp stream <101> local tcp did close => assetdelivery.roblox.com, state => 9, cost => 9310.903907 ms
+[19:19:39.273] tcp stream <96> local tcp did close => assetdelivery.roblox.com, state => 9, cost => 10386.313081 ms
+[19:19:39.273] tcp stream <95> local tcp did close => assetdelivery.roblox.com, state => 9, cost => 10518.714070 ms
+[19:19:39.273] tcp stream <94> local tcp did close => assetdelivery.roblox.com, state => 9, cost => 11411.973953 ms
+[19:19:39.273] proxy stream <82> disconnect clientsettingscdn.roblox.com:443 error => Socket closed by remote peer reason => none cost => 19163.462996 ms
+[19:19:39.273] tcp stream <100> local tcp did close => assetdelivery.roblox.com, state => 9, cost => 9313.000917 ms
+[19:19:39.273] tcp stream <97> local tcp did close => tracing.roblox.com, state => 9, cost => 9801.681995 ms
+[19:19:39.273] tcp stream <93> local tcp did close => gamejoin.roblox.com, state => 9, cost => 15525.661945 ms
+[19:19:39.273] tcp stream <92> local tcp error => fts.rbxcdn.com error => , state => 4
+[19:19:39.273] tcp stream <102> remove host => gameinternationalization.roblox.com port => 443 total => 59
+[19:19:39.274] tcp stream <90> local tcp did close => thumbnails.roblox.com, state => 9, cost => 16780.956984 ms
+[19:19:39.274] tcp stream <89> local tcp did close => voice.roblox.com, state => 9, cost => 17175.532937 ms
+[19:19:39.274] tcp stream <108> remove host => ephemeralcounters.api.roblox.com port => 443 total => 58
+[19:19:39.274] tcp stream <88> local tcp did close => games.roblox.com, state => 9, cost => 17178.794980 ms
+[19:19:39.274] tcp stream <83> local tcp did close => ecsv2.roblox.com, state => 9, cost => 19161.483049 ms
+[19:19:39.274] tcp stream <84> local tcp did close => ecsv2.roblox.com, state => 9, cost => 19160.678029 ms
+[19:19:39.274] proxy stream <87> disconnect users.roblox.com:443 error => Socket closed by remote peer reason => none cost => 18590.587020 ms
+[19:19:39.274] tcp stream <99> remove host => groups.roblox.com port => 443 total => 57
+[19:19:39.274] tcp stream <81> local tcp did close => ephemeralcounters.api.roblox.com, state => 9, cost => 19168.071032 ms
+[19:19:39.274] tcp stream <86> local tcp did close => metrics.roblox.com, state => 9, cost => 19147.053003 ms
+[19:19:39.274] tcp stream <80> local tcp did close => ecsv2.roblox.com, state => 9, cost => 19377.902985 ms
+[19:19:39.274] tcp stream <79> local tcp did close => ecsv2.roblox.com, state => 9, cost => 19378.491044 ms
+[19:19:39.274] tcp stream <98> remove host => metrics.roblox.com port => 443 total => 56
+[19:19:39.274] tcp stream <77> local tcp did close => ephemeralcounters.api.roblox.com, state => 9, cost => 19412.279010 ms
+[19:19:39.274] tcp stream <74> local tcp did close => contacts.roblox.com, state => 9, cost => 22635.540009 ms
+[19:19:39.274] tcp stream <72> local tcp did close => presence.roblox.com, state => 9, cost => 22986.611962 ms
+[19:19:39.274] tcp stream <71> local tcp did close => tr.rbxcdn.com, state => 9, cost => 23042.572975 ms
+[19:19:39.274] tcp stream <69> local tcp did close => accountinformation.roblox.com, state => 9, cost => 23122.446895 ms
+[19:19:39.274] tcp stream <101> remove host => assetdelivery.roblox.com port => 443 total => 55
+[19:19:39.274] tcp stream <68> local tcp did close => avatar.roblox.com, state => 9, cost => 23620.146036 ms
+[19:19:39.274] tcp stream <67> local tcp did close => catalog.roblox.com, state => 9, cost => 23622.438073 ms
+[19:19:39.274] tcp stream <66> local tcp did close => economy.roblox.com, state => 9, cost => 23626.536012 ms
+[19:19:39.274] tcp stream <96> remove host => assetdelivery.roblox.com port => 443 total => 54
+[19:19:39.274] tcp stream <65> local tcp did close => apis.rbxcdn.com, state => 9, cost => 23627.148986 ms
+[19:19:39.274] tcp stream <64> local tcp did close => notifications.roblox.com, state => 9, cost => 23627.474070 ms
+[19:19:39.274] tcp stream <95> remove host => assetdelivery.roblox.com port => 443 total => 53
+[19:19:39.274] tcp stream <63> local tcp did close => privatemessages.roblox.com, state => 9, cost => 23629.124999 ms
+[19:19:39.274] tcp stream <61> local tcp did close => clientsettings.roblox.com, state => 9, cost => 23735.607028 ms
+[19:19:39.274] tcp stream <60> local tcp did close => usermoderation.roblox.com, state => 9, cost => 23737.081051 ms
+[19:19:39.274] tcp stream <94> remove host => assetdelivery.roblox.com port => 443 total => 52
+[19:19:39.274] tcp stream <57> local tcp did close => accountsettings.roblox.com, state => 9, cost => 23775.941968 ms
+[19:19:39.274] tcp stream <109> local tcp did close => client-telemetry.roblox.com, state => 9, cost => 718.068957 ms
+[19:19:39.274] tcp stream <54> local tcp did close => ephemeralcounters.api.roblox.com, state => 9, cost => 23912.847042 ms
+[19:19:39.274] tcp stream <53> local tcp did close => assetdelivery.roblox.com, state => 9, cost => 23940.153003 ms
+[19:19:39.275] tcp stream <52> local tcp did close => thumbnails.roblox.com, state => 9, cost => 24021.689057 ms
+[19:19:39.275] tcp stream <100> remove host => assetdelivery.roblox.com port => 443 total => 51
+[19:19:39.275] tcp stream <51> local tcp did close => apis.roblox.com, state => 9, cost => 24360.702038 ms
+[19:19:39.275] tcp stream <50> local tcp did close => apis.roblox.com, state => 9, cost => 24392.811060 ms
+[19:19:39.275] tcp stream <97> remove host => tracing.roblox.com port => 443 total => 50
+[19:19:39.275] tcp stream <49> local tcp did close => apis.roblox.com, state => 9, cost => 24393.671036 ms
+[19:19:39.275] tcp stream <48> local tcp did close => users.roblox.com, state => 9, cost => 24409.469962 ms
+[19:19:39.275] tcp stream <47> local tcp did close => apis.roblox.com, state => 9, cost => 24410.267949 ms
+[19:19:39.275] tcp stream <44> local tcp did close => apis.roblox.com, state => 9, cost => 24448.365927 ms
+[19:19:39.275] tcp stream <46> local tcp did close => friends.roblox.com, state => 9, cost => 24439.951062 ms
+[19:19:39.275] tcp stream <93> remove host => gamejoin.roblox.com port => 443 total => 49
+[19:19:39.275] tcp stream <45> local tcp did close => thumbnails.roblox.com, state => 9, cost => 24448.411942 ms
+[19:19:39.275] tcp stream <43> local tcp did close => assetdelivery.roblox.com, state => 9, cost => 24458.742023 ms
+[19:19:39.275] tcp stream <42> local tcp did close => locale.roblox.com, state => 9, cost => 24462.006092 ms
+[19:19:39.275] proxy stream <78> disconnect ecsv2.roblox.com:443 error => Socket closed by remote peer reason => none cost => 19387.688994 ms
+[19:19:39.275] tcp stream <92> remove host => fts.rbxcdn.com port => 443 total => 48
+[19:19:39.275] proxy stream <76> disconnect ecsv2.roblox.com:443 error => Socket closed by remote peer reason => none cost => 19954.182982 ms
+[19:19:39.275] tcp stream <40> local tcp did close => ecsv2.roblox.com, state => 9, cost => 24866.999984 ms
+[19:19:39.275] tcp stream <39> local tcp did close => apis.roblox.com, state => 9, cost => 24898.041010 ms
+[19:19:39.275] tcp stream <38> local tcp did close => apis.roblox.com, state => 9, cost => 24898.164988 ms
+[19:19:39.275] tcp stream <37> local tcp did close => apis.roblox.com, state => 9, cost => 24898.352027 ms
+[19:19:39.275] tcp stream <36> local tcp did close => apis.roblox.com, state => 9, cost => 24899.387002 ms
+[19:19:39.275] proxy stream <59> disconnect notifications.roblox.com:443 error => Socket closed by remote peer reason => none cost => 23757.600904 ms
+[19:19:39.275] tcp stream <90> remove host => thumbnails.roblox.com port => 443 total => 47
+[19:19:39.275] tcp stream <25> local tcp did close => clientsettingscdn.roblox.com, state => 9, cost => 25500.434995 ms
+[19:19:39.275] tcp stream <26> local tcp did close => apis.roblox.com, state => 9, cost => 25498.497009 ms
+[19:19:39.275] tcp stream <33> local tcp did close => apis.roblox.com, state => 9, cost => 25477.185011 ms
+[19:19:39.275] tcp stream <32> local tcp did close => apis.roblox.com, state => 9, cost => 25477.598071 ms
+[19:19:39.275] tcp stream <89> remove host => voice.roblox.com port => 443 total => 46
+[19:19:39.275] tcp stream <31> local tcp did close => apis.roblox.com, state => 9, cost => 25479.426980 ms
+[19:19:39.275] tcp stream <41> local tcp did close => apis.roblox.com, state => 9, cost => 24489.494920 ms
+[19:19:39.275] tcp stream <88> remove host => games.roblox.com port => 443 total => 45
+[19:19:39.275] tcp stream <83> remove host => ecsv2.roblox.com port => 443 total => 44
+[19:19:39.275] tcp stream <84> remove host => ecsv2.roblox.com port => 443 total => 43
+[19:19:39.275] tcp stream <81> remove host => ephemeralcounters.api.roblox.com port => 443 total => 42
+[19:19:39.275] proxy stream <35> disconnect bijmry-launches.appsflyersdk.com:443 error => Socket closed by remote peer reason => none cost => 25414.340019 ms
+[19:19:39.275] tcp stream <86> remove host => metrics.roblox.com port => 443 total => 41
+[19:19:39.275] proxy stream <34> disconnect ecsv2.roblox.com:443 error => Socket closed by remote peer reason => none cost => 25436.154008 ms
+[19:19:39.275] tcp stream <80> remove host => ecsv2.roblox.com port => 443 total => 40
+[19:19:39.275] tcp stream <79> remove host => ecsv2.roblox.com port => 443 total => 39
+[19:19:39.275] tcp stream <77> remove host => ephemeralcounters.api.roblox.com port => 443 total => 38
+[19:19:39.275] tcp stream <74> remove host => contacts.roblox.com port => 443 total => 37
+[19:19:39.275] tcp stream <72> remove host => presence.roblox.com port => 443 total => 36
+[19:19:39.275] tcp stream <71> remove host => tr.rbxcdn.com port => 443 total => 35
+[19:19:39.275] tcp stream <69> remove host => accountinformation.roblox.com port => 443 total => 34
+[19:19:39.275] tcp stream <68> remove host => avatar.roblox.com port => 443 total => 33
+[19:19:39.275] tcp stream <67> remove host => catalog.roblox.com port => 443 total => 32
+[19:19:39.275] tcp stream <66> remove host => economy.roblox.com port => 443 total => 31
+[19:19:39.275] tcp stream <65> remove host => apis.rbxcdn.com port => 443 total => 30
+[19:19:39.275] tcp stream <64> remove host => notifications.roblox.com port => 443 total => 29
+[19:19:39.275] tcp stream <63> remove host => privatemessages.roblox.com port => 443 total => 28
+[19:19:39.275] tcp stream <61> remove host => clientsettings.roblox.com port => 443 total => 27
+[19:19:39.275] tcp stream <60> remove host => usermoderation.roblox.com port => 443 total => 26
+[19:19:39.275] tcp stream <57> remove host => accountsettings.roblox.com port => 443 total => 25
+[19:19:39.275] tcp stream <109> remove host => client-telemetry.roblox.com port => 443 total => 24
+[19:19:39.275] tcp stream <54> remove host => ephemeralcounters.api.roblox.com port => 443 total => 23
+[19:19:39.275] tcp stream <53> remove host => assetdelivery.roblox.com port => 443 total => 22
+[19:19:39.275] tcp stream <52> remove host => thumbnails.roblox.com port => 443 total => 21
+[19:19:39.275] tcp stream <51> remove host => apis.roblox.com port => 443 total => 20
+[19:19:39.275] tcp stream <50> remove host => apis.roblox.com port => 443 total => 19
+[19:19:39.275] tcp stream <49> remove host => apis.roblox.com port => 443 total => 18
+[19:19:39.275] tcp stream <48> remove host => users.roblox.com port => 443 total => 17
+[19:19:39.275] tcp stream <47> remove host => apis.roblox.com port => 443 total => 16
+[19:19:39.275] tcp stream <44> remove host => apis.roblox.com port => 443 total => 15
+[19:19:39.275] tcp stream <46> remove host => friends.roblox.com port => 443 total => 14
+[19:19:39.275] tcp stream <45> remove host => thumbnails.roblox.com port => 443 total => 13
+[19:19:39.275] tcp stream <43> remove host => assetdelivery.roblox.com port => 443 total => 12
+[19:19:39.275] tcp stream <42> remove host => locale.roblox.com port => 443 total => 11
+[19:19:39.275] tcp stream <40> remove host => ecsv2.roblox.com port => 443 total => 10
+[19:19:39.275] tcp stream <39> remove host => apis.roblox.com port => 443 total => 9
+[19:19:39.275] tcp stream <38> remove host => apis.roblox.com port => 443 total => 8
+[19:19:39.275] tcp stream <37> remove host => apis.roblox.com port => 443 total => 7
+[19:19:39.275] tcp stream <36> remove host => apis.roblox.com port => 443 total => 6
+[19:19:39.275] tcp stream <25> remove host => clientsettingscdn.roblox.com port => 443 total => 5
+[19:19:39.275] tcp stream <26> remove host => apis.roblox.com port => 443 total => 4
+[19:19:39.275] tcp stream <33> remove host => apis.roblox.com port => 443 total => 3
+[19:19:39.275] tcp stream <32> remove host => apis.roblox.com port => 443 total => 2
+[19:19:39.275] tcp stream <31> remove host => apis.roblox.com port => 443 total => 1
+[19:19:39.275] tcp stream <41> remove host => apis.roblox.com port => 443 total => 0
+[19:19:39.364] tcp tunnel lwip suspend tcp timer
+[19:19:45.683] proxy stream <56> disconnect gateway.icloud.com:443 error => Socket closed by remote peer reason => none cost => 30273.690104 ms
+[19:19:45.683] chain socket <56> remove closed socket => 17.248.214.67:443
+[19:19:45.944] proxy stream <55> disconnect gspe1-ssl.ls.apple.com:443 error => Socket closed by remote peer reason => none cost => 30599.943042 ms
+[19:19:46.392] utun query => b5n.1password.com type => 1
+[19:19:46.392] utun response dummy ip => b5n.1password.com response => 198.18.0.39
+[19:19:46.392] utun query => b5n.1password.com type => 28
+[19:19:46.393] utun response dummy ip => b5n.1password.com response => ::ffff:198.18.0.39
+[19:19:46.396] tcp tunnel lwip resume tcp timer
+[19:19:46.396] tcp tunnel dummy ip 198.18.0.39 => b5n.1password.com
+[19:19:46.396] tcp stream <110> start host => b5n.1password.com port => 443 total => 1
+[19:19:46.410] tcp stream <110> match tcp request => b5n.1password.com:443, cost => 13.229966 ms
+[19:19:46.410] tcp stream <110> async lookup host => b5n.1password.com:443 => 198.18.0.39
+[19:19:46.410] dns query <81> did start => 81#b5n.1password.com total => 0
+[19:19:46.410] dns query <81> any send ipv4 b5n.1password.com to 213.87.0.1
+[19:19:46.410] dns query <81> any send ipv4 b5n.1password.com to 213.87.1.1
+[19:19:46.485] dns query <81> response b5n.1password.com from 213.87.1.1
+[19:19:46.485] tcp stream <110> async lookup host => b5n.1password.com:443 result => 3.160.196.85 cost => 75.194001 ms
+[19:19:46.485] dns query <81> did finish 81#b5n.1password.com => success total => 2
+[19:19:46.485] dns response record => {
+	result = 3.160.196.85,
+	host = b5n.1password.com,
+	type = 1,
+	server = 213.87.1.1,
+	elapsed = 74
+}
+[19:19:46.485] tcp stream <110> proxy lookup host => b5n.1password.com:443 server => VLESS policy => PROXY group => PROXY
+[19:19:46.485] tcp stream <110> lookup host => 78.47.40.68:443 domain => b5n.1password.com host => <null> ip => 198.18.0.39
+[19:19:46.485] tcp stream <110> tcp rule => {
+	result = FINAL,PROXY # Vless-rk_iphone,
+	ns = 0,
+	url = b5n.1password.com:443,
+	type = PROXY,
+	ua = TCP Stream
+}
+[19:19:46.514] dns query <81> cancel from 213.87.0.1
+[19:19:46.561] backend <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> start tls peer => github.com insecure => 0 auth => 0
+[19:19:46.665] tcp stream <110> connect to host => b5n.1password.com:443 > 78.47.40.68:443, fastopen => 0, cost => 178.861022 ms
+[19:19:46.665] backend vless <12CD3F3B-8CD2-464B-84C1-1BAD41B5CDD4> send vless header

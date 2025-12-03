@@ -13,8 +13,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install WHOIS client
-        run: sudo apt install -y whois parallel gawk
+      - name: Install dependencies
+        run: sudo apt install -y whois parallel gawk dnsutils
 
       - name: Set up Python
         uses: actions/setup-python@v5
