@@ -317,6 +317,12 @@ except Exception as e:
     shutil.copy('/tmp/akamai-ipv6-normalized.txt', '/tmp/akamai-ipv6-final.txt')
 PYTHON_SCRIPT
 
+# Temporarily exclude 2.16.0.0/13 (breaks PlayStation Network)
+# TODO: Re-enable after confirming it's safe
+echo "Excluding 2.16.0.0/13 (temporary exclusion for PlayStation Network compatibility)..." >&2
+grep -v "^2\.16\.0\.0/13$" /tmp/akamai-ipv4-final.txt > /tmp/akamai-ipv4-filtered.txt || cp /tmp/akamai-ipv4-final.txt /tmp/akamai-ipv4-filtered.txt
+mv /tmp/akamai-ipv4-filtered.txt /tmp/akamai-ipv4-final.txt
+
 # Save results
 cp /tmp/akamai-ipv4-final.txt "${SCRIPT_DIR}/ipv4.txt"
 cp /tmp/akamai-ipv6-final.txt "${SCRIPT_DIR}/ipv6.txt"
