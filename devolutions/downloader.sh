@@ -9,7 +9,18 @@ set -x
 # Devolutions domains to resolve
 DEVOLUTIONS_DOMAINS=(
     "devolutions.net"
+    "api.devolutions.com"
+    "api.devolutions.net"
+    "account.devolutions.com"
+    "login.devolutions.com"
+    "cloud.devolutions.net"
+    "hub.devolutions.com"
+    "cdn.devolutions.net"
+    "store.devolutions.net"
     "portal.devolutions.com"
+    "redirection.devolutions.com"
+    "telemetry2.devolutions.net"
+    "send.devolutions.com"
 )
 
 # Clean up temp files

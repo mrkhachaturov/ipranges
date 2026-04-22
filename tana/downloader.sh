@@ -10,6 +10,8 @@ set -x
 TANA_DOMAINS=(
     "tana.inc"
     "app.tana.inc"
+    "be.tana.inc"
+    "desktop-update.tana.inc"
     "outliner.tana.inc"
 )
 
