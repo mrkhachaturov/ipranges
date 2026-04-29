@@ -167,6 +167,13 @@ To allow GoogleBot, block all Google IP addresses and then allow the GoogleBot a
 - IPv6: https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/wisprflow/ipv6.txt
 - IPv6 (merged): https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/wisprflow/ipv6_merged.txt
 
+### OpenTofu
+
+- IPv4: https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/opentofu/ipv4.txt
+- IPv4 (merged): https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/opentofu/ipv4_merged.txt
+- IPv6: https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/opentofu/ipv6.txt
+- IPv6 (merged): https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/opentofu/ipv6_merged.txt
+
 ## All-In-One IPs
 
 A list of IP addresses from all sources combined into one file.
