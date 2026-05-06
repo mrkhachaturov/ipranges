@@ -57,6 +57,9 @@ jobs:
           set -x
           find . -name ipv6.txt | sort -h | parallel --will-cite -j 1 echo "Merging '{}'"';'python utils/merge.py --source={} '|' sort -V '>' {.}_merged.txt
 
+      - name: Render README
+        run: python utils/render_readme.py
+
       - name: Commit files
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
