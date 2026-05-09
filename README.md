@@ -7,7 +7,7 @@
 [![Last commit](https://img.shields.io/github/last-commit/mrkhachaturov/ipranges/main)](https://github.com/mrkhachaturov/ipranges/commits/main)
 
 <!-- BEGIN AUTO:summary -->
-**35 providers** · **114,170 IPv4 entries** · **267,739 IPv6 entries** · refreshed every 4 hours via GitHub Actions
+**36 providers** · **114,294 IPv4 entries** · **267,767 IPv6 entries** · refreshed every 4 hours via GitHub Actions
 <!-- END AUTO:summary -->
 
 All addresses come from public sources (vendor-published JSON/TXT or DNS resolution of vendor domains). The lists are committed back to `main` after each refresh, so consumers can pin to either `main` (rolling) or a specific commit (frozen).
@@ -69,6 +69,7 @@ def is_openai(ip: str) -> bool:
 | Apple (Private Relay) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/apple-proxy/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/apple-proxy/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/apple-proxy/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/apple-proxy/ipv6_merged.txt) |  |
 | Atlassian | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/atlassian/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/atlassian/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/atlassian/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/atlassian/ipv6_merged.txt) |  |
 | Bing (Bingbot) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/bing/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/bing/ipv4_merged.txt) | — | — |  |
+| ClickUp | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/clickup/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/clickup/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/clickup/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/clickup/ipv6_merged.txt) |  |
 | Cloudflare | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflare/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflare/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflare/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflare/ipv6_merged.txt) |  |
 | Cloudflare Tunnel (Argo) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflared/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflared/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflared/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflared/ipv6_merged.txt) |  |
 | Amazon CloudFront | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudfront/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudfront/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudfront/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudfront/ipv6_merged.txt) |  |

@@ -5,6 +5,7 @@
   { "dir": "apple-proxy",  "name": "Apple (Private Relay)" },
   { "dir": "atlassian",    "name": "Atlassian" },
   { "dir": "bing",         "name": "Bing (Bingbot)" },
+  { "dir": "clickup",      "name": "ClickUp" },
   { "dir": "cloudflare",   "name": "Cloudflare" },
   { "dir": "cloudflared",  "name": "Cloudflare Tunnel (Argo)" },
   { "dir": "cloudfront",   "name": "Amazon CloudFront" },
