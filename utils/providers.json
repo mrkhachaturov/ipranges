@@ -19,6 +19,7 @@
   { "dir": "google",       "name": "Google (Cloud & GoogleBot)" },
   { "dir": "googlebot",    "name": "Google (GoogleBot)", "note": "To allow GoogleBot, block all Google IPs first, then allow these." },
   { "dir": "groq",         "name": "Groq" },
+  { "dir": "hetzner",      "name": "Hetzner", "note": "All prefixes announced by Hetzner ASNs (AS24940 Online, AS213230 Cloud)." },
   { "dir": "kino-pub",     "name": "Kino.pub" },
   { "dir": "linode",       "name": "Linode" },
   { "dir": "microsoft",    "name": "Microsoft" },
