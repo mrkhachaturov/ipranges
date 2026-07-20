@@ -7,7 +7,7 @@
 [![Last commit](https://img.shields.io/github/last-commit/mrkhachaturov/ipranges/main)](https://github.com/mrkhachaturov/ipranges/commits/main)
 
 <!-- BEGIN AUTO:summary -->
-**37 providers** · **116,981 IPv4 entries** · **269,285 IPv6 entries** · refreshed every 4 hours via GitHub Actions
+**38 providers** · **116,999 IPv4 entries** · **269,290 IPv6 entries** · refreshed every 4 hours via GitHub Actions
 <!-- END AUTO:summary -->
 
 All addresses come from public sources (vendor-published JSON/TXT or DNS resolution of vendor domains). The lists are committed back to `main` after each refresh, so consumers can pin to either `main` (rolling) or a specific commit (frozen).
@@ -73,6 +73,7 @@ def is_openai(ip: str) -> bool:
 | Cloudflare | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflare/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflare/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflare/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflare/ipv6_merged.txt) |  |
 | Cloudflare Tunnel (Argo) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflared/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflared/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflared/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudflared/ipv6_merged.txt) |  |
 | Amazon CloudFront | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudfront/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudfront/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudfront/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cloudfront/ipv6_merged.txt) |  |
+| Cohere | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cohere/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cohere/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cohere/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/cohere/ipv6_merged.txt) |  |
 | DeepL | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/deepl/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/deepl/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/deepl/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/deepl/ipv6_merged.txt) |  |
 | Devolutions | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/devolutions/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/devolutions/ipv4_merged.txt) | — | — |  |
 | DigitalOcean | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/digitalocean/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/digitalocean/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/digitalocean/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/digitalocean/ipv6_merged.txt) |  |
