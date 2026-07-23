@@ -10,6 +10,7 @@
   { "dir": "cloudflare",   "name": "Cloudflare" },
   { "dir": "cloudflared",  "name": "Cloudflare Tunnel (Argo)" },
   { "dir": "cloudfront",   "name": "Amazon CloudFront" },
+  { "dir": "coder",        "name": "Coder", "note": "Resolves coder.com, registry.coder.com and related hosts. Most sit behind Cloudflare/Vercel — ranges are shared, not Coder-owned." },
   { "dir": "cohere",       "name": "Cohere" },
   { "dir": "deepl",        "name": "DeepL" },
   { "dir": "devolutions",  "name": "Devolutions" },
