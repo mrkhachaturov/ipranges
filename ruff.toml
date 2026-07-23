@@ -1,0 +1,9 @@
+# Lint config for the Python tooling in utils/.
+# Run:  ruff check .      (lint)
+#       ruff format .     (auto-format)
+line-length = 120
+target-version = "py38"
+
+[lint]
+# pycodestyle errors/warnings, pyflakes, import sorting, pyupgrade, bugbear.
+select = ["E", "F", "W", "I", "UP", "B"]

@@ -3,21 +3,22 @@
 Filter IP addresses, removing those already covered by CIDR ranges in roblox.lst
 """
 
-import sys
 import ipaddress
+import sys
 from pathlib import Path
+
 
 def main():
     if len(sys.argv) < 2:
         print("Usage: filter_ips.py <roblox.lst>", file=sys.stderr)
         sys.exit(1)
-    
+
     lst_file = Path(sys.argv[1])
     covered_networks = []
-    
+
     # Load covered networks from roblox.lst
     if lst_file.exists():
-        with open(lst_file, 'r') as f:
+        with open(lst_file) as f:
             for line in f:
                 line = line.strip()
                 if line and not line.startswith('#'):
@@ -25,7 +26,7 @@ def main():
                         covered_networks.append(ipaddress.ip_network(line, strict=False))
                     except ValueError:
                         pass
-    
+
     # Check each IP from stdin
     for line in sys.stdin:
         line = line.strip()

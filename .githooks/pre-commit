@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #
-# Pre-commit gate: refuse to commit malformed CIDR lists.
+# Pre-commit gate. Two checks, both scoped to what THIS commit stages:
 #
-# Runs utils/validate.py against the ipv4/ipv6 (and _merged) files staged in
-# THIS commit. Blocks base64/PGP blocks, bare IPs without a prefix, dig error
-# strings — the classes of garbage that have leaked into published lists before.
+#   1. CIDR lists  — utils/validate.py rejects base64/PGP blocks, bare IPs
+#                    without a prefix, and dig error strings.
+#   2. Python      — ruff lints staged *.py files.
 #
 # Enable once per clone:
 #     git config core.hooksPath .githooks
@@ -14,29 +14,49 @@
 set -euo pipefail
 
 repo_root="$(git rev-parse --show-toplevel)"
-
-# Staged (added/copied/modified) CIDR-list files. Keep only those inside a
-# provider directory (path contains a "/") — the legacy root-level ipv4.txt /
-# ipv6.txt are not used by tooling and are intentionally skipped.
-files=()
-while IFS= read -r f; do
-    [ -n "$f" ] || continue
-    case "$f" in */*) files+=("$f") ;; esac
-done < <(git diff --cached --name-only --diff-filter=ACM -- \
-    '*ipv4.txt' '*ipv6.txt' '*ipv4_merged.txt' '*ipv6_merged.txt')
-
-# Nothing relevant staged — let the commit through.
-if [ "${#files[@]}" -eq 0 ]; then
-    exit 0
-fi
+status=0
 
 # Prefer python3, fall back to python (mise/venv setups expose one or the other).
 py="python3"
 command -v python3 >/dev/null 2>&1 || py="python"
 
-if ! "$py" "$repo_root/utils/validate.py" --files "${files[@]}"; then
-    echo "" >&2
-    echo "pre-commit: blocked — the staged IP lists contain invalid CIDRs." >&2
-    echo "Fix the offending downloader/output, or bypass with --no-verify." >&2
-    exit 1
+# --- 1. CIDR list validation -------------------------------------------------
+# Staged CIDR-list files inside a provider directory (path contains "/"). The
+# legacy root-level ipv4.txt / ipv6.txt are not used by tooling, so skip them.
+cidr_files=()
+while IFS= read -r f; do
+    [ -n "$f" ] || continue
+    case "$f" in */*) cidr_files+=("$f") ;; esac
+done < <(git diff --cached --name-only --diff-filter=ACM -- \
+    '*ipv4.txt' '*ipv6.txt' '*ipv4_merged.txt' '*ipv6_merged.txt')
+
+if [ "${#cidr_files[@]}" -gt 0 ]; then
+    if ! "$py" "$repo_root/utils/validate.py" --files "${cidr_files[@]}"; then
+        echo "pre-commit: blocked — staged IP lists contain invalid CIDRs." >&2
+        status=1
+    fi
 fi
+
+# --- 2. Python lint ----------------------------------------------------------
+py_files=()
+while IFS= read -r f; do
+    [ -n "$f" ] && py_files+=("$f")
+done < <(git diff --cached --name-only --diff-filter=ACM -- '*.py')
+
+if [ "${#py_files[@]}" -gt 0 ]; then
+    if command -v ruff >/dev/null 2>&1; then
+        if ! ruff check "${py_files[@]}"; then
+            echo "pre-commit: blocked — ruff found Python issues (try: ruff check --fix)." >&2
+            status=1
+        fi
+    else
+        echo "pre-commit: WARNING — ruff not installed, skipping Python lint." >&2
+        echo "  install with: pip install -r utils/requirements.txt" >&2
+    fi
+fi
+
+if [ "$status" -ne 0 ]; then
+    echo "" >&2
+    echo "Fix the issues above, or bypass with:  git commit --no-verify" >&2
+fi
+exit "$status"
