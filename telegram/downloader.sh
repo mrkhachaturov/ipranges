@@ -1,11 +1,18 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
+#
+# Telegram — published CIDR list (both families in one file).
+# Source: https://core.telegram.org/resources/cidr.txt
+#
 set -euo pipefail
-set -x
 
-# get ranges from telegram
-curl -s https://core.telegram.org/resources/cidr.txt > /tmp/telegram.txt
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=../utils/lib.sh
+source "$DIR/../utils/lib.sh"
 
-# seperate IPv4 and IPv6, sort an uniq
-grep -v ':' /tmp/telegram.txt | sort -V | uniq > telegram/ipv4.txt
-grep ':' /tmp/telegram.txt | sort -V | uniq > telegram/ipv6.txt
+# One file carrying both families. write_ipv4/write_ipv6 each keep only their
+# own family, so the same stream feeds both.
+body="$(fetch https://core.telegram.org/resources/cidr.txt)"
+printf '%s\n' "$body" | write_ipv4 "$DIR"
+printf '%s\n' "$body" | write_ipv6 "$DIR"
+
+log "telegram: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

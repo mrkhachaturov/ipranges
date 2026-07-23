@@ -1,13 +1,19 @@
-#!/bin/bash
-
-set -euo pipefail
-set -x
-
+#!/usr/bin/env bash
+#
+# Apple iCloud Private Relay — egress IP ranges (CSV, first column is the CIDR).
 # https://developer.apple.com/icloud/prepare-your-network-for-icloud-private-relay/
-curl -s https://mask-api.icloud.com/egress-ip-ranges.csv | cut -d',' -f1  > /tmp/apple-proxy.txt
+# Source: https://mask-api.icloud.com/egress-ip-ranges.csv
+#
+set -euo pipefail
 
-grep -v ':' /tmp/apple-proxy.txt > /tmp/apple-proxy-ipv4.txt
-grep ':' /tmp/apple-proxy.txt > /tmp/apple-proxy-ipv6.txt
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=../utils/lib.sh
+source "$DIR/../utils/lib.sh"
 
-sort -V /tmp/apple-proxy-ipv4.txt | uniq > apple-proxy/ipv4.txt
-sort -V /tmp/apple-proxy-ipv6.txt | uniq > apple-proxy/ipv6.txt
+# One CSV carrying both families; first column is the CIDR. write_ipv4/write_ipv6
+# each keep only their own family, so the same stream feeds both.
+body="$(fetch https://mask-api.icloud.com/egress-ip-ranges.csv | cut -d',' -f1)"
+printf '%s\n' "$body" | write_ipv4 "$DIR"
+printf '%s\n' "$body" | write_ipv6 "$DIR"
+
+log "apple-proxy: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

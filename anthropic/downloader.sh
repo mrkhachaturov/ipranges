@@ -1,53 +1,40 @@
-#!/bin/bash
-
-# Anthropic IP Ranges Downloader
-# Downloads Anthropic/Claude IPs from documentation and resolves domains
-
+#!/usr/bin/env bash
+#
+# Anthropic / Claude — documented static ranges plus resolved service domains.
+# Static IPs from Anthropic docs: inbound 160.79.104.0/23 + 2607:6bc0::/48,
+# outbound (MCP tool calls) 160.79.104.0/21.
+#
 set -euo pipefail
-set -x
 
-# Anthropic/Claude domains to resolve
-ANTHROPIC_DOMAINS=(
-    "claude.ai"
-    "api.anthropic.com"
-    "console.anthropic.com"
-    "www.anthropic.com"
-    "anthropic.com"
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=../utils/lib.sh
+source "$DIR/../utils/lib.sh"
+
+STATIC_V4=(
+    160.79.104.0/23
+    160.79.104.0/21
+)
+STATIC_V6=(
+    2607:6bc0::/48
 )
 
-# Static IPs from Anthropic documentation
-# Inbound IPs
-echo "160.79.104.0/23" > /tmp/anthropic-ipv4.txt
-echo "2607:6bc0::/48" > /tmp/anthropic-ipv6.txt
+DOMAINS=(
+    claude.ai
+    api.anthropic.com
+    console.anthropic.com
+    www.anthropic.com
+    anthropic.com
+)
+RESOLVERS=(8.8.8.8 1.1.1.1 208.67.222.222 9.9.9.9 77.88.8.8)
 
-# Outbound IPs (for MCP tool calls)
-echo "160.79.104.0/21" >> /tmp/anthropic-ipv4.txt
+{
+    printf '%s\n' "${STATIC_V4[@]}"
+    for r in "${RESOLVERS[@]}"; do resolve_a "$r" "${DOMAINS[@]}"; done
+} | write_ipv4 "$DIR"
 
-# Resolve additional domains (use multiple DNS servers to get all CDN IPs)
-DNS_SERVERS=("8.8.8.8" "1.1.1.1" "208.67.222.222" "9.9.9.9" "77.88.8.8")
-for domain in "${ANTHROPIC_DOMAINS[@]}"; do
-    echo "Resolving $domain..." >&2
-    for dns in "${DNS_SERVERS[@]}"; do
-        # Query multiple times to catch round-robin IPs
-        for i in {1..3}; do
-            dig +short A "$domain" @"$dns" | sed 's/$/\/32/' >> /tmp/anthropic-ipv4.txt || true
-            dig +short AAAA "$domain" @"$dns" | sed 's/$/\/128/' >> /tmp/anthropic-ipv6.txt || true
-            sleep 0.1  # Small delay between queries
-        done
-    done
-done
+{
+    printf '%s\n' "${STATIC_V6[@]}"
+    for r in "${RESOLVERS[@]}"; do resolve_aaaa "$r" "${DOMAINS[@]}"; done
+} | write_ipv6 "$DIR"
 
-# Process IPv4 addresses
-cat /tmp/anthropic-ipv4.txt 2>/dev/null | \
-    grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(/[0-9]+)?$' | \
-    sort -V | uniq > /tmp/anthropic-ipv4-final.txt
-
-# Process IPv6 addresses
-cat /tmp/anthropic-ipv6.txt 2>/dev/null | \
-    grep ':' | \
-    sort -V | uniq > /tmp/anthropic-ipv6-final.txt
-
-# sort & uniq
-sort -V /tmp/anthropic-ipv4-final.txt | uniq > anthropic/ipv4.txt
-sort -V /tmp/anthropic-ipv6-final.txt | uniq > anthropic/ipv6.txt
-
+log "anthropic: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

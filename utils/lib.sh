@@ -41,13 +41,16 @@ count() { grep -c . "$1" 2>/dev/null || printf '0\n'; }
 # (The old `curl -s` would silently write an HTML error page into the pipeline.)
 fetch() { curl -fsSL --retry 3 --retry-delay 2 --max-time 60 "$@"; }
 
+# Per-query dig caps so one unreachable resolver can't stall a run for ~15s.
+_DIG_OPTS=(+time=3 +tries=1)
+
 # resolve_a <resolver> <domain...>: print A records, one per line. dig errors
 # go to /dev/null and never enter the stream.
 resolve_a() {
     local resolver="$1"; shift
     local domain
     for domain in "$@"; do
-        dig +short A "$domain" "@$resolver" 2>/dev/null || true
+        dig +short "${_DIG_OPTS[@]}" A "$domain" "@$resolver" 2>/dev/null || true
     done
 }
 
@@ -56,7 +59,7 @@ resolve_aaaa() {
     local resolver="$1"; shift
     local domain
     for domain in "$@"; do
-        dig +short AAAA "$domain" "@$resolver" 2>/dev/null || true
+        dig +short "${_DIG_OPTS[@]}" AAAA "$domain" "@$resolver" 2>/dev/null || true
     done
 }
 

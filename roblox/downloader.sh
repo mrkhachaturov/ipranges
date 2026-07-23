@@ -7,9 +7,10 @@
 # 4. Merges everything together
 
 set -euo pipefail
-set -x
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=../utils/lib.sh
+source "$SCRIPT_DIR/../utils/lib.sh"
 
 # Roblox ASNs
 ROBLOX_ASNS=("AS22697" "AS11281" "AS136766")
@@ -69,7 +70,7 @@ fetch_asn_prefixes() {
 # Fetch ASN prefixes and merge them
 echo "Fetching Roblox ASN prefixes..." >&2
 TEMP_DIR=$(mktemp -d)
-trap "rm -rf $TEMP_DIR" EXIT
+trap 'rm -rf "$TEMP_DIR"' EXIT
 
 for asn in "${ROBLOX_ASNS[@]}"; do
     fetch_asn_prefixes "$asn" "${TEMP_DIR}/${asn}.tmp" || true
@@ -81,7 +82,7 @@ cat "${TEMP_DIR}"/*.tmp 2>/dev/null | sort -u > "${TEMP_DIR}/asn_prefixes.txt"
 # Check if we got any ASN prefixes
 if [ ! -s "${TEMP_DIR}/asn_prefixes.txt" ]; then
     echo "Warning: No ASN prefixes fetched. Will use logs only." >&2
-    > "${TEMP_DIR}/asn_prefixes.txt"  # Create empty file
+    : > "${TEMP_DIR}/asn_prefixes.txt"  # Create empty file
 fi
 
 ASN_COUNT=$(wc -l < "${TEMP_DIR}/asn_prefixes.txt" | tr -d ' ')
@@ -123,7 +124,7 @@ for domain in "${ROBLOX_DOMAINS[@]}"; do
     echo "Resolving $domain..." >&2
     for dns in "${DNS_SERVERS[@]}"; do
         # Query multiple times to catch round-robin IPs
-        for i in {1..3}; do
+        for _ in {1..3}; do
             dig +short A "$domain" @"$dns" >> /tmp/roblox-ipv4-resolved.txt || true
             dig +short AAAA "$domain" @"$dns" >> /tmp/roblox-ipv6.txt || true
             sleep 0.1  # Small delay between queries
@@ -139,39 +140,11 @@ else
     echo "No IPs resolved from domains" >&2
 fi
 
-# Process IPv4 addresses
-# Convert all to proper CIDR notation (keep existing CIDR, add /32 to plain IPs)
-cat /tmp/roblox-ipv4.txt 2>/dev/null | \
-    while IFS= read -r line; do
-        if [[ "$line" =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(/[0-9]+)?$ ]]; then
-            # Already has CIDR or is just IP
-            if [[ "$line" =~ / ]]; then
-                echo "$line"
-            else
-                echo "${line}/32"
-            fi
-        fi
-    done | \
-    sort -V | uniq > /tmp/roblox-ipv4-final.txt
+# Normalize + validate via the shared lib. The inputs above (ASN prefixes,
+# missing IPs from logs, filtered resolved A/AAAA records) are passed through
+# write_ipv4/write_ipv6, which upgrade bare -> /32 or /128, validate, and drop
+# any non-CIDR text (e.g. a dig timeout line).
+write_ipv4 "$SCRIPT_DIR" < /tmp/roblox-ipv4.txt
+write_ipv6 "$SCRIPT_DIR" < /tmp/roblox-ipv6.txt
 
-# Process IPv6 addresses (ensure proper CIDR notation)
-cat /tmp/roblox-ipv6.txt 2>/dev/null | \
-    grep ':' | \
-    while IFS= read -r line; do
-        if [[ "$line" =~ / ]]; then
-            echo "$line"
-        else
-            echo "${line}/128"
-        fi
-    done | \
-    sort -V | uniq > /tmp/roblox-ipv6-final.txt
-
-# save ipv4
-[ -f "downloader.sh" ] && cp /tmp/roblox-ipv4-final.txt ipv4.txt || cp /tmp/roblox-ipv4-final.txt roblox/ipv4.txt
-
-# save ipv6
-[ -f "downloader.sh" ] && cp /tmp/roblox-ipv6-final.txt ipv6.txt || cp /tmp/roblox-ipv6-final.txt roblox/ipv6.txt
-
-FINAL_IPV4_COUNT=$(wc -l < /tmp/roblox-ipv4-final.txt | tr -d ' ')
-FINAL_IPV6_COUNT=$(wc -l < /tmp/roblox-ipv6-final.txt | tr -d ' ')
-echo "Final output: $FINAL_IPV4_COUNT IPv4 addresses, $FINAL_IPV6_COUNT IPv6 addresses" >&2
+log "roblox: $(count "$SCRIPT_DIR/ipv4.txt") IPv4, $(count "$SCRIPT_DIR/ipv6.txt") IPv6"

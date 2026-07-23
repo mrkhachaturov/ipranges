@@ -1,10 +1,12 @@
-#!/bin/bash
-
-# Sunsama IP Ranges Downloader
-# Resolves Sunsama domains
-
+#!/usr/bin/env bash
+#
+# Sunsama — resolve the Sunsama service domains to their A/AAAA addresses.
+#
 set -euo pipefail
-set -x
+
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=../utils/lib.sh
+source "$DIR/../utils/lib.sh"
 
 # Sunsama domains to resolve
 SUNSAMA_DOMAINS=(
@@ -20,30 +22,7 @@ SUNSAMA_DOMAINS=(
     "api.sunsama.net"
 )
 
-# Clean up temp files
-rm -f /tmp/sunsama-ipv4.txt /tmp/sunsama-ipv6.txt
+resolve_a    8.8.8.8 "${SUNSAMA_DOMAINS[@]}" | write_ipv4 "$DIR"
+resolve_aaaa 8.8.8.8 "${SUNSAMA_DOMAINS[@]}" | write_ipv6 "$DIR"
 
-# Resolve Sunsama domains
-for domain in "${SUNSAMA_DOMAINS[@]}"; do
-    echo "Resolving $domain..." >&2
-    dig +short A "$domain" @8.8.8.8 >> /tmp/sunsama-ipv4.txt || echo 'failed'
-    dig +short AAAA "$domain" @8.8.8.8 >> /tmp/sunsama-ipv6.txt || echo 'failed'
-done
-
-# Process IPv4 addresses (ensure proper CIDR notation)
-{ grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(/[0-9]+)?$' /tmp/sunsama-ipv4.txt || true; } | \
-    sed 's/^\([0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\)$/\1\/32/' | \
-    sort -V | uniq > /tmp/sunsama-ipv4-final.txt
-
-# Process IPv6 addresses (ensure proper CIDR notation)
-{ grep -E '^[0-9a-fA-F:]+(/[0-9]+)?$' /tmp/sunsama-ipv6.txt || true; } | \
-    sed 's/^\([^/]*\)$/\1\/128/' | \
-    sort -V | uniq > /tmp/sunsama-ipv6-final.txt
-
-# save ipv4
-[ -f "downloader.sh" ] && cp /tmp/sunsama-ipv4-final.txt ipv4.txt || cp /tmp/sunsama-ipv4-final.txt sunsama/ipv4.txt
-
-# save ipv6
-[ -f "downloader.sh" ] && cp /tmp/sunsama-ipv6-final.txt ipv6.txt || cp /tmp/sunsama-ipv6-final.txt sunsama/ipv6.txt
-
-echo "Done!"
+log "sunsama: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

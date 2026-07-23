@@ -1,11 +1,13 @@
-#!/bin/bash
-
-# Wispr Flow IP Ranges Downloader
-# Resolves Wispr Flow / Wispr Aria / FlowVoice domains and third-party
-# service dependencies (Supabase, S3, Baseten) used by the app.
-
+#!/usr/bin/env bash
+#
+# Wispr Flow — resolve the Wispr Flow / Wispr Aria / FlowVoice domains and the
+# third-party service dependencies (Supabase, S3, Baseten) used by the app.
+#
 set -euo pipefail
-set -x
+
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=../utils/lib.sh
+source "$DIR/../utils/lib.sh"
 
 # Wispr Flow domains to resolve
 WISPRFLOW_DOMAINS=(
@@ -32,30 +34,7 @@ WISPRFLOW_DOMAINS=(
     "chain-o232k03l.api.baseten.co"
 )
 
-# Clean up temp files
-rm -f /tmp/wisprflow-ipv4.txt /tmp/wisprflow-ipv6.txt
+resolve_a    8.8.8.8 "${WISPRFLOW_DOMAINS[@]}" | write_ipv4 "$DIR"
+resolve_aaaa 8.8.8.8 "${WISPRFLOW_DOMAINS[@]}" | write_ipv6 "$DIR"
 
-# Resolve Wispr Flow domains
-for domain in "${WISPRFLOW_DOMAINS[@]}"; do
-    echo "Resolving $domain..." >&2
-    dig +short A "$domain" @8.8.8.8 >> /tmp/wisprflow-ipv4.txt || echo 'failed'
-    dig +short AAAA "$domain" @8.8.8.8 >> /tmp/wisprflow-ipv6.txt || echo 'failed'
-done
-
-# Process IPv4 addresses (ensure proper CIDR notation)
-{ grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(/[0-9]+)?$' /tmp/wisprflow-ipv4.txt || true; } | \
-    sed 's/^\([0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\)$/\1\/32/' | \
-    sort -V | uniq > /tmp/wisprflow-ipv4-final.txt
-
-# Process IPv6 addresses (ensure proper CIDR notation)
-{ grep -E '^[0-9a-fA-F:]+(/[0-9]+)?$' /tmp/wisprflow-ipv6.txt || true; } | \
-    sed 's/^\([^/]*\)$/\1\/128/' | \
-    sort -V | uniq > /tmp/wisprflow-ipv6-final.txt
-
-# save ipv4
-[ -f "downloader.sh" ] && cp /tmp/wisprflow-ipv4-final.txt ipv4.txt || cp /tmp/wisprflow-ipv4-final.txt wisprflow/ipv4.txt
-
-# save ipv6
-[ -f "downloader.sh" ] && cp /tmp/wisprflow-ipv6-final.txt ipv6.txt || cp /tmp/wisprflow-ipv6-final.txt wisprflow/ipv6.txt
-
-echo "Done!"
+log "wisprflow: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

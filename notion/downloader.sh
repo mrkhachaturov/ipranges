@@ -1,12 +1,15 @@
-#!/bin/bash
-
-# Notion IP Ranges Downloader
-# Resolves Notion domain names to IP addresses and includes specific IP ranges
-
+#!/usr/bin/env bash
+#
+# Notion — resolve the published domain allowlist plus a set of static IPs.
+# (dig +short A already follows CNAME chains to the final A records, so no
+# separate CNAME step is needed.)
+#
 set -euo pipefail
-set -x
 
-# Notion domains to resolve
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=../utils/lib.sh
+source "$DIR/../utils/lib.sh"
+
 NOTION_DOMAINS=(
     "notion.com"
     "notion.site"
@@ -14,19 +17,18 @@ NOTION_DOMAINS=(
     "api.notion.com"
     "img.notionusercontent.com"
     "notionusercontent.com"
-	"www.notion.so"
-	"exp.notion.so"
-	"http-inputs-notion.splunkcloud.com"
-	"identity.notion.so"
-	"msgstore.www.notion.so"
-	"o324374.ingest.us.sentry.io"
+    "www.notion.so"
+    "exp.notion.so"
+    "http-inputs-notion.splunkcloud.com"
+    "identity.notion.so"
+    "msgstore.www.notion.so"
+    "o324374.ingest.us.sentry.io"
     "file.notion.so"
     "s3-us-west-2.amazonaws.com"
     "s3.amazonaws.com"
-    
 )
 
-# Specific IP addresses from Notion allowlist
+# Specific IP addresses from the Notion allowlist (bare -> /32 by write_ipv4).
 NOTION_IPS=(
     "18.158.108.139"
     "3.66.39.119"
@@ -39,51 +41,11 @@ NOTION_IPS=(
     "63.176.24.113"
 )
 
-# Clear temporary files
-rm -f /tmp/notion-ipv4.txt /tmp/notion-ipv6.txt
+{
+    printf '%s\n' "${NOTION_IPS[@]}"
+    resolve_a 8.8.8.8 "${NOTION_DOMAINS[@]}"
+} | write_ipv4 "$DIR"
 
-# Add specific IP addresses (ensure proper CIDR notation)
-for ip in "${NOTION_IPS[@]}"; do
-    echo "$ip/32" >> /tmp/notion-ipv4.txt
-done
+resolve_aaaa 8.8.8.8 "${NOTION_DOMAINS[@]}" | write_ipv6 "$DIR"
 
-# Resolve domains to IP addresses (including CNAME records)
-for domain in "${NOTION_DOMAINS[@]}"; do
-    echo "Resolving $domain..." >&2
-    
-    # Get A records
-    dig +short A "$domain" @8.8.8.8 >> /tmp/notion-ipv4.txt || echo 'failed'
-    
-    # Get CNAME records and resolve them too
-    cname=$(dig +short CNAME "$domain" @8.8.8.8 | head -1)
-    if [ -n "$cname" ] && [ "$cname" != "failed" ]; then
-        echo "Resolving CNAME $cname for $domain..." >&2
-        dig +short A "$cname" @8.8.8.8 >> /tmp/notion-ipv4.txt || echo 'failed'
-    fi
-    
-    # Get AAAA records
-    dig +short AAAA "$domain" @8.8.8.8 >> /tmp/notion-ipv6.txt || echo 'failed'
-done
-
-# Process IPv4 addresses (ensure proper CIDR notation)
-cat /tmp/notion-ipv4.txt 2>/dev/null | \
-    grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(/[0-9]+)?$' | \
-    sed 's/^\([0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\)$/\1\/32/' | \
-    sort -V | uniq > /tmp/notion-ipv4-final.txt
-
-# Process IPv6 addresses (ensure proper CIDR notation)
-cat /tmp/notion-ipv6.txt 2>/dev/null | \
-    grep ':' | \
-    sed 's/$/\/128/' | \
-    sort -V | uniq > /tmp/notion-ipv6-final.txt
-
-# save ipv4
-[ -f "downloader.sh" ] && cp /tmp/notion-ipv4-final.txt ipv4.txt || cp /tmp/notion-ipv4-final.txt notion/ipv4.txt
-
-# save ipv6 (if any)
-if [ -s /tmp/notion-ipv6-final.txt ]; then
-    [ -f "downloader.sh" ] && cp /tmp/notion-ipv6-final.txt ipv6.txt || cp /tmp/notion-ipv6-final.txt notion/ipv6.txt
-else
-    # Create empty IPv6 file if no IPv6 addresses found
-    [ -f "downloader.sh" ] && touch ipv6.txt || touch notion/ipv6.txt
-fi
+log "notion: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

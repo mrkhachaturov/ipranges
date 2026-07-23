@@ -1,10 +1,13 @@
-#!/bin/bash
-
-# Games IP Ranges Downloader
-# Resolves gaming domain names to IP addresses
-
+#!/usr/bin/env bash
+#
+# Games — resolve gaming service domains, plus common subdomains of a couple
+# of wildcard domains, to their A/AAAA addresses.
+#
 set -euo pipefail
-set -x
+
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=../utils/lib.sh
+source "$DIR/../utils/lib.sh"
 
 # Gaming domains to resolve
 DOMAINS=(
@@ -28,42 +31,17 @@ WILDCARD_DOMAINS=(
 # Common subdomains to try for wildcard domains
 SUBDOMAINS=("www" "api" "cdn" "assets" "static" "game" "app" "auth" "login")
 
-# get IPs from direct domains
-for domain in "${DOMAINS[@]}"; do
-    echo "Resolving $domain..." >&2
-    dig +short A "$domain" @8.8.8.8 >> /tmp/games-ipv4.txt || echo 'failed'
-    dig +short AAAA "$domain" @8.8.8.8 >> /tmp/games-ipv6.txt || echo 'failed'
-done
-
-# get IPs from wildcard domains (try subdomains)
+# Expand wildcard domains into the concrete names to resolve: the root domain
+# plus each subdomain prefix — same set the old per-name loop resolved.
+ALL_DOMAINS=("${DOMAINS[@]}")
 for domain in "${WILDCARD_DOMAINS[@]}"; do
-    echo "Resolving wildcard domain $domain..." >&2
-    # Try root domain
-    dig +short A "$domain" @8.8.8.8 >> /tmp/games-ipv4.txt || echo 'failed'
-    dig +short AAAA "$domain" @8.8.8.8 >> /tmp/games-ipv6.txt || echo 'failed'
-    
-    # Try common subdomains
+    ALL_DOMAINS+=("$domain")
     for subdomain in "${SUBDOMAINS[@]}"; do
-        echo "Trying $subdomain.$domain..." >&2
-        dig +short A "$subdomain.$domain" @8.8.8.8 >> /tmp/games-ipv4.txt || echo 'failed'
-        dig +short AAAA "$subdomain.$domain" @8.8.8.8 >> /tmp/games-ipv6.txt || echo 'failed'
+        ALL_DOMAINS+=("$subdomain.$domain")
     done
 done
 
-# Process IPv4 addresses
-cat /tmp/games-ipv4.txt 2>/dev/null | \
-    grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$' | \
-    sed 's/$/\/32/' | \
-    sort -V | uniq > /tmp/games-ipv4-final.txt
+resolve_a    8.8.8.8 "${ALL_DOMAINS[@]}" | write_ipv4 "$DIR"
+resolve_aaaa 8.8.8.8 "${ALL_DOMAINS[@]}" | write_ipv6 "$DIR"
 
-# Process IPv6 addresses
-cat /tmp/games-ipv6.txt 2>/dev/null | \
-    grep ':' | \
-    sed 's/$/\/128/' | \
-    sort -V | uniq > /tmp/games-ipv6-final.txt
-
-# save ipv4
-[ -f "downloader.sh" ] && cp /tmp/games-ipv4-final.txt ipv4.txt || cp /tmp/games-ipv4-final.txt games/ipv4.txt
-
-# save ipv6
-[ -f "downloader.sh" ] && cp /tmp/games-ipv6-final.txt ipv6.txt || cp /tmp/games-ipv6-final.txt games/ipv6.txt
+log "games: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

@@ -1,22 +1,21 @@
-#!/bin/bash
-
-
+#!/usr/bin/env bash
+#
+# Linode / Akamai — published geofeed (CSV with '#' comment lines; first column
+# is the CIDR).
 # https://www.linode.com/community/questions/19247/list-of-linodes-ip-ranges
-
+# Source: https://geoip.linode.com/
+#
 set -euo pipefail
-set -x
 
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=../utils/lib.sh
+source "$DIR/../utils/lib.sh"
 
-# get from public ranges
-curl -s https://geoip.linode.com/ | grep -v '^#' | cut -d, -f1  > /tmp/linode.txt
+# One CSV carrying both families; drop comment lines, take the first column.
+# write_ipv4/write_ipv6 each keep only their own family, so the same stream
+# feeds both.
+body="$(fetch https://geoip.linode.com/ | grep -v '^#' | cut -d, -f1)"
+printf '%s\n' "$body" | write_ipv4 "$DIR"
+printf '%s\n' "$body" | write_ipv6 "$DIR"
 
-# save ipv4
-grep -v ':' /tmp/linode.txt > /tmp/linode-ipv4.txt
-
-# save ipv6
-grep ':' /tmp/linode.txt > /tmp/linode-ipv6.txt
-
-
-# sort & uniq
-sort -V /tmp/linode-ipv4.txt | uniq > linode/ipv4.txt
-sort -V /tmp/linode-ipv6.txt | uniq > linode/ipv6.txt
+log "linode: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"
