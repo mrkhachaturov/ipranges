@@ -1,22 +1,23 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
+#
+# ProtonVPN — entry IPs of every logical VPN server.
+# Source: https://api.protonvpn.ch/vpn/logicals
+#         .LogicalServers[].Servers[].EntryIP  (bare IPv4 addresses)
+#
 set -euo pipefail
-set -x
 
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=../utils/lib.sh
+source "$DIR/../utils/lib.sh"
 
-# get from public ranges
-curl -s https://api.protonvpn.ch/vpn/logicals > /tmp/protonvpn.json
+# The API requires an app-version header; without it it returns 400.
+# EntryIP is a bare IPv4 address — write_ipv4 upgrades it to /32 and validates,
+# so nulls or any non-address value are dropped rather than published.
+fetch https://api.protonvpn.ch/vpn/logicals \
+    -H 'x-pm-appversion: Other' -H 'x-pm-apiversion: 3' \
+    | jq -r '.LogicalServers[].Servers[].EntryIP // empty' \
+    | write_ipv4 "$DIR"
 
+# The endpoint publishes no IPv6, so ipv6.txt is left as-is.
 
-# get all prefixes without some keys
-jq '.LogicalServers[].Servers[].EntryIP' -r /tmp/protonvpn.json | tr -d '"' > /tmp/protonvpn-all.txt
-
-
-# save ipv4
-grep -v ':' /tmp/protonvpn-all.txt > /tmp/protonvpn-ipv4.txt
-
-# ipv6 not provided
-
-
-# sort & uniq
-sort -V /tmp/protonvpn-ipv4.txt | uniq > protonvpn/ipv4.txt
+log "protonvpn: $(count "$DIR/ipv4.txt") IPv4 CIDRs"

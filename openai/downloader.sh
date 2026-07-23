@@ -36,6 +36,7 @@ AI_DOMAINS=(
     "openai.org"
     "platform.api.openai.com"
     "platform.openai.com"
+    "releases.openai.com"
     "spinningup.openai"
     "chat.openai.com"
     "chatgpt.com"
