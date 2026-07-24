@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install dependencies
-        run: sudo apt install -y whois parallel gawk dnsutils
+        run: sudo apt install -y whois gawk dnsutils jq
 
       - name: Set up Python
         uses: actions/setup-python@v7
@@ -42,20 +42,34 @@ jobs:
 
       - name: Create All-In-One ranges
         run: |
-          cat $(find . -name ipv4.txt | sort -h) | sort -V | uniq > all/ipv4.txt
-          cat $(find . -name ipv6.txt | sort -h) | sort -V | uniq > all/ipv6.txt
+          set -euo pipefail
+          # Aggregate provider lists only (mindepth 2), excluding all/ itself and
+          # the unused root-level legacy files — otherwise stale IPs and a removed
+          # provider's IPs would linger in the aggregate forever.
+          find . -mindepth 2 -name ipv4.txt -not -path './all/*' -exec cat {} + | sort -V | uniq > all/ipv4.txt
+          find . -mindepth 2 -name ipv6.txt -not -path './all/*' -exec cat {} + | sort -V | uniq > all/ipv6.txt
 
       - name: Merge ipv4 Ranges
         run: |
           set -euo pipefail
-          set -x
-          find . -name ipv4.txt | sort -h | parallel --will-cite -j 1 echo "Merging '{}'"';'python utils/merge.py --source={} '|'  sort -V '>' {.}_merged.txt
+          find . -name ipv4.txt | sort -h | while read -r f; do
+            echo "Merging $f"
+            python utils/merge.py --source="$f" | sort -V > "${f%.txt}_merged.txt"
+          done
 
       - name: Merge ipv6 Ranges
         run: |
           set -euo pipefail
-          set -x
-          find . -name ipv6.txt | sort -h | parallel --will-cite -j 1 echo "Merging '{}'"';'python utils/merge.py --source={} '|' sort -V '>' {.}_merged.txt
+          find . -name ipv6.txt | sort -h | while read -r f; do
+            echo "Merging $f"
+            python utils/merge.py --source="$f" | sort -V > "${f%.txt}_merged.txt"
+          done
+
+      - name: Lint Python
+        run: ruff check .
+
+      - name: Validate CIDR lists
+        run: python utils/validate.py
 
       - name: Render README
         run: python utils/render_readme.py
@@ -67,7 +81,7 @@ jobs:
           set -euo pipefail
 
           git remote add github "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git pull github ${GITHUB_REF} --ff-only
+          git pull github "${GITHUB_REF}" --ff-only
 
           # Use current user's credentials instead of original author
           git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
@@ -82,4 +96,4 @@ jobs:
           git commit -m "Auto-update ip ranges"
 
           # push changes
-          git push github HEAD:${GITHUB_REF}
+          git push github "HEAD:${GITHUB_REF}"
