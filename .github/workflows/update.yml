@@ -52,7 +52,7 @@ jobs:
       - name: Merge ipv4 Ranges
         run: |
           set -euo pipefail
-          find . -name ipv4.txt | sort -h | while read -r f; do
+          find . -mindepth 2 -name ipv4.txt | sort -h | while read -r f; do
             echo "Merging $f"
             python utils/merge.py --source="$f" | sort -V > "${f%.txt}_merged.txt"
           done
@@ -60,7 +60,7 @@ jobs:
       - name: Merge ipv6 Ranges
         run: |
           set -euo pipefail
-          find . -name ipv6.txt | sort -h | while read -r f; do
+          find . -mindepth 2 -name ipv6.txt | sort -h | while read -r f; do
             echo "Merging $f"
             python utils/merge.py --source="$f" | sort -V > "${f%.txt}_merged.txt"
           done
