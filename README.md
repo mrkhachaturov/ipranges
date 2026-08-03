@@ -7,7 +7,7 @@
 [![Last commit](https://img.shields.io/github/last-commit/mrkhachaturov/ipranges/main)](https://github.com/mrkhachaturov/ipranges/commits/main)
 
 <!-- BEGIN AUTO:summary -->
-**42 providers** · **118,028 IPv4 entries** · **270,218 IPv6 entries** · refreshed every 4 hours via GitHub Actions
+**43 providers** · **118,044 IPv4 entries** · **270,224 IPv6 entries** · refreshed every 4 hours via GitHub Actions
 <!-- END AUTO:summary -->
 
 All addresses come from public sources (vendor-published JSON/TXT or DNS resolution of vendor domains). The lists are committed back to `main` after each refresh, so consumers can pin to either `main` (rolling) or a specific commit (frozen).
@@ -80,6 +80,7 @@ def is_openai(ip: str) -> bool:
 | Devolutions | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/devolutions/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/devolutions/ipv4_merged.txt) | — | — |  |
 | DigitalOcean | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/digitalocean/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/digitalocean/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/digitalocean/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/digitalocean/ipv6_merged.txt) |  |
 | Discord | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/discord/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/discord/ipv4_merged.txt) | — | — |  |
+| Exa AI | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/exa/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/exa/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/exa/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/exa/ipv6_merged.txt) | Resolves exa.ai API/app/docs hosts plus the legacy metaphor.systems. Most sit behind Cloudflare/Vercel — ranges are shared CDN edge, not Exa-owned. |
 | Facebook (Meta) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/facebook/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/facebook/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/facebook/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/facebook/ipv6_merged.txt) |  |
 | Games | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/games/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/games/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/games/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/games/ipv6_merged.txt) |  |
 | GitHub | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/github/ipv4.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/github/ipv4_merged.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/github/ipv6.txt) | [txt](https://raw.githubusercontent.com/mrkhachaturov/ipranges/main/github/ipv6_merged.txt) |  |

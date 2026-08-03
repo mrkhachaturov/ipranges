@@ -16,6 +16,7 @@
   { "dir": "devolutions",  "name": "Devolutions" },
   { "dir": "digitalocean", "name": "DigitalOcean" },
   { "dir": "discord",      "name": "Discord" },
+  { "dir": "exa",          "name": "Exa AI", "note": "Resolves exa.ai API/app/docs hosts plus the legacy metaphor.systems. Most sit behind Cloudflare/Vercel — ranges are shared CDN edge, not Exa-owned." },
   { "dir": "facebook",     "name": "Facebook (Meta)" },
   { "dir": "games",        "name": "Games" },
   { "dir": "github",       "name": "GitHub" },
