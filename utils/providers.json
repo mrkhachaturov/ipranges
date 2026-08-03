@@ -30,6 +30,7 @@
   { "dir": "microsoft",    "name": "Microsoft" },
   { "dir": "notion",       "name": "Notion" },
   { "dir": "openai",       "name": "OpenAI (GPTBot)" },
+  { "dir": "openrouter",   "name": "OpenRouter", "note": "Site, status and Clerk-backed auth hosts; the API is served from openrouter.ai/api/v1, not a separate host. All Cloudflare-fronted — shared CDN edge IPs, and the auth hosts are shared Clerk infrastructure." },
   { "dir": "opentofu",     "name": "OpenTofu" },
   { "dir": "oracle",       "name": "Oracle (Cloud)" },
   { "dir": "paddle",       "name": "PaddlePaddle", "note": "Model/wheel download hosts and AI Studio. Resolved via several resolvers — Baidu GeoDNS answers differ per region." },
