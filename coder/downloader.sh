@@ -16,7 +16,7 @@ DOMAINS=(
     dev.coder.com
 )
 
-resolve_a    8.8.8.8 "${DOMAINS[@]}" | write_ipv4 "$DIR"
-resolve_aaaa 8.8.8.8 "${DOMAINS[@]}" | write_ipv6 "$DIR"
+resolve_a "${DOMAINS[@]}" | write_ipv4 "$DIR"
+resolve_aaaa "${DOMAINS[@]}" | write_ipv6 "$DIR"
 
 log "coder: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

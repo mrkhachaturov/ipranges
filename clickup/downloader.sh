@@ -68,9 +68,9 @@ CLICKUP_IPS=(
 
 {
     printf '%s\n' "${CLICKUP_IPS[@]}"
-    resolve_a 8.8.8.8 "${CLICKUP_DOMAINS[@]}"
+    resolve_a "${CLICKUP_DOMAINS[@]}"
 } | write_ipv4 "$DIR"
 
-resolve_aaaa 8.8.8.8 "${CLICKUP_DOMAINS[@]}" | write_ipv6 "$DIR"
+resolve_aaaa "${CLICKUP_DOMAINS[@]}" | write_ipv6 "$DIR"
 
 log "clickup: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

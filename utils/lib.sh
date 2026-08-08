@@ -14,7 +14,12 @@
 #     DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 #     source "$DIR/../utils/lib.sh"
 #
-#     { resolve_a 8.8.8.8 example.com; } | write_ipv4 "$DIR"
+#     { resolve_a example.com; } | write_ipv4 "$DIR"
+#
+# Pass no resolver: resolve_a/resolve_aaaa then query the whole RESOLVERS pool,
+# which is what you want for any GeoDNS-fronted host. Naming one resolver
+# explicitly (`resolve_a 8.8.8.8 example.com`) restricts the query to that
+# resolver and will under-report such hosts — only do it deliberately.
 #
 # DIR resolves to the absolute provider directory whether the script is invoked
 # from the repo root (the GitHub Action: `bash provider/downloader.sh`) or from
@@ -44,24 +49,47 @@ fetch() { curl -fsSL --retry 3 --retry-delay 2 --max-time 60 "$@"; }
 # Per-query dig caps so one unreachable resolver can't stall a run for ~15s.
 _DIG_OPTS=(+time=3 +tries=1)
 
-# resolve_a <resolver> <domain...>: print A records, one per line. dig errors
-# go to /dev/null and never enter the stream.
-resolve_a() {
-    local resolver="$1"; shift
-    local domain
-    for domain in "$@"; do
-        dig +short "${_DIG_OPTS[@]}" A "$domain" "@$resolver" 2>/dev/null || true
+# Default resolver pool. Hosts behind GeoDNS — anything on Cloudflare, Akamai or
+# Fastly — hand back different addresses to different resolvers, so querying a
+# single resolver produces a permanently incomplete list no matter how often CI
+# re-runs it. openrouter.ai is the worked example: Google and Quad9 answer
+# 104.18.2.115/104.18.3.115, while Cloudflare and Yandex answer 8.47.69.0/8.6.112.0
+# — all four are live Cloudflare edges, and 8.x is absent from Cloudflare's own
+# published prefix list, so nothing downstream can recover it.
+#
+# A downloader may override this (see paddle/, which adds a China-local resolver).
+RESOLVERS=(8.8.8.8 1.1.1.1 208.67.222.222 9.9.9.9 77.88.8.8)
+
+# _is_resolver <token>: true when the token is an address rather than a domain,
+# which is what lets the resolver argument be optional.
+_is_resolver() {
+    [[ "$1" =~ ^[0-9]{1,3}(\.[0-9]{1,3}){3}$ ]] || [[ "$1" == *:*:* ]]
+}
+
+# _resolve <rrtype> [resolver] <domain...>: shared body for resolve_a/resolve_aaaa.
+_resolve() {
+    local rrtype="$1"; shift
+    [ "$#" -gt 0 ] || return 0
+    local -a resolvers
+    if _is_resolver "$1"; then resolvers=("$1"); shift
+    else resolvers=("${RESOLVERS[@]}"); fi
+    [ "$#" -gt 0 ] || return 0
+    local r domain
+    for r in "${resolvers[@]}"; do
+        for domain in "$@"; do
+            dig +short "${_DIG_OPTS[@]}" "$rrtype" "$domain" "@$r" 2>/dev/null || true
+        done
     done
 }
 
-# resolve_aaaa <resolver> <domain...>: print AAAA records, one per line.
-resolve_aaaa() {
-    local resolver="$1"; shift
-    local domain
-    for domain in "$@"; do
-        dig +short "${_DIG_OPTS[@]}" AAAA "$domain" "@$resolver" 2>/dev/null || true
-    done
-}
+# resolve_a [resolver] <domain...>: print A records, one per line. Given an
+# explicit resolver, queries only that one; otherwise queries every resolver in
+# RESOLVERS and unions the answers (write_ipv4 sorts and de-dupes). dig errors go
+# to /dev/null and never enter the stream.
+resolve_a() { _resolve A "$@"; }
+
+# resolve_aaaa [resolver] <domain...>: print AAAA records, one per line.
+resolve_aaaa() { _resolve AAAA "$@"; }
 
 # asn_routes <ASN>: print announced route/route6 prefixes from public IRR mirrors.
 # Emits both families; write_ipv4/write_ipv6 each keep only what they want.

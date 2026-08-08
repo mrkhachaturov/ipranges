@@ -34,7 +34,7 @@ WISPRFLOW_DOMAINS=(
     "chain-o232k03l.api.baseten.co"
 )
 
-resolve_a    8.8.8.8 "${WISPRFLOW_DOMAINS[@]}" | write_ipv4 "$DIR"
-resolve_aaaa 8.8.8.8 "${WISPRFLOW_DOMAINS[@]}" | write_ipv6 "$DIR"
+resolve_a "${WISPRFLOW_DOMAINS[@]}" | write_ipv4 "$DIR"
+resolve_aaaa "${WISPRFLOW_DOMAINS[@]}" | write_ipv6 "$DIR"
 
 log "wisprflow: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

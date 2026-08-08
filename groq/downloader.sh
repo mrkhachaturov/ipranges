@@ -15,7 +15,7 @@ GROQ_DOMAINS=(
     "console.groq.com"
 )
 
-resolve_a    8.8.8.8 "${GROQ_DOMAINS[@]}" | write_ipv4 "$DIR"
-resolve_aaaa 8.8.8.8 "${GROQ_DOMAINS[@]}" | write_ipv6 "$DIR"
+resolve_a "${GROQ_DOMAINS[@]}" | write_ipv4 "$DIR"
+resolve_aaaa "${GROQ_DOMAINS[@]}" | write_ipv6 "$DIR"
 
 log "groq: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

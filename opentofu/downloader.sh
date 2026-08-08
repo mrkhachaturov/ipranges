@@ -29,7 +29,7 @@ OPENTOFU_DOMAINS=(
     "packages.opentofu.org"
 )
 
-resolve_a    8.8.8.8 "${OPENTOFU_DOMAINS[@]}" | write_ipv4 "$DIR"
-resolve_aaaa 8.8.8.8 "${OPENTOFU_DOMAINS[@]}" | write_ipv6 "$DIR"
+resolve_a "${OPENTOFU_DOMAINS[@]}" | write_ipv4 "$DIR"
+resolve_aaaa "${OPENTOFU_DOMAINS[@]}" | write_ipv6 "$DIR"
 
 log "opentofu: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

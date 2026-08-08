@@ -41,7 +41,7 @@ for domain in "${WILDCARD_DOMAINS[@]}"; do
     done
 done
 
-resolve_a    8.8.8.8 "${ALL_DOMAINS[@]}" | write_ipv4 "$DIR"
-resolve_aaaa 8.8.8.8 "${ALL_DOMAINS[@]}" | write_ipv6 "$DIR"
+resolve_a "${ALL_DOMAINS[@]}" | write_ipv4 "$DIR"
+resolve_aaaa "${ALL_DOMAINS[@]}" | write_ipv6 "$DIR"
 
 log "games: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

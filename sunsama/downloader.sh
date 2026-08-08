@@ -22,7 +22,7 @@ SUNSAMA_DOMAINS=(
     "api.sunsama.net"
 )
 
-resolve_a    8.8.8.8 "${SUNSAMA_DOMAINS[@]}" | write_ipv4 "$DIR"
-resolve_aaaa 8.8.8.8 "${SUNSAMA_DOMAINS[@]}" | write_ipv6 "$DIR"
+resolve_a "${SUNSAMA_DOMAINS[@]}" | write_ipv4 "$DIR"
+resolve_aaaa "${SUNSAMA_DOMAINS[@]}" | write_ipv6 "$DIR"
 
 log "sunsama: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

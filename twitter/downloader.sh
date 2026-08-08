@@ -18,7 +18,7 @@ DOMAINS=(
 # prefixes; each write_* keeps only its own family.
 routes="$(for asn in "${ASNS[@]}"; do asn_routes "$asn"; done)"
 
-{ printf '%s\n' "$routes"; resolve_a 8.8.8.8 "${DOMAINS[@]}"; } | write_ipv4 "$DIR"
-{ printf '%s\n' "$routes"; resolve_aaaa 8.8.8.8 "${DOMAINS[@]}"; } | write_ipv6 "$DIR"
+{ printf '%s\n' "$routes"; resolve_a "${DOMAINS[@]}"; } | write_ipv4 "$DIR"
+{ printf '%s\n' "$routes"; resolve_aaaa "${DOMAINS[@]}"; } | write_ipv6 "$DIR"
 
 log "twitter: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"

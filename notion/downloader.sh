@@ -43,9 +43,9 @@ NOTION_IPS=(
 
 {
     printf '%s\n' "${NOTION_IPS[@]}"
-    resolve_a 8.8.8.8 "${NOTION_DOMAINS[@]}"
+    resolve_a "${NOTION_DOMAINS[@]}"
 } | write_ipv4 "$DIR"
 
-resolve_aaaa 8.8.8.8 "${NOTION_DOMAINS[@]}" | write_ipv6 "$DIR"
+resolve_aaaa "${NOTION_DOMAINS[@]}" | write_ipv6 "$DIR"
 
 log "notion: $(count "$DIR/ipv4.txt") IPv4, $(count "$DIR/ipv6.txt") IPv6"
