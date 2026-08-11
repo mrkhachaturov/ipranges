@@ -19,6 +19,7 @@
   { "dir": "exa",          "name": "Exa AI", "note": "Resolves exa.ai API/app/docs hosts plus the legacy metaphor.systems. Most sit behind Cloudflare/Vercel — ranges are shared CDN edge, not Exa-owned." },
   { "dir": "facebook",     "name": "Facebook (Meta)" },
   { "dir": "games",        "name": "Games" },
+  { "dir": "gemini",       "name": "Google Gemini / Vertex AI", "note": "Attribution split of google/, not extra coverage — every address here is already in google/, as /32s that win on longest-prefix. Web hosts separate cleanly; the API does not: generativelanguage and all *-aiplatform endpoints share www.googleapis.com's frontend addresses." },
   { "dir": "github",       "name": "GitHub" },
   { "dir": "google",       "name": "Google (Cloud & GoogleBot)" },
   { "dir": "googlebot",    "name": "Google (GoogleBot)", "note": "To allow GoogleBot, block all Google IPs first, then allow these." },
