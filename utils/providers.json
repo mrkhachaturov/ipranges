@@ -22,6 +22,7 @@
   { "dir": "github",       "name": "GitHub" },
   { "dir": "google",       "name": "Google (Cloud & GoogleBot)" },
   { "dir": "googlebot",    "name": "Google (GoogleBot)", "note": "To allow GoogleBot, block all Google IPs first, then allow these." },
+  { "dir": "grok",         "name": "Grok (xAI)", "note": "Resolves grok.com and x.ai hosts, including the regional API endpoints (us-east-1, us-west-1, eu-west-1, asia-south1). Most sit behind Cloudflare/GCP — ranges are shared edge, not xAI-owned." },
   { "dir": "groq",         "name": "Groq" },
   { "dir": "hetzner",      "name": "Hetzner", "note": "All prefixes announced by Hetzner ASNs (AS24940 Online, AS213230 Cloud)." },
   { "dir": "imobie",       "name": "iMobie (FocuSee)", "note": "FocuSee account/license/AI-voice hosts across imobie.com and imobie-resource.com. Several are Cloudflare/CloudFront/Incapsula-fronted — shared CDN edge IPs." },
