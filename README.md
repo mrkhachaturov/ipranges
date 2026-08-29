@@ -160,6 +160,10 @@ python utils/render_readme.py --check
 
 [MIT](LICENSE) — © 2026 Ruben Khachaturov. The IP data itself comes from public sources and is not subject to copyright on its own.
 
+## Documentation
+
+- See `docs/API.md` for usage, script interfaces, and examples.
+
 ## Source
 
 <https://github.com/mrkhachaturov/ipranges>
