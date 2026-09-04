@@ -13,6 +13,9 @@ DOMAINS=(
     www.brevilabs.com
     api.brevilabs.com
     models.brevilabs.com
+    miyo.md
+    www.miyo.md
+    relay.miyo.md
 )
 
 resolve_a "${DOMAINS[@]}" | write_ipv4 "$DIR"
