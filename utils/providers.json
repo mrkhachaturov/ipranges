@@ -6,6 +6,7 @@
   { "dir": "atlassian",    "name": "Atlassian" },
   { "dir": "baidu",        "name": "Baidu", "note": "All prefixes announced by Baidu ASNs. Does not cover Baidu services hosted in China Telecom/Unicom IDC space — see paddle." },
   { "dir": "bing",         "name": "Bing (Bingbot)" },
+  { "dir": "brevilabs",    "name": "Brevi Labs (Obsidian Copilot)", "note": "Site plus the api and models endpoints. Site is Vercel-hosted and the endpoints sit behind Railway — ranges are shared platform edge, not Brevi Labs-owned." },
   { "dir": "clickup",      "name": "ClickUp" },
   { "dir": "cloudflare",   "name": "Cloudflare" },
   { "dir": "cloudflared",  "name": "Cloudflare Tunnel (Argo)" },
