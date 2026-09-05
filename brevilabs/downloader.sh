@@ -13,8 +13,8 @@ DOMAINS=(
     www.brevilabs.com
     api.brevilabs.com
     models.brevilabs.com
-    miyo.md
-    www.miyo.md
+    # miyo.md / www.miyo.md are deliberately left out — the site is Vercel-fronted
+    # and reachable, so only the relay endpoint is worth listing.
     relay.miyo.md
 )
 
