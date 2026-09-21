@@ -43,6 +43,7 @@
   { "dir": "sunsama",      "name": "Sunsama" },
   { "dir": "tana",         "name": "Tana" },
   { "dir": "telegram",     "name": "Telegram" },
+  { "dir": "typesafe",     "name": "TypeSafe AI", "note": "Site, docs, console, api, evals, login and status hosts. Spread across Framer, Mintlify/Cloudflare, AWS us-west-2, Vercel and Hetzner — shared platform edge, not TypeSafe-owned. The Vanta trust center and the GitHub Pages daggerverse docs are excluded." },
   { "dir": "twitter",      "name": "Twitter / X" },
   { "dir": "vultr",        "name": "Vultr" },
   { "dir": "wisprflow",    "name": "Wispr Flow" }
