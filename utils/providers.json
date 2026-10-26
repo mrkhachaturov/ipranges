@@ -13,6 +13,7 @@
   { "dir": "cloudfront",   "name": "Amazon CloudFront" },
   { "dir": "coder",        "name": "Coder", "note": "Resolves coder.com, registry.coder.com and related hosts. Most sit behind Cloudflare/Vercel — ranges are shared, not Coder-owned." },
   { "dir": "cohere",       "name": "Cohere" },
+  { "dir": "cursor",       "name": "Cursor", "note": "Targets the SNI-blocked cursor.sh backend hosts (api2, api3, auth, metrics, repo42, authenticator) used by the Cursor editor. AWS us-east-1 behind GeoDNS: some resolvers answer with Cloudflare edge instead, and authenticator is WorkOS on Cloudflare — shared ranges, not Cursor-owned. *.cursor.com is excluded." },
   { "dir": "deepl",        "name": "DeepL" },
   { "dir": "devolutions",  "name": "Devolutions" },
   { "dir": "digitalocean", "name": "DigitalOcean" },
