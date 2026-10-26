@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
-# Cursor — resolve the cursor.sh backend hosts (AWS us-east-1, rotating).
+# Cursor — resolve the cursor.sh backend hosts and the cursorvm.com cloud-VM
+# regions (AWS, rotating). us{1..20} covers regions Cursor has not opened yet.
 #
 set -euo pipefail
 
@@ -17,6 +18,7 @@ DOMAINS=(
     repo42.cursor.sh
     api3.cursor.sh
     authenticator.cursor.sh
+    us{1..20}.cursorvm.com
 )
 
 resolve_a "${DOMAINS[@]}" | write_ipv4 "$DIR"
