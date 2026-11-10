@@ -7,7 +7,7 @@
 [![Last commit](https://img.shields.io/github/last-commit/mrkhachaturov/ipranges/main)](https://github.com/mrkhachaturov/ipranges/commits/main)
 
 <!-- BEGIN AUTO:summary -->
-**49 providers** · **122,207 IPv4 entries** · **271,942 IPv6 entries** · refreshed every 4 hours via GitHub Actions
+**49 providers** · **122,130 IPv4 entries** · **271,920 IPv6 entries** · refreshed every 4 hours via GitHub Actions
 <!-- END AUTO:summary -->
 
 All addresses come from public sources (vendor-published JSON/TXT or DNS resolution of vendor domains). The lists are committed back to `main` after each refresh, so consumers can pin to either `main` (rolling) or a specific commit (frozen).
