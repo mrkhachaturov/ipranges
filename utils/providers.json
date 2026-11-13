@@ -20,7 +20,8 @@
   { "dir": "discord",      "name": "Discord" },
   { "dir": "exa",          "name": "Exa AI", "note": "Resolves exa.ai API/app/docs hosts plus the legacy metaphor.systems. Most sit behind Cloudflare/Vercel — ranges are shared CDN edge, not Exa-owned." },
   { "dir": "facebook",     "name": "Facebook (Meta)" },
-  { "dir": "games",        "name": "Games" },
+  { "dir": "fastly",       "name": "Fastly", "note": "Fastly's published edge prefixes. Use this rather than per-site lists for anything Fastly-fronted (e.g. Unsplash): Fastly hands each resolver a different edge, so per-host /32s miss whatever your own DNS returns." },
+  { "dir": "games",       "name": "Games" },
   { "dir": "gemini",       "name": "Google Gemini / Vertex AI", "note": "Attribution split of google/, not extra coverage — every address here is already in google/, as /32s that win on longest-prefix. Web hosts separate cleanly; the API does not: generativelanguage and all *-aiplatform endpoints share www.googleapis.com's frontend addresses." },
   { "dir": "github",       "name": "GitHub" },
   { "dir": "google",       "name": "Google (Cloud & GoogleBot)" },
@@ -46,7 +47,7 @@
   { "dir": "telegram",     "name": "Telegram" },
   { "dir": "typesafe",     "name": "TypeSafe AI", "note": "Site, docs, console, api, evals, login and status hosts. Spread across Framer, Mintlify/Cloudflare, AWS us-west-2, Vercel and Hetzner — shared platform edge, not TypeSafe-owned. The Vanta trust center and the GitHub Pages daggerverse docs are excluded." },
   { "dir": "twitter",      "name": "Twitter / X" },
-  { "dir": "unsplash",     "name": "Unsplash", "note": "Site, API and image hosts (images/plus.unsplash.com and their imgix origins). All Fastly-fronted and GeoDNS-split per resolver — shared Fastly edge IPs, not Unsplash-owned." },
+  { "dir": "unsplash",     "name": "Unsplash", "note": "Site, API and image hosts (images/plus.unsplash.com and their imgix origins). All Fastly-fronted and GeoDNS-split per resolver — shared Fastly edge IPs, not Unsplash-owned. Incomplete for routing: your own DNS may get a Fastly edge no public resolver returns, and the ISP block is by SNI, so route fastly/ instead." },
   { "dir": "vultr",       "name": "Vultr" },
   { "dir": "wisprflow",    "name": "Wispr Flow" }
 ]
